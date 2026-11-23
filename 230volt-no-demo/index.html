@@ -4,336 +4,334 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elektro Verden AS | Oslo</title>
-  <meta name="description" content="Vi leverer fagmessig arbeid med tydelig fremdriftsplan, ryddig kommunikasjon og respekt for avtalte rammer.">
+  <meta name="description" content="Elektro Verden AS leverer fagmessige elektriske installasjoner, service og oppgraderinger for bolig, borettslag og næring – med fokus på sikkerhet, ryddig dokumentasjon og punktlig levering.">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
-      margin: 0;
-      font-family: 'DM Sans', system-ui, sans-serif;
-      background: #FAF8F4;
-      color: #1C2420;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
+      margin: 0; font-family: 'Inter', system-ui, sans-serif; color: #0F172A;
+      background: #FFFFFF; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden;
     }
-    h1, h2, h3 {
-      font-family: 'Fraunces', Georgia, serif;
-      line-height: 1.18;
-      margin: 0 0 0.75rem;
-      overflow-wrap: break-word;
-      hyphens: auto;
-    }
+    h1, h2, h3 { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; line-height: 1.15; margin: 0 0 0.75rem; overflow-wrap: break-word; hyphens: auto; }
+    img { max-width: 100%; display: block; }
     a { color: inherit; text-decoration: none; }
-    .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 1.25rem; }
+    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+
     .demo-banner {
-      background: #0B1220;
-      color: #E2E8F0;
-      font-size: 0.85rem;
-      padding: 0.6rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      background: #060C18; color: #CBD5E1; font-size: 0.82rem; padding: 0.55rem 1rem;
+      text-align: center; border-bottom: 1px solid rgba(255,255,255,0.08);
     }
+    .demo-banner strong { color: #FFFFFF; }
     .demo-banner a { color: #FBBF24; font-weight: 600; text-decoration: underline; margin-left: 0.35rem; }
+
     .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      background: rgba(255,255,255,0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid #E2DDD4;
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(11, 22, 40, 0.96); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.1); color: #F1F5F9;
     }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      min-height: 68px;
-    }
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.65rem;
-      font-family: 'Fraunces', Georgia, serif;
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: #1C2420;
-    }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 74px; }
+    .brand { display: inline-flex; align-items: center; gap: 0.7rem; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; font-size: 1.05rem; }
     .brand-mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 9px;
-      background: #2D6A4F;
-      color: #FFFFFF;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.85rem;
-      font-weight: 700;
-      flex-shrink: 0;
+      width: 36px; height: 36px; border-radius: 10px; background: #0EA5E9; color: #FFFFFF;
+      display: inline-flex; align-items: center; justify-content: center; font-size: 0.88rem; font-weight: 800; flex-shrink: 0;
     }
-    .nav-links { display: flex; align-items: center; gap: 1.4rem; font-size: 0.95rem; font-weight: 500; }
-    .nav-links a:hover { color: #2D6A4F; }
-    .nav-cta {
-      background: #2D6A4F;
-      color: #FFFFFF !important;
-      padding: 0.55rem 1.05rem;
-      border-radius: 8px;
-      font-weight: 600;
+    .logo-pill {
+      background: #FFFFFF; padding: 6px 12px; border-radius: 10px; display: inline-flex; align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     }
-    .nav-cta:hover { background: #1B4332; }
-    .hero {
-      background: #1B4332;
-      color: #F8FAF9;
-      padding: clamp(3rem, 7vw, 5.5rem) 0;
-    }
-    .hero-split {
-      display: grid;
-      grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.95fr);
-      gap: 2.5rem;
-      align-items: center;
-    }
-    .hero-centered { text-align: center; max-width: 860px; }
-    .hero-badge {
-      display: inline-block;
-      background: #D8F3DC;
-      color: #1B4332;
-      font-weight: 600;
-      font-size: 0.82rem;
-      padding: 0.35rem 0.8rem;
-      border-radius: 999px;
-      margin-bottom: 1rem;
-    }
-    .hero h1 { font-size: clamp(1.9rem, 4.2vw, 3.15rem); letter-spacing: -0.02em; }
-    .hero-lead {
-      font-size: clamp(1rem, 1.6vw, 1.15rem);
-      color: #D8E8DF;
-      margin: 0 0 1.75rem;
-      max-width: 62ch;
-    }
-    .hero-centered .hero-lead { margin-left: auto; margin-right: auto; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.85rem; }
-    .hero-centered .hero-actions { justify-content: center; }
+    .logo-pill img { height: 30px; max-width: 165px; width: auto; object-fit: contain; }
+    .nav-desktop { display: flex; align-items: center; gap: 1.6rem; font-size: 0.93rem; font-weight: 500; }
+    .nav-desktop a:hover { color: #0EA5E9; }
+    .header-actions { display: flex; align-items: center; gap: 0.85rem; }
+    .phone-link { font-weight: 600; font-size: 0.9rem; }
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.85rem 1.4rem;
-      border-radius: 10px;
-      font-weight: 600;
-      font-size: 0.98rem;
-      transition: transform 0.15s ease, background 0.15s ease;
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+      padding: 0.82rem 1.35rem; border-radius: 10px; font-weight: 600; font-size: 0.95rem;
+      border: 1px solid transparent; cursor: pointer; transition: all 0.18s ease;
     }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: #2D6A4F; color: #FFFFFF; }
-    .btn-primary:hover { background: #1B4332; }
+    .btn-primary { background: #0EA5E9; color: #FFFFFF; }
+    .btn-primary:hover { background: #0284C7; transform: translateY(-1px); }
     .btn-secondary {
-      border: 1px solid currentColor;
-      opacity: 0.9;
+      background: rgba(255,255,255,0.08);
+      color: #FFFFFF;
+      border-color: rgba(255,255,255,0.24);
     }
-    .hero-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 16px;
-      padding: 1.5rem;
+    .btn-sm { padding: 0.56rem 1.05rem; font-size: 0.88rem; }
+    .menu-toggle {
+      display: none; background: transparent; color: inherit;
+      border: 1px solid currentColor; border-radius: 8px; padding: 0.4rem 0.6rem; cursor: pointer;
     }
-    .hero-card-top { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.25rem; }
-    .monogram {
-      width: 48px; height: 48px; border-radius: 12px;
-      background: #2D6A4F; color: #FFFFFF;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 1.1rem; flex-shrink: 0;
+    .mobile-drawer {
+      display: none; background: rgba(11, 22, 40, 0.96); border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem 1.25rem 1.4rem;
     }
-    .hero-card-title { font-weight: 700; font-size: 1.05rem; }
-    .hero-card-sub { font-size: 0.9rem; color: #D8E8DF; }
-    .facts-list { display: grid; gap: 0.85rem; }
-    .facts-strip {
-      margin-top: 2.25rem;
+    .mobile-drawer.open { display: grid; gap: 0.8rem; }
+
+    .hero {
+      background: radial-gradient(circle at 80% 20%, rgba(14,165,233,0.22), transparent 52%), linear-gradient(135deg, #07101F 0%, #0B1628 60%, #13233E 100%); color: #FFFFFF;
+      padding: clamp(3rem, 6.5vw, 5.25rem) 0;
+    }
+    .hero-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      text-align: left;
-    }
-    .fact-item {
-      padding: 0.85rem 1rem;
-      border-radius: 10px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.12);
-    }
-    .fact-label { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.75; }
-    .fact-value { display: block; font-weight: 600; font-size: 0.95rem; margin-top: 0.15rem; }
-    .section { padding: clamp(3rem, 6vw, 4.75rem) 0; }
-    .surface { background: #F2EFE9; }
-    .section-head { max-width: 680px; margin-bottom: 2.25rem; }
-    .eyebrow {
-      display: inline-block;
-      color: #2D6A4F;
-      font-weight: 700;
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 0.45rem;
-    }
-    .section h2 { font-size: clamp(1.55rem, 3vw, 2.2rem); }
-    .cards-grid, .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.35rem;
-    }
-    .card, .step {
-      background: #FAF8F4;
-      border: 1px solid #E2DDD4;
-      border-radius: 14px;
-      padding: 1.5rem;
-    }
-    .card-num {
-      color: #2D6A4F;
-      font-family: 'Fraunces', Georgia, serif;
-      font-weight: 800;
-      font-size: 0.9rem;
-      margin-bottom: 0.65rem;
-    }
-    .card h3 { font-size: 1.15rem; }
-    .card p, .step p { color: #4A5A52; margin: 0.35rem 0 0; font-size: 0.96rem; }
-    .contact-box {
-      background: #1B4332;
-      color: #F8FAF9;
-      border-radius: 18px;
-      padding: clamp(1.75rem, 4vw, 3rem);
-      display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-      gap: 2rem;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+      gap: clamp(2rem, 4vw, 3.5rem);
       align-items: center;
     }
-    .contact-box p { color: #D8E8DF; margin: 0.5rem 0 1.25rem; }
-    .contact-details { display: grid; gap: 0.75rem; font-size: 0.96rem; }
-    .contact-details a { color: #FFFFFF; text-decoration: underline; }
-    footer {
-      border-top: 1px solid #E2DDD4;
-      padding: 2rem 0;
-      font-size: 0.88rem;
-      color: #4A5A52;
+    .hero-grid.reverse .hero-visual { order: -1; }
+    .hero-kicker {
+      display: inline-block; background: #E0F2FE; color: #0284C7;
+      font-weight: 700; font-size: 0.8rem; padding: 0.36rem 0.88rem; border-radius: 999px; margin-bottom: 1.1rem;
     }
-    .footer-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 1rem;
+    .hero h1 { font-size: clamp(2rem, 4.1vw, 3.25rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1.05rem; }
+    .hero-lead { font-size: clamp(1rem, 1.45vw, 1.12rem); color: #CBD5E1; max-width: 58ch; margin: 0 0 1.75rem; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 2rem; }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem;
+      padding-top: 1.4rem; border-top: 1px solid rgba(255,255,255,0.14);
     }
-    @media (max-width: 820px) {
-      .hero-split, .contact-box { grid-template-columns: 1fr; }
-      .nav-links a:not(.nav-cta) { display: none; }
+    .stat-num { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 1.28rem; font-weight: 800; }
+    .stat-label { font-size: 0.8rem; opacity: 0.78; margin-top: 0.12rem; }
+    .hero-photo-wrap {
+      position: relative; border-radius: 20px; overflow: hidden;
+      box-shadow: 0 24px 54px rgba(0,0,0,0.22);
+      border: 1px solid rgba(255,255,255,0.15);
+      aspect-ratio: 4 / 3.4; background: #0F172A;
+    }
+    .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-photo-badge {
+      position: absolute; left: 1rem; right: 1rem; bottom: 1rem;
+      background: rgba(11, 22, 40, 0.88); backdrop-filter: blur(10px); color: #FFFFFF;
+      border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 0.85rem 1.05rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+    }
+    .hero-photo-badge strong { display: block; font-size: 0.92rem; }
+    .hero-photo-badge span { font-size: 0.78rem; color: #CBD5E1; }
+    .pill-ok {
+      background: rgba(16,185,129,0.2); color: #6EE7B7; border: 1px solid rgba(16,185,129,0.4);
+      font-size: 0.74rem; font-weight: 700; padding: 0.28rem 0.65rem; border-radius: 999px; white-space: nowrap;
+    }
+
+    .trust-bar { background: #F5F9FD; border-bottom: 1px solid #E2E8F0; padding: 1.15rem 0; }
+    .trust-items { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1.5rem; }
+    .trust-item { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 600; }
+    .trust-dot { width: 8px; height: 8px; border-radius: 50%; background: #0EA5E9; flex-shrink: 0; }
+
+    .section { padding: clamp(3.25rem, 6vw, 5.25rem) 0; }
+    .section-alt { background: #F5F9FD; }
+    .section-head { max-width: 700px; margin-bottom: 2.5rem; }
+    .eyebrow {
+      display: inline-block; color: #0EA5E9; font-weight: 700;
+      font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.45rem;
+    }
+    .section h2 { font-size: clamp(1.65rem, 3.1vw, 2.4rem); font-weight: 800; letter-spacing: -0.02em; }
+    .section-lead { color: #475569; font-size: 1.02rem; margin: 0.45rem 0 0; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.45rem; }
+    .service-card {
+      background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px;
+      padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .service-card:hover { transform: translateY(-2px); border-color: #0EA5E9; box-shadow: 0 18px 38px rgba(15,23,42,0.08); }
+    .service-icon {
+      width: 46px; height: 46px; border-radius: 12px; background: #E0F2FE; color: #0284C7;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 1.05rem;
+    }
+    .service-card h3 { font-size: 1.22rem; }
+    .service-card p { color: #475569; font-size: 0.95rem; margin: 0.4rem 0 1.1rem; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .tag { background: #F5F9FD; color: #0F172A; font-size: 0.78rem; font-weight: 600; padding: 0.26rem 0.65rem; border-radius: 999px; border: 1px solid #E2E8F0; }
+
+    .showcase-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.45rem; }
+    .showcase-card {
+      background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .showcase-img { position: relative; aspect-ratio: 16 / 10.5; overflow: hidden; background: #0F172A; }
+    .showcase-img img { width: 100%; height: 100%; object-fit: cover; }
+    .step-pill {
+      position: absolute; top: 0.75rem; left: 0.75rem;
+      background: rgba(11, 22, 40, 0.86); color: #FFFFFF; font-size: 0.75rem; font-weight: 700;
+      padding: 0.26rem 0.65rem; border-radius: 999px;
+    }
+    .showcase-body { padding: 1.35rem; }
+    .showcase-body h3 { font-size: 1.1rem; margin-bottom: 0.45rem; }
+    .showcase-body p { color: #475569; font-size: 0.92rem; margin: 0; }
+
+    .contact-grid { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr); gap: 2rem; align-items: start; }
+    .contact-info { background: #0B1628; color: #FFFFFF; border-radius: 20px; padding: 2rem; }
+    .contact-info p { color: #CBD5E1; font-size: 0.95rem; margin: 0 0 1.4rem; }
+    .contact-rows { display: grid; gap: 0.9rem; }
+    .contact-row { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 0.9rem 1.05rem; }
+    .contact-row small { display: block; color: #94A3B8; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .contact-row a, .contact-row strong { display: block; color: #FFFFFF; font-size: 0.98rem; font-weight: 600; margin-top: 0.15rem; word-break: break-word; }
+    .contact-form {
+      background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 2rem;
+      box-shadow: 0 14px 36px rgba(15,23,42,0.06);
+    }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.95rem; }
+    .field { display: flex; flex-direction: column; gap: 0.32rem; margin-bottom: 0.95rem; }
+    .field label { font-size: 0.85rem; font-weight: 600; }
+    .field input, .field textarea {
+      width: 100%; padding: 0.75rem 0.9rem; border-radius: 10px; border: 1px solid #E2E8F0;
+      font-family: inherit; font-size: 0.95rem; background: #FFFFFF; color: #0F172A;
+    }
+    .form-status {
+      display: none; margin-top: 1rem; padding: 0.9rem 1rem; border-radius: 10px;
+      background: #ECFDF5; border: 1px solid #A7F3D0; color: #065F46; font-size: 0.9rem; font-weight: 500;
+    }
+    .form-status.show { display: block; }
+
+    .site-footer { background: #07101F; color: #94A3B8; padding: 2.5rem 0 2rem; }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.88rem; }
+    .footer-inner strong { color: #FFFFFF; }
+
+    @media (max-width: 960px) {
+      .hero-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero-grid.reverse .hero-visual { order: 0; }
+      .showcase-grid { grid-template-columns: 1fr; }
+      .nav-desktop, .phone-link { display: none; }
+      .menu-toggle { display: inline-flex; }
+    }
+    @media (max-width: 680px) {
+      .services-grid, .form-grid { grid-template-columns: 1fr; }
+      .header-actions .btn-sm { display: none; }
     }
   </style>
 </head>
 <body>
   <div class="demo-banner">
     Live-utkast laget for <strong>Elektro Verden AS</strong> · Ønsker dere tilpasninger og lansering?
-    <a href="https://vikingnet.no/landingsside" target="_blank" rel="noopener">Se løsning på vikingnet.no</a>
+    <a href="https://vikingnet.no/landingsside" target="_blank" rel="noopener">Se pakker på vikingnet.no</a>
   </div>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">
-        <span class="brand-mark">EV</span>
-        <span>Elektro Verden AS</span>
-      </a>
-      <nav class="nav-links" aria-label="Hovedmeny">
+      <a class="brand" href="#"><span class="brand-mark">EV</span><span class="brand-name">Elektro Verden AS</span></a>
+      <nav class="nav-desktop" aria-label="Hovedmeny">
         <a href="#tjenester">Tjenester</a>
         <a href="#prosess">Slik jobber vi</a>
-        <a class="nav-cta" href="#kontakt">Kontakt oss</a>
+        <a href="#kontakt">Kontakt</a>
       </nav>
+      <div class="header-actions">
+        
+        <a class="btn btn-primary btn-sm" href="#kontakt">Be om tilbud</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Åpne meny" aria-expanded="false">☰</button>
+      </div>
     </div>
+    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobilmeny">
+      <a href="#tjenester">Tjenester</a>
+      <a href="#prosess">Slik jobber vi</a>
+      <a href="#kontakt">Kontakt oss</a>
+      
+    </nav>
   </header>
 
   <main>
     <section class="hero">
-      
-        <div class="container hero-split">
-          <div class="hero-copy">
-            <span class="hero-badge">Håndverk og bygg · Oslo</span>
-            <h1>Solid håndverk og pålitelig gjennomføring fra Elektro Verden AS</h1>
-            <p class="hero-lead">Vi leverer fagmessig arbeid med tydelig fremdriftsplan, ryddig kommunikasjon og respekt for avtalte rammer.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#kontakt">Kontakt oss for pris</a>
-              <a class="btn btn-secondary" href="#tjenester">Våre tjenester</a>
+      <div class="container hero-grid ">
+        <div>
+          <span class="hero-kicker">Elektro &amp; Tekniske Installasjoner · Oslo</span>
+          <h1>Trygge og moderne elektroløsninger fra Elektro Verden AS</h1>
+          <p class="hero-lead">Elektro Verden AS leverer fagmessige elektriske installasjoner, service og oppgraderinger for bolig, borettslag og næring – med fokus på sikkerhet, ryddig dokumentasjon og punktlig levering.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#kontakt">Be om uforpliktende pristilbud</a>
+            <a class="btn btn-secondary" href="#tjenester">Se våre tjenester</a>
+          </div>
+          <div class="hero-stats"><div><div class="stat-num">2004</div><div class="stat-label">Stiftet</div></div><div><div class="stat-num">Oslo</div><div class="stat-label">Tilholdssted</div></div><div><div class="stat-num">986 571 256</div><div class="stat-label">Org.nr.</div></div></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-wrap">
+            <img src="../assets/stock/elektriker.jpg" alt="Elektro Verden AS – Elektro &amp; Tekniske Installasjoner">
+            <div class="hero-photo-badge">
+              <div>
+                <strong>Elektro Verden AS</strong>
+                <span>Oslo · Elektro &amp; Tekniske Installasjoner</span>
+              </div>
+              <span class="pill-ok">Klar for oppdrag</span>
             </div>
           </div>
-          <aside class="hero-card" aria-label="Nøkkelinformasjon">
-            <div class="hero-card-top">
-              <div class="monogram">EV</div>
-              <div>
-                <div class="hero-card-title">Elektro Verden AS</div>
-                <div class="hero-card-sub">Oslo</div>
-              </div>
-            </div>
-            <div class="facts-list"><div class="fact-item"><span class="fact-label">Organisasjonsnummer</span><span class="fact-value">Org.nr. 986 571 256</span></div>
-<div class="fact-item"><span class="fact-label">Tilholdssted</span><span class="fact-value">Oslo</span></div>
-<div class="fact-item"><span class="fact-label">Stiftet</span><span class="fact-value">2004</span></div>
-<div class="fact-item"><span class="fact-label">Bransje</span><span class="fact-value">Elektrisk installasjonsarbeid</span></div></div>
-          </aside>
-        </div>
-        
-    </section>
-
-    
-    <section id="prosess" class="section surface">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Slik jobber vi</span>
-          <h2>En enkel og ryddig prosess fra første prat</h2>
-        </div>
-        <div class="steps-grid">
-          <div class="step"><strong>1. Uforpliktende henvendelse</strong><p>Send oss en kort beskrivelse av hva dere trenger hjelp med, så tar vi raskt kontakt.</p></div>
-          <div class="step"><strong>2. Avklaring og tilbud</strong><p>Vi går gjennom omfang, tidsplan og rammer slik at alt er tydelig før oppstart.</p></div>
-          <div class="step"><strong>3. Trygg gjennomføring</strong><p>Fast oppfølging og ryddig leveranse til avtalt tid og kvalitet.</p></div>
         </div>
       </div>
     </section>
-    
+
+    <div class="trust-bar">
+      <div class="container trust-items"><span class="trust-item"><span class="trust-dot"></span>Org.nr. 986 571 256</span><span class="trust-item"><span class="trust-dot"></span>Oslo</span><span class="trust-item"><span class="trust-dot"></span>Elektrisk installasjonsarbeid</span><span class="trust-item"><span class="trust-dot"></span>Uforpliktende pristilbud</span></div>
+    </div>
+
     <section id="tjenester" class="section">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Håndverk og bygg</span>
+          <span class="eyebrow">Våre tjenester</span>
           <h2>Hva Elektro Verden AS kan hjelpe dere med</h2>
+          <p class="section-lead">Tydelige leveranser, god fagkompetanse og direkte dialog fra første henvendelse til ferdig resultat.</p>
         </div>
-        <div class="cards-grid">
-          <article class="card"><div class="card-num">01</div><h3>Befaring og planlegging</h3><p>Vi går gjennom prosjektet sammen med deg og gir et uforpliktende pristilbud.</p></article>
-<article class="card"><div class="card-num">02</div><h3>Fagmessig utførelse</h3><p>Nøyaktig arbeid fra oppstart til ferdigstillelse med fokus på varige løsninger.</p></article>
-<article class="card"><div class="card-num">03</div><h3>Oppfølging og overlevering</h3><p>Ryddig arbeidsplass og grundig gjennomgang før prosjektet avsluttes.</p></article>
-        </div>
+        <div class="services-grid"><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h3>Elektroinstallasjon &amp; Rehabilitering</h3><p>Komplette el-anlegg ved nybygg, ombygging og modernisering av eksisterende bygg.</p></div><div class="service-tags"><span class="tag">Bolig &amp; næring</span><span class="tag">Dokumentert utførelse</span></div></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Sikringsskap &amp; El-kontroll</h3><p>Oppgradering av eldre sikringsskap, feilsøking og gjennomgang for økt elsikkerhet.</p></div><div class="service-tags"><span class="tag">Trygge anlegg</span><span class="tag">Rask feilsøking</span></div></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div><h3>Elbillading &amp; Smart Styring</h3><p>Fremtidsrettede ladeløsninger og energieffektiv styring av varme og belysning.</p></div><div class="service-tags"><span class="tag">Elbillader</span><span class="tag">Energisparing</span></div></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Service &amp; Næringsoppdrag</h3><p>Fast oppfølging, vedlikehold og prosjektleveranser for bedrifter og eiendom.</p></div><div class="service-tags"><span class="tag">Prosjekt</span><span class="tag">Forutsigbar fremdrift</span></div></article></div>
       </div>
     </section>
-    
+
+    <section id="prosess" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Slik jobber vi</span>
+          <h2>En ryddig og forutsigbar prosess</h2>
+          <p class="section-lead">Vi holder deg oppdatert hele veien slik at prosjektet blir levert til avtalt tid og kvalitet.</p>
+        </div>
+        <div class="showcase-grid"><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/elektriker.jpg" alt="Befaring og tydelig plan – Elektro Verden AS" loading="lazy"><span class="step-pill">Steg 01</span></div><div class="showcase-body"><h3>Befaring og tydelig plan</h3><p>Vi kartlegger behov, omfang og fremdriftsplan før oppstart slik at du har full oversikt.</p></div></article><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/bygg.jpg" alt="Fagmessig utførelse – Elektro Verden AS" loading="lazy"><span class="step-pill">Steg 02</span></div><div class="showcase-body"><h3>Fagmessig utførelse</h3><p>Erfarne fagfolk sørger for solid kvalitet og ryddig kommunikasjon underveis i leveransen.</p></div></article><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/b2b.jpg" alt="Dokumentert overlevering – Elektro Verden AS" loading="lazy"><span class="step-pill">Steg 03</span></div><div class="showcase-body"><h3>Dokumentert overlevering</h3><p>Vi avslutter alltid med en grundig gjennomgang slik at resultatet står til forventningene.</p></div></article></div>
+      </div>
+    </section>
 
     <section id="kontakt" class="section">
-      <div class="container">
-        <div class="contact-box">
-          <div>
-            <span class="eyebrow" style="color: #FBBF24;">Ta kontakt</span>
-            <h2>Klar for en uforpliktende prat med Elektro Verden AS?</h2>
-            <p>Send oss en e-post med litt informasjon om behovet ditt, så svarer vi så snart vi har anledning.</p>
-            <a class="btn btn-primary" href="mailto:230volt@230volt.no">Send e-post til 230volt@230volt.no</a>
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="eyebrow" style="color:#FBBF24;">Kontakt oss</span>
+          <h3 style="font-size:1.45rem;margin-bottom:0.5rem;">Klar for en uforpliktende prat?</h3>
+          <p>Ta kontakt med Elektro Verden AS for befaring, kapasitet eller et uforpliktende pristilbud.</p>
+          <div class="contact-rows">
+            <div class="contact-row"><small>Bedrift</small><strong>Elektro Verden AS</strong></div>
+            <div class="contact-row"><small>Organisasjonsnummer</small><strong>Org.nr. 986 571 256</strong></div>
+            
+            <div class="contact-row"><small>E-post</small><a href="mailto:230volt@230volt.no">230volt@230volt.no</a></div>
+            <div class="contact-row"><small>Adresse</small><strong>Ryenstubben 5, 0679 Oslo</strong></div>
           </div>
-          <div class="contact-details">
-            <div><strong>Bedrift:</strong> Elektro Verden AS</div>
-            <div><strong>Org.nr.:</strong> 986 571 256</div>
-            <div><strong>Adresse:</strong> Ryenstubben 5, 0679 Oslo</div>
-            <div><strong>E-post:</strong> <a href="mailto:230volt@230volt.no">230volt@230volt.no</a></div>
-          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3 style="font-size:1.35rem;margin-bottom:0.35rem;">Send en uforpliktende forespørsel</h3>
+          <p style="color:#475569;font-size:0.93rem;margin:0 0 1.35rem;">Fortell kort hva du trenger hjelp med, så tar vi kontakt så snart vi har anledning.</p>
+          <form id="quoteForm">
+            <div class="form-grid">
+              <div class="field"><label for="qName">Navn</label><input id="qName" type="text" required placeholder="Ola Nordmann"></div>
+              <div class="field"><label for="qEmail">E-post</label><input id="qEmail" type="email" required placeholder="navn@bedrift.no"></div>
+            </div>
+            <div class="field"><label for="qMsg">Beskrivelse av oppdraget</label><textarea id="qMsg" rows="4" required placeholder="Skriv kort om hva dere ønsker hjelp til..."></textarea></div>
+            <button class="btn btn-primary" type="submit" style="width:100%;">Send forespørsel</button>
+            <div class="form-status" id="formStatus" role="status">Takk for din henvendelse! I den publiserte versjonen sendes skjemaet direkte til 230volt@230volt.no.</div>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container footer-inner">
-      <div>&copy; 2026 Elektro Verden AS · Org.nr. 986 571 256</div>
-      <div>Ryenstubben 5, 0679 Oslo</div>
+      <div><strong>Elektro Verden AS</strong> · Org.nr. 986 571 256</div>
+      <div>Ryenstubben 5, 0679 Oslo · 230volt@230volt.no</div>
     </div>
   </footer>
+
+  <script>
+    const mt = document.getElementById('menuToggle'), md = document.getElementById('mobileDrawer');
+    if (mt && md) {
+      mt.addEventListener('click', () => { const o = md.classList.toggle('open'); mt.setAttribute('aria-expanded', String(o)); });
+      md.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { md.classList.remove('open'); mt.setAttribute('aria-expanded', 'false'); }));
+    }
+    const qf = document.getElementById('quoteForm'), fs = document.getElementById('formStatus');
+    if (qf && fs) qf.addEventListener('submit', e => { e.preventDefault(); fs.classList.add('show'); qf.reset(); });
+  </script>
 </body>
 </html>
