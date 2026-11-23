@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elinsta AS | Lørenskog</title>
+  <meta name="description" content="Vi leverer fagmessig arbeid med tydelig fremdriftsplan, ryddig kommunikasjon og respekt for avtalte rammer.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #FFFFFF;
+      color: #0F172A;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      line-height: 1.18;
+      margin: 0 0 0.75rem;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 1.25rem; }
+    .demo-banner {
+      background: #0B1220;
+      color: #E2E8F0;
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .demo-banner a { color: #FBBF24; font-weight: 600; text-decoration: underline; margin-left: 0.35rem; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #E2E8F0;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 68px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #0F172A;
+    }
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: #D97706;
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .nav-links { display: flex; align-items: center; gap: 1.4rem; font-size: 0.95rem; font-weight: 500; }
+    .nav-links a:hover { color: #D97706; }
+    .nav-cta {
+      background: #D97706;
+      color: #FFFFFF !important;
+      padding: 0.55rem 1.05rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .nav-cta:hover { background: #B45309; }
+    .hero {
+      background: #0F172A;
+      color: #F8FAFC;
+      padding: clamp(3rem, 7vw, 5.5rem) 0;
+    }
+    .hero-split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.95fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .hero-centered { text-align: center; max-width: 860px; }
+    .hero-badge {
+      display: inline-block;
+      background: #FEF3C7;
+      color: #B45309;
+      font-weight: 600;
+      font-size: 0.82rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .hero h1 { font-size: clamp(1.9rem, 4.2vw, 3.15rem); letter-spacing: -0.02em; }
+    .hero-lead {
+      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      color: #CBD5E1;
+      margin: 0 0 1.75rem;
+      max-width: 62ch;
+    }
+    .hero-centered .hero-lead { margin-left: auto; margin-right: auto; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+    .hero-centered .hero-actions { justify-content: center; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.4rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.98rem;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: #D97706; color: #FFFFFF; }
+    .btn-primary:hover { background: #B45309; }
+    .btn-secondary {
+      border: 1px solid currentColor;
+      opacity: 0.9;
+    }
+    .hero-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+    .hero-card-top { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.25rem; }
+    .monogram {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: #D97706; color: #FFFFFF;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; font-size: 1.1rem; flex-shrink: 0;
+    }
+    .hero-card-title { font-weight: 700; font-size: 1.05rem; }
+    .hero-card-sub { font-size: 0.9rem; color: #CBD5E1; }
+    .facts-list { display: grid; gap: 0.85rem; }
+    .facts-strip {
+      margin-top: 2.25rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      text-align: left;
+    }
+    .fact-item {
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .fact-label { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.75; }
+    .fact-value { display: block; font-weight: 600; font-size: 0.95rem; margin-top: 0.15rem; }
+    .section { padding: clamp(3rem, 6vw, 4.75rem) 0; }
+    .surface { background: #F8FAFC; }
+    .section-head { max-width: 680px; margin-bottom: 2.25rem; }
+    .eyebrow {
+      display: inline-block;
+      color: #D97706;
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.45rem;
+    }
+    .section h2 { font-size: clamp(1.55rem, 3vw, 2.2rem); }
+    .cards-grid, .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.35rem;
+    }
+    .card, .step {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 1.5rem;
+    }
+    .card-num {
+      color: #D97706;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin-bottom: 0.65rem;
+    }
+    .card h3 { font-size: 1.15rem; }
+    .card p, .step p { color: #475569; margin: 0.35rem 0 0; font-size: 0.96rem; }
+    .contact-box {
+      background: #0F172A;
+      color: #F8FAFC;
+      border-radius: 18px;
+      padding: clamp(1.75rem, 4vw, 3rem);
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+    .contact-box p { color: #CBD5E1; margin: 0.5rem 0 1.25rem; }
+    .contact-details { display: grid; gap: 0.75rem; font-size: 0.96rem; }
+    .contact-details a { color: #FFFFFF; text-decoration: underline; }
+    footer {
+      border-top: 1px solid #E2E8F0;
+      padding: 2rem 0;
+      font-size: 0.88rem;
+      color: #475569;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    @media (max-width: 820px) {
+      .hero-split, .contact-box { grid-template-columns: 1fr; }
+      .nav-links a:not(.nav-cta) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-banner">
+    Live-utkast laget for <strong>Elinsta AS</strong> · Ønsker dere tilpasninger og lansering?
+    <a href="https://vikingnet.no/landingsside" target="_blank" rel="noopener">Se løsning på vikingnet.no</a>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark">EL</span>
+        <span>Elinsta AS</span>
+      </a>
+      <nav class="nav-links" aria-label="Hovedmeny">
+        <a href="#tjenester">Tjenester</a>
+        <a href="#prosess">Slik jobber vi</a>
+        <a class="nav-cta" href="#kontakt">Kontakt oss</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      
+        <div class="container hero-split">
+          <div class="hero-copy">
+            <span class="hero-badge">Håndverk og bygg · Lørenskog</span>
+            <h1>Solid håndverk og pålitelig gjennomføring fra Elinsta AS</h1>
+            <p class="hero-lead">Vi leverer fagmessig arbeid med tydelig fremdriftsplan, ryddig kommunikasjon og respekt for avtalte rammer.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#kontakt">Kontakt oss for pris</a>
+              <a class="btn btn-secondary" href="#tjenester">Våre tjenester</a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Nøkkelinformasjon">
+            <div class="hero-card-top">
+              <div class="monogram">EL</div>
+              <div>
+                <div class="hero-card-title">Elinsta AS</div>
+                <div class="hero-card-sub">Lørenskog</div>
+              </div>
+            </div>
+            <div class="facts-list"><div class="fact-item"><span class="fact-label">Organisasjonsnummer</span><span class="fact-value">Org.nr. 918 453 547</span></div>
+<div class="fact-item"><span class="fact-label">Tilholdssted</span><span class="fact-value">Lørenskog</span></div>
+<div class="fact-item"><span class="fact-label">Stiftet</span><span class="fact-value">2016</span></div>
+<div class="fact-item"><span class="fact-label">Bransje</span><span class="fact-value">Elektrisk installasjonsarbeid</span></div></div>
+          </aside>
+        </div>
+        
+    </section>
+
+    
+    <section id="tjenester" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Håndverk og bygg</span>
+          <h2>Hva Elinsta AS kan hjelpe dere med</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card"><div class="card-num">01</div><h3>Befaring og planlegging</h3><p>Vi går gjennom prosjektet sammen med deg og gir et uforpliktende pristilbud.</p></article>
+<article class="card"><div class="card-num">02</div><h3>Fagmessig utførelse</h3><p>Nøyaktig arbeid fra oppstart til ferdigstillelse med fokus på varige løsninger.</p></article>
+<article class="card"><div class="card-num">03</div><h3>Oppfølging og overlevering</h3><p>Ryddig arbeidsplass og grundig gjennomgang før prosjektet avsluttes.</p></article>
+        </div>
+      </div>
+    </section>
+    
+    <section id="prosess" class="section surface">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Slik jobber vi</span>
+          <h2>En enkel og ryddig prosess fra første prat</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step"><strong>1. Uforpliktende henvendelse</strong><p>Send oss en kort beskrivelse av hva dere trenger hjelp med, så tar vi raskt kontakt.</p></div>
+          <div class="step"><strong>2. Avklaring og tilbud</strong><p>Vi går gjennom omfang, tidsplan og rammer slik at alt er tydelig før oppstart.</p></div>
+          <div class="step"><strong>3. Trygg gjennomføring</strong><p>Fast oppfølging og ryddig leveranse til avtalt tid og kvalitet.</p></div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="kontakt" class="section">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <span class="eyebrow" style="color: #FBBF24;">Ta kontakt</span>
+            <h2>Klar for en uforpliktende prat med Elinsta AS?</h2>
+            <p>Send oss en e-post med litt informasjon om behovet ditt, så svarer vi så snart vi har anledning.</p>
+            <a class="btn btn-primary" href="mailto:post@elinsta.no">Send e-post til post@elinsta.no</a>
+          </div>
+          <div class="contact-details">
+            <div><strong>Bedrift:</strong> Elinsta AS</div>
+            <div><strong>Org.nr.:</strong> 918 453 547</div>
+            <div><strong>Adresse:</strong> Industriveien 6, 1461 Lørenskog</div>
+            <div><strong>E-post:</strong> <a href="mailto:post@elinsta.no">post@elinsta.no</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>&copy; 2026 Elinsta AS · Org.nr. 918 453 547</div>
+      <div>Industriveien 6, 1461 Lørenskog</div>
+    </div>
+  </footer>
+</body>
+</html>
