@@ -3,818 +3,494 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arctiq AS | Mobil, Radiolinje, Fiber, Strukturert Kabling &amp; Asbestsanering</title>
-  <meta name="description" content="Arctiq AS er et landsdekkende norsk selskap innen mobil (4G/5G), radiolinje (MW), fiber (FTTx), strukturert kabling og godkjent asbestsanering. Basert i Sørkjosen, Nordreisa.">
+  <title>Arctiq AS – Elektro &amp; Installasjon i Sørkjosen</title>
+  <meta name="description" content="Arctiq AS er et landsdekkende norsk selskap innen mobil (4G/5G), radiolinje (MW), fiber (FTTx), strukturert kabling og godkjent asbestsanering med base i Sørkjosen, Nordreisa.">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap">
   <style>
-    :root {
-      --navy-950: #07101F;
-      --navy-900: #0B1628;
-      --navy-800: #13233E;
-      --navy-700: #1D3557;
-      --cyan-500: #0EA5E9;
-      --cyan-600: #0284C7;
-      --cyan-100: #E0F2FE;
-      --emerald-500: #10B981;
-      --slate-900: #0F172A;
-      --slate-700: #334155;
-      --slate-600: #475569;
-      --slate-200: #E2E8F0;
-      --slate-100: #F1F5F9;
-      --ice-50: #F5F9FD;
-      --white: #FFFFFF;
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      color: var(--slate-900);
-      background: var(--white);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-    h1, h2, h3, h4 {
-      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-      line-height: 1.15;
-      margin: 0 0 0.75rem;
-      overflow-wrap: break-word;
-      hyphens: auto;
-    }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  max-width: 100%;
+  overflow-x: clip;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, picture { max-width: 100%; display: block; }
+img { height: auto; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; touch-action: manipulation; }
+h1, h2, h3, h4 { margin: 0 0 0.7rem; line-height: 1.16; overflow-wrap: break-word; }
+p { margin: 0 0 1rem; overflow-wrap: break-word; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
 
-    /* Demo banner */
-    .demo-banner {
-      background: #040914;
-      color: #CBD5E1;
-      font-size: 0.82rem;
-      padding: 0.55rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .demo-banner strong { color: #FFFFFF; }
-    .demo-banner a { color: #38BDF8; font-weight: 600; text-decoration: underline; margin-left: 0.35rem; }
+/* Tastatur- og TV-fjernkontrollfokus */
+:focus-visible {
+  outline: 3px solid var(--focus-ring, var(--accent));
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.75rem;
+  z-index: 200;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: var(--accent-ink, #ffffff);
+  font-weight: 700;
+  border-radius: 8px;
+}
+.skip-link:focus { left: 1rem; }
 
-    /* Sticky Dark Header */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(11, 22, 40, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.25rem;
-      min-height: 74px;
-    }
-    .brand { display: inline-flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
-    .brand img { height: 34px; width: auto; object-fit: contain; }
-    .nav-desktop { display: flex; align-items: center; gap: 1.65rem; font-size: 0.93rem; font-weight: 500; color: #E2E8F0; }
-    .nav-desktop a:hover { color: #38BDF8; }
-    .header-actions { display: flex; align-items: center; gap: 0.85rem; }
-    .phone-link {
-      display: inline-flex; align-items: center; gap: 0.45rem;
-      color: #E2E8F0; font-weight: 600; font-size: 0.9rem;
-    }
-    .phone-link:hover { color: #38BDF8; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
-      padding: 0.8rem 1.35rem; border-radius: 10px; font-weight: 600; font-size: 0.95rem;
-      border: 1px solid transparent; cursor: pointer; transition: all 0.18s ease;
-    }
-    .btn-primary { background: var(--cyan-500); color: var(--white); }
-    .btn-primary:hover { background: var(--cyan-600); transform: translateY(-1px); }
-    .btn-outline-light { background: rgba(255,255,255,0.06); color: var(--white); border-color: rgba(255,255,255,0.22); }
-    .btn-outline-light:hover { background: rgba(255,255,255,0.14); }
-    .btn-sm { padding: 0.58rem 1.05rem; font-size: 0.88rem; }
-    .menu-toggle {
-      display: none; background: rgba(255,255,255,0.08); color: #FFFFFF;
-      border: 1px solid rgba(255,255,255,0.18); border-radius: 8px;
-      padding: 0.45rem 0.65rem; cursor: pointer;
-    }
-    .mobile-drawer {
-      display: none; background: var(--navy-900); border-top: 1px solid rgba(255,255,255,0.1);
-      padding: 1rem 1.25rem 1.5rem;
-    }
-    .mobile-drawer.open { display: grid; gap: 0.85rem; }
-    .mobile-drawer a { color: #F1F5F9; font-weight: 500; padding: 0.35rem 0; }
+/* Demo-topplinje */
+.demo-strip {
+  font-size: 0.84rem;
+  line-height: 1.4;
+  padding: 0.55rem 1rem;
+  text-align: center;
+  background: var(--strip-bg, #090d16);
+  color: var(--strip-fg, #e2e8f0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.demo-strip strong { color: #ffffff; }
+.demo-strip a {
+  display: inline-block;
+  margin-left: 0.45rem;
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--strip-link, #fbbf24);
+}
 
-    /* Hero */
-    .hero {
-      position: relative;
-      background: radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.22), transparent 50%),
-                  linear-gradient(135deg, var(--navy-950) 0%, var(--navy-900) 58%, var(--navy-800) 100%);
-      color: var(--white);
-      padding: clamp(3.25rem, 6.5vw, 5.5rem) 0 clamp(3.5rem, 6vw, 5rem);
-      overflow: hidden;
-    }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.92fr);
-      gap: clamp(2rem, 4vw, 3.75rem);
-      align-items: center;
-    }
-    .hero-kicker {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(14, 165, 233, 0.16);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      color: #7DD3FC;
-      padding: 0.38rem 0.9rem;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      margin-bottom: 1.15rem;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 4.2vw, 3.35rem);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      color: var(--white);
-      margin-bottom: 1.1rem;
-    }
-    .hero-lead {
-      font-size: clamp(1rem, 1.45vw, 1.14rem);
-      color: #CBD5E1;
-      max-width: 58ch;
-      margin: 0 0 1.85rem;
-    }
-    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 2.25rem; }
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.12);
-    }
-    .stat-num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.45rem; font-weight: 800; color: #FFFFFF; }
-    .stat-label { font-size: 0.82rem; color: #94A3B8; margin-top: 0.15rem; }
+/* Minimum 44x44px berøringsmål på mobil/pad/TV */
+.tap-target, .btn, .nav-link, .menu-toggle, summary {
+  min-height: 44px;
+}
+.menu-toggle {
+  display: none;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  border: 1.5px solid currentColor;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.mobile-nav {
+  display: none;
+  padding: 1rem 1.25rem 1.5rem;
+}
+.mobile-nav.is-open {
+  display: grid;
+  gap: 0.5rem;
+}
+.mobile-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
 
-    .hero-visual { position: relative; }
-    .hero-photo-wrap {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.16);
-      box-shadow: 0 28px 60px rgba(0,0,0,0.45);
-      aspect-ratio: 4 / 4.2;
-      background: var(--navy-800);
-    }
-    .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
-    .hero-photo-badge {
-      position: absolute;
-      left: 1rem; right: 1rem; bottom: 1rem;
-      background: rgba(7, 16, 31, 0.88);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 14px;
-      padding: 0.9rem 1.1rem;
-      display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
-    }
-    .hero-photo-badge strong { display: block; font-size: 0.92rem; color: #FFFFFF; }
-    .hero-photo-badge span { font-size: 0.8rem; color: #94A3B8; }
-    .pill-green {
-      background: rgba(16, 185, 129, 0.18); color: #6EE7B7;
-      border: 1px solid rgba(16, 185, 129, 0.35);
-      font-size: 0.75rem; font-weight: 700; padding: 0.3rem 0.65rem; border-radius: 999px; white-space: nowrap;
-    }
+/* Felles skjema- og underside-stiler som bruker hver mals tokens */
+.form-card {
+  background: var(--surface-card);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 16px);
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.form-field.full { grid-column: 1 / -1; }
+.form-field label { font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm, 8px);
+  border: 1.5px solid var(--border-strong, var(--border));
+  background: var(--input-bg, #ffffff);
+  color: var(--input-ink, #0f172a);
+  font-size: 16px;
+}
+.form-field textarea { min-height: 120px; resize: vertical; }
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.form-feedback {
+  display: none;
+  margin-top: 1rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 10px;
+  background: var(--tint);
+  color: var(--ink);
+  border: 1.5px solid var(--accent);
+  font-weight: 600;
+}
+.form-feedback.is-visible { display: block; }
 
-    /* Trust Strip */
-    .trust-bar {
-      background: var(--ice-50);
-      border-bottom: 1px solid var(--slate-200);
-      padding: 1.25rem 0;
-    }
-    .trust-items {
-      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.85rem 1.5rem;
-    }
-    .trust-item {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      font-size: 0.88rem; font-weight: 600; color: var(--navy-900);
-    }
-    .trust-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald-500); flex-shrink: 0; }
+.subpage-hero {
+  padding: clamp(2.5rem, 5vw, 4.25rem) 0;
+  background: var(--subhero-bg, var(--hero-bg));
+  color: var(--subhero-ink, var(--hero-ink));
+  border-bottom: 1px solid var(--border);
+}
+.subpage-hero p {
+  max-width: 64ch;
+  color: var(--subhero-muted, var(--hero-muted));
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+}
+.prose-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 16px);
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  max-width: 860px;
+}
+.prose-card h2 { font-size: clamp(1.25rem, 2vw, 1.55rem); margin-top: 1.6rem; }
+.prose-card h2:first-child { margin-top: 0; }
+.prose-card p, .prose-card li { color: var(--muted); }
+.prose-card ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; display: grid; gap: 0.4rem; }
 
-    /* Sections */
-    .section { padding: clamp(3.5rem, 6.5vw, 5.5rem) 0; }
-    .section-ice { background: var(--ice-50); }
-    .section-dark { background: var(--navy-900); color: var(--white); }
-    .section-head { max-width: 720px; margin-bottom: 2.75rem; }
-    .eyebrow {
-      display: inline-block; color: var(--cyan-600); font-weight: 700;
-      font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;
-    }
-    .section-dark .eyebrow { color: #38BDF8; }
-    .section h2 { font-size: clamp(1.65rem, 3.2vw, 2.45rem); font-weight: 800; letter-spacing: -0.02em; }
-    .section-lead { color: var(--slate-600); font-size: 1.03rem; margin: 0.5rem 0 0; }
-    .section-dark .section-lead { color: #CBD5E1; }
+.contact-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.85fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: start;
+}
+.info-stack { display: grid; gap: 1rem; }
+.info-tile {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 12px);
+  padding: 1.2rem 1.35rem;
+}
+.info-tile strong { display: block; margin-bottom: 0.25rem; color: var(--ink); }
+.info-tile span, .info-tile a { color: var(--muted); font-size: 0.95rem; }
 
-    /* Services Grid */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.5rem;
-    }
-    .service-card {
-      background: var(--white);
-      border: 1px solid var(--slate-200);
-      border-radius: 18px;
-      padding: 1.85rem;
-      display: flex; flex-direction: column; justify-content: space-between;
-      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
-    }
-    .service-card:hover {
-      border-color: var(--cyan-500);
-      box-shadow: 0 18px 40px rgba(11, 22, 40, 0.08);
-      transform: translateY(-2px);
-    }
-    .service-icon {
-      width: 48px; height: 48px; border-radius: 12px;
-      background: var(--cyan-100); color: var(--cyan-600);
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 1.15rem;
-    }
-    .service-card h3 { font-size: 1.28rem; font-weight: 700; color: var(--navy-900); }
-    .service-card p { color: var(--slate-600); margin: 0.45rem 0 1.2rem; font-size: 0.96rem; }
-    .service-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; }
-    .tag {
-      background: var(--slate-100); color: var(--slate-700);
-      font-size: 0.78rem; font-weight: 600; padding: 0.28rem 0.65rem; border-radius: 999px;
-    }
-    .asbest-call {
-      margin-top: 1.15rem; padding-top: 1rem; border-top: 1px solid var(--slate-200);
-      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
-      font-size: 0.9rem;
-    }
-    .asbest-call a { color: var(--cyan-600); font-weight: 700; }
+/* TV (1920x1080+): skalerbar lesbar typografi >= 18px og sentrert beholder */
+@media (min-width: 1800px) {
+  html { font-size: 112.5%; }
+}
 
-    /* Projects Filter + Gallery */
-    .filter-row { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 2rem; }
-    .filter-btn {
-      background: var(--white); color: var(--slate-700);
-      border: 1px solid var(--slate-200); border-radius: 999px;
-      padding: 0.5rem 1.05rem; font-weight: 600; font-size: 0.88rem; cursor: pointer;
-      transition: all 0.15s ease;
-    }
-    .filter-btn:hover { border-color: var(--cyan-500); color: var(--navy-900); }
-    .filter-btn.active { background: var(--navy-900); color: var(--white); border-color: var(--navy-900); }
+/* Pad (<= 1080px) */
+@media (max-width: 1080px) {
+  .contact-split { grid-template-columns: 1fr; }
+}
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.5rem;
-    }
-    .project-card {
-      background: var(--white);
-      border: 1px solid var(--slate-200);
-      border-radius: 18px;
-      overflow: hidden;
-      display: flex; flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .project-card.hidden { display: none; }
-    .project-card:hover { transform: translateY(-3px); box-shadow: 0 20px 42px rgba(11, 22, 40, 0.1); }
-    .project-img { position: relative; aspect-ratio: 16 / 11; overflow: hidden; background: var(--navy-800); }
-    .project-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s ease; }
-    .project-card:hover .project-img img { transform: scale(1.04); }
-    .project-year {
-      position: absolute; top: 0.8rem; left: 0.8rem;
-      background: rgba(11, 22, 40, 0.86); color: #FFFFFF;
-      font-size: 0.76rem; font-weight: 700; padding: 0.28rem 0.65rem; border-radius: 999px;
-    }
-    .project-body { padding: 1.35rem; flex: 1; display: flex; flex-direction: column; }
-    .project-cat { color: var(--cyan-600); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem; }
-    .project-body h3 { font-size: 1.12rem; color: var(--navy-900); margin-bottom: 0.5rem; }
-    .project-body p { color: var(--slate-600); font-size: 0.92rem; margin: 0; }
+/* Mobil (<= 768px) */
+@media (max-width: 768px) {
+  .desktop-nav, .header-cta-desktop { display: none !important; }
+  .menu-toggle { display: inline-flex !important; }
+  .form-grid { grid-template-columns: 1fr; }
+}
 
-    /* Certifications / About */
-    .about-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      gap: 2.5rem;
-      align-items: start;
-    }
-    .cert-list { display: grid; gap: 0.9rem; }
-    .cert-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 14px;
-      padding: 1.15rem 1.25rem;
-      display: flex; align-items: flex-start; gap: 0.85rem;
-    }
-    .cert-check {
-      width: 26px; height: 26px; border-radius: 50%;
-      background: rgba(16, 185, 129, 0.2); color: #34D399;
-      display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 800;
-    }
-    .cert-card strong { display: block; color: #FFFFFF; font-size: 0.98rem; }
-    .cert-card span { color: #CBD5E1; font-size: 0.88rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
-    /* Contact Section */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-      gap: 2.25rem;
-      align-items: start;
-    }
-    .contact-info-card {
-      background: var(--navy-900);
-      color: var(--white);
-      border-radius: 20px;
-      padding: 2rem;
-    }
-    .contact-info-card h3 { font-size: 1.4rem; margin-bottom: 0.65rem; }
-    .contact-info-card > p { color: #CBD5E1; font-size: 0.95rem; margin: 0 0 1.5rem; }
-    .contact-rows { display: grid; gap: 1rem; }
-    .contact-row {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 0.95rem 1.1rem;
-    }
-    .contact-row small { display: block; color: #94A3B8; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .contact-row a, .contact-row strong { display: block; color: #FFFFFF; font-size: 1rem; font-weight: 600; margin-top: 0.15rem; }
-    .contact-row a:hover { color: #38BDF8; }
+:root {
+  --vvs-deep: #060D17;
+  --vvs-navy: #0B192C;
+  --vvs-fjord: #13263E;
+  --vvs-copper: #F59E0B;
+  --vvs-copper-dark: #B45309;
+  --accent: #0B192C;
+  --accent-ink: #FFFFFF;
+  --focus-ring: #D97706;
+  --strip-bg: #060D17;
+  --strip-fg: #CBD5E1;
+  --strip-link: #FBBF24;
+  --hero-bg: #0B192C;
+  --hero-ink: #FFFFFF;
+  --hero-muted: #CBD5E1;
+  --surface-card: #FFFFFF;
+  --ink: #0B192C;
+  --muted: #334E68;
+  --border: #D9E2EC;
+  --border-strong: #9FB3C8;
+  --tint: #F0F4F8;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+body.tpl-vvs {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: #FFFFFF;
+  color: var(--ink);
+}
+.tpl-vvs h1, .tpl-vvs h2, .tpl-vvs h3 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  letter-spacing: -0.025em;
+}
+.vvs-wrap { width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 clamp(1rem, 3vw, 2rem); }
+.vvs-header {
+  position: sticky; top: 0; z-index: 60;
+  background: #060D17; color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.vvs-header-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 76px; }
+.vvs-brand { display: inline-flex; align-items: center; gap: 0.7rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.08rem; }
+.vvs-badge-icon { width: 38px; height: 38px; border-radius: 50%; background: #13263E; border: 2px solid #F59E0B; color: #F59E0B; display: inline-flex; align-items: center; justify-content: center; font-size: 0.88rem; font-weight: 800; }
+.vvs-nav { display: flex; align-items: center; gap: 1.5rem; font-size: 0.94rem; font-weight: 500; }
+.vvs-nav a { display: inline-flex; align-items: center; color: #E2E9F2; }
+.vvs-nav a:hover, .vvs-nav a.active { color: #FBBF24; }
+.vvs-btn-copper {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+  background: #F59E0B; color: #060D17; font-weight: 700; padding: 0.82rem 1.45rem;
+  border-radius: 10px; border: 2px solid #F59E0B;
+}
+.vvs-btn-copper:hover { background: #FBBF24; }
+.vvs-btn-glass {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.08); color: #FFFFFF; font-weight: 600;
+  padding: 0.82rem 1.45rem; border-radius: 10px; border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
 
-    .contact-form-card {
-      background: var(--white);
-      border: 1px solid var(--slate-200);
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 14px 36px rgba(11, 22, 40, 0.06);
-    }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .field { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
-    .field label { font-size: 0.86rem; font-weight: 600; color: var(--slate-700); }
-    .field input, .field select, .field textarea {
-      width: 100%; padding: 0.75rem 0.9rem; border-radius: 10px;
-      border: 1px solid var(--slate-200); font-family: inherit; font-size: 0.95rem;
-      color: var(--slate-900); background: var(--white);
-    }
-    .field input:focus, .field select:focus, .field textarea:focus {
-      outline: none; border-color: var(--cyan-500); box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.16);
-    }
-    .form-status {
-      display: none; margin-top: 1rem; padding: 0.9rem 1rem; border-radius: 10px;
-      background: #ECFDF5; border: 1px solid #A7F3D0; color: #065F46; font-size: 0.92rem; font-weight: 500;
-    }
-    .form-status.show { display: block; }
+.vvs-hero {
+  background: linear-gradient(155deg, #060D17 0%, #0B192C 55%, #13263E 100%);
+  color: #FFFFFF; padding: clamp(3rem, 6vw, 5.25rem) 0;
+}
+.vvs-hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: center; }
+.vvs-kicker { display: inline-block; background: rgba(245, 158, 11, 0.16); color: #FCD34D; border: 1px solid rgba(245, 158, 11, 0.4); font-size: 0.8rem; font-weight: 700; padding: 0.34rem 0.85rem; border-radius: 999px; margin-bottom: 1rem; }
+.vvs-hero h1 { font-size: clamp(2.1rem, 4.1vw, 3.35rem); margin-bottom: 1rem; }
+.vvs-hero-lead { color: #CBD5E1; font-size: clamp(1rem, 1.4vw, 1.14rem); max-width: 56ch; margin-bottom: 1.75rem; }
+.vvs-hero-cta { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+.vvs-hero-img { border-radius: 18px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: 0 24px 55px rgba(0, 0, 0, 0.4); }
+.vvs-hero-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 
-    /* Footer */
-    .site-footer {
-      background: var(--navy-950);
-      color: #94A3B8;
-      padding: 3rem 0 2rem;
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-    .footer-top {
-      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
-      gap: 1.5rem; padding-bottom: 1.75rem; border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .footer-top img { height: 30px; width: auto; }
-    .footer-links { display: flex; flex-wrap: wrap; gap: 1.25rem; font-size: 0.9rem; color: #CBD5E1; }
-    .footer-links a:hover { color: #38BDF8; }
-    .footer-bottom {
-      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem;
-      padding-top: 1.35rem; font-size: 0.84rem;
-    }
+.vvs-trust-line { background: #F0F4F8; border-bottom: 1px solid #D9E2EC; padding: 1.15rem 0; }
+.vvs-trust-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.vvs-trust-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; font-weight: 600; color: #0B192C; }
+.vvs-trust-dot { width: 10px; height: 10px; border-radius: 50%; background: #B45309; flex-shrink: 0; }
 
-    @media (max-width: 980px) {
-      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .nav-desktop, .phone-link { display: none; }
-      .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
-    }
-    @media (max-width: 680px) {
-      .services-grid, .projects-grid, .form-grid { grid-template-columns: 1fr; }
-      .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
-      .stat-num { font-size: 1.2rem; }
-      .header-actions .btn-sm { display: none; }
-    }
+.vvs-section { padding: clamp(3rem, 6vw, 5rem) 0; }
+.vvs-section-tint { background: #F0F4F8; }
+.vvs-head { max-width: 720px; margin-bottom: 2.25rem; }
+.vvs-eyebrow { display: block; color: #B45309; font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.45rem; }
+.vvs-head h2 { font-size: clamp(1.7rem, 3vw, 2.45rem); }
+.vvs-head p { color: var(--muted); }
+
+/* Rene hvite tjenestekort med tydelig blå venstrekant */
+.vvs-cards-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.45rem; }
+.vvs-card {
+  background: #FFFFFF; border: 1px solid #D9E2EC; border-left: 5px solid #0B192C;
+  border-radius: 12px; padding: 1.7rem; box-shadow: 0 8px 24px rgba(11, 25, 44, 0.05);
+}
+.vvs-card h3 { font-size: 1.22rem; color: #0B192C; }
+.vvs-card p { color: var(--muted); font-size: 0.95rem; }
+.vvs-card ul { display: grid; gap: 0.35rem; margin-top: 0.85rem; font-size: 0.9rem; color: #1E3A5F; }
+.vvs-card li::before { content: "→ "; color: #B45309; font-weight: 700; }
+
+/* 3-stegs prosess med unike bilder */
+.vvs-steps-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.vvs-step { background: #FFFFFF; border: 1px solid #D9E2EC; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+.vvs-step img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.vvs-step-body { padding: 1.45rem; }
+.vvs-step-num { display: inline-block; background: #0B192C; color: #FCD34D; font-size: 0.78rem; font-weight: 800; padding: 0.25rem 0.65rem; border-radius: 6px; margin-bottom: 0.65rem; }
+.vvs-step-body h3 { font-size: 1.15rem; }
+.vvs-step-body p { color: var(--muted); font-size: 0.92rem; margin: 0; }
+
+.vvs-navy-band { background: #0B192C; color: #FFFFFF; padding: clamp(2.75rem, 5vw, 4.25rem) 0; }
+.vvs-why-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 2.25rem; }
+.vvs-why-box { background: #13263E; border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 12px; padding: 1.35rem; }
+.vvs-why-box h3 { color: #FFFFFF; font-size: 1.06rem; }
+.vvs-why-box p { color: #CBD5E1; font-size: 0.9rem; margin: 0; }
+.vvs-cta-strip { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem; padding-top: 1.75rem; border-top: 1px solid rgba(255, 255, 255, 0.14); }
+.vvs-cta-strip p { color: #CBD5E1; margin: 0; }
+
+.vvs-footer { background: #060D17; color: #CBD5E1; padding: 3rem 0 2rem; }
+.vvs-footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.vvs-footer h3 { color: #FFFFFF; font-size: 1rem; margin-bottom: 0.8rem; }
+.vvs-footer-links { display: grid; gap: 0.45rem; font-size: 0.92rem; }
+.vvs-footer-links a { display: inline-flex; align-items: center; min-height: 36px; }
+.vvs-footer-links a:hover { color: #FBBF24; }
+.vvs-footer-end { border-top: 1px solid rgba(255, 255, 255, 0.12); padding-top: 1.2rem; font-size: 0.86rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; }
+.tpl-vvs .mobile-nav { background: #060D17; color: #FFFFFF; border-top: 1px solid rgba(255, 255, 255, 0.14); }
+
+@media (max-width: 1080px) {
+  .vvs-hero-grid { grid-template-columns: 1fr; }
+  .vvs-trust-grid, .vvs-why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vvs-steps-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .vvs-trust-grid, .vvs-cards-grid, .vvs-steps-3, .vvs-why-grid, .vvs-footer-grid { grid-template-columns: 1fr; }
+}
   </style>
 </head>
-<body>
-  <div class="demo-banner">
-    Live-utkast laget for <strong>Arctiq AS</strong> · Ønsker dere finpuss, tekster og lansering på arctiq.no?
-    <a href="https://vikingnet.no/landingsside" target="_blank" rel="noopener">Se løsning på vikingnet.no</a>
+<body class="tpl-vvs" data-template="vvs">
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
+  <div class="demo-strip" role="note">Forhåndsvisning utarbeidet for <strong>Arctiq AS</strong>. <a href="kontakt.html">Ønsker dere å gå videre med løsningen?</a></div>
+  <header class="vvs-header">
+  <div class="vvs-wrap vvs-header-row">
+    <a href="index.html" class="vvs-brand"><span class="vvs-badge-icon" aria-hidden="true">AR</span><span>Arctiq AS</span></a>
+    <nav class="vvs-nav desktop-nav" aria-label="Hovedmeny"><a href="index.html" class="nav-link active" aria-current="page">Forside</a>
+<a href="tjenester.html" class="nav-link">Tjenester</a>
+<a href="om-oss.html" class="nav-link">Om oss</a>
+<a href="kontakt.html" class="nav-link">Kontakt</a></nav>
+    <div class="header-cta-desktop"><a href="kontakt.html" class="btn vvs-btn-copper">Ta kontakt</a></div>
+    <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åpne meny">Meny ☰</button>
   </div>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#" aria-label="Arctiq AS forside">
-        <img src="./images/client/logo.webp" alt="Arctiq AS logo" width="206" height="48">
-      </a>
-      <nav class="nav-desktop" aria-label="Hovedmeny">
-        <a href="#tjenester">Tjenester</a>
-        <a href="#prosjekter">Referanseprosjekter</a>
-        <a href="#godkjenninger">Godkjenninger</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
-      <div class="header-actions">
-        <a class="phone-link" href="tel:+4777729400">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          +47 777 29 400
-        </a>
-        <a class="btn btn-primary btn-sm" href="#kontakt">Be om tilbud</a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Åpne meny" aria-expanded="false">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobilmeny"><a href="index.html" aria-current="page">Forside</a>
+<a href="tjenester.html">Tjenester</a>
+<a href="om-oss.html">Om oss</a>
+<a href="kontakt.html">Kontakt</a><a href="personvern.html">Personvern</a></nav>
+</header>
+  <main id="main-content">
+  <section class="vvs-hero">
+    <div class="vvs-wrap vvs-hero-grid">
+      <div>
+        <span class="vvs-kicker">Elektroinstallasjon og tekniske løsninger</span>
+        <h1>Trygge elektrotjenester for bolig og næring i Sørkjosen</h1>
+        <p class="vvs-hero-lead">Arctiq AS er et landsdekkende norsk selskap innen mobil (4G/5G), radiolinje (MW), fiber (FTTx), strukturert kabling og godkjent asbestsanering med base i Sørkjosen, Nordreisa.</p>
+        <div class="vvs-hero-cta">
+          <a href="kontakt.html" class="btn vvs-btn-copper">Be om pristilbud</a>
+          <a href="tjenester.html" class="btn vvs-btn-glass">Oversikt over tjenester</a>
+        </div>
+      </div>
+      <div class="vvs-hero-img"><img src="../assets/curated/elektro/04-fordelingsskap-installasjon.webp" alt="Elektriker under kabling og feilsøking i fordelingsskap" width="960" height="639" loading="eager" fetchpriority="high" decoding="sync"></div>
+    </div>
+  </section>
+  <div class="vvs-trust-line">
+    <div class="vvs-wrap vvs-trust-grid"><div class="vvs-trust-item"><span class="vvs-trust-dot" aria-hidden="true"></span><span>Fokus på elsikkerhet og forskriftsmessig arbeid</span></div><div class="vvs-trust-item"><span class="vvs-trust-dot" aria-hidden="true"></span><span>Ryddig befaring og tydelig pristilbud</span></div><div class="vvs-trust-item"><span class="vvs-trust-dot" aria-hidden="true"></span><span>Moderne løsninger for belysning og lading</span></div><div class="vvs-trust-item"><span class="vvs-trust-dot" aria-hidden="true"></span><span>Dokumentasjon ved ferdigstillelse</span></div></div>
+  </div>
+  <section class="vvs-section">
+    <div class="vvs-wrap">
+      <div class="vvs-head"><span class="vvs-eyebrow">Tjenester</span><h2>Faglig bredde og tydelige rammer</h2><p>Vi leverer ryddige og driftssikre løsninger tilpasset ditt behov.</p></div>
+      <div class="vvs-cards-grid"><article class="vvs-card"><h3>Elbillader og sikringsskap</h3><p>Sikker montering av hjemmeladere, lastbalansering og oppgradering av eldre sikringsskap.</p><ul><li>Gjennomgang av kapasitet</li><li>Montering med overspenningsvern</li><li>Tydelig sluttdokumentasjon</li></ul></article><article class="vvs-card"><h3>Belysning og smarthus</h3><p>Energieffektive LED-løsninger, utebelysning og enkel styring av lys og varme.</p><ul><li>Lysplan tilpasset rommene</li><li>Dimming og sonestyring</li><li>Lavere strømforbruk i hverdagen</li></ul></article><article class="vvs-card"><h3>Nybygg og rehabilitering</h3><p>Komplett elektrisk anlegg ved oppussing av kjøkken, bad, tilbygg eller ny bolig.</p><ul><li>God planlegging med øvrige fag</li><li>Skjult og ryddig føringsvei</li><li>Leveranse til avtalt tid</li></ul></article><article class="vvs-card"><h3>Service, feilsøking og næring</h3><p>Løpende service, feilretting og kontroll av elektriske anlegg for bedrifter og borettslag.</p><ul><li>Rask kartlegging av feil</li><li>Forebyggende gjennomgang</li><li>Fast kontaktperson</li></ul></article></div>
+    </div>
+  </section>
+  <section class="vvs-section vvs-section-tint">
+    <div class="vvs-wrap">
+      <div class="vvs-head"><span class="vvs-eyebrow">3-stegs prosess</span><h2>Slik jobber vi fra start til mål</h2></div>
+      <div class="vvs-steps-3"><article class="vvs-step"><img src="../assets/curated/elektro/05-belysning-takarmatur.webp" alt="Installatør på stige som monterer LED-belysning i tak" width="1024" height="683" loading="lazy" decoding="async"><div class="vvs-step-body"><span class="vvs-step-num">STEG 01</span><h3>Befaring og behov</h3><p>Vi går gjennom anlegget og anbefaler trygge, praktiske løsninger.</p></div></article><article class="vvs-step"><img src="../assets/curated/elektro/06-moderne-boligbelysning.webp" alt="Moderne stue og kjøkken med integrert arkitektonisk belysning" width="1200" height="816" loading="lazy" decoding="async"><div class="vvs-step-body"><span class="vvs-step-num">STEG 02</span><h3>Tydelig tilbud</h3><p>Du får oversikt over omfang, materialer og fremdriftsplan før oppstart.</p></div></article><article class="vvs-step"><img src="../assets/curated/elektro/07-teknisk-koblingsboks.webp" alt="Faglært elektriker som utfører tilkobling i veggboks" width="1200" height="801" loading="lazy" decoding="async"><div class="vvs-step-body"><span class="vvs-step-num">STEG 03</span><h3>Montering og kontroll</h3><p>Arbeidet utføres ryddig, testes grundig og dokumenteres ved overlevering.</p></div></article></div>
+    </div>
+  </section>
+  <section class="vvs-navy-band">
+    <div class="vvs-wrap">
+      <div class="vvs-why-grid"><div class="vvs-why-box"><h3>Sikkerhet først</h3><p>Alle oppdrag utføres med høyt fokus på elsikkerhet og varig driftssikkerhet.</p></div><div class="vvs-why-box"><h3>Ryddig på arbeidsplassen</h3><p>Vi møter til avtalt tid, beskytter overflater og rydder etter oss.</p></div><div class="vvs-why-box"><h3>Energismarte valg</h3><p>Råd om styring og belysning som reduserer unødvendig strømforbruk.</p></div><div class="vvs-why-box"><h3>Klar kommunikasjon</h3><p>Ingen skjulte overraskelser – vi avklarer endringer før de utføres.</p></div></div>
+      <div class="vvs-cta-strip">
+        <div><h2>Trenger du elektriker til neste prosjekt?</h2><p>Send en forespørsel til Arctiq AS for befaring eller et ryddig pristilbud.</p></div>
+        <a href="kontakt.html" class="btn vvs-btn-copper">Send henvendelse</a>
       </div>
     </div>
-    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobilmeny">
-      <a href="#tjenester">Våre tjenester</a>
-      <a href="#prosjekter">Referanseprosjekter</a>
-      <a href="#godkjenninger">Godkjenninger &amp; HMS</a>
-      <a href="#kontakt">Kontakt oss</a>
-      <a href="tel:+4777729400" style="color:#38BDF8;font-weight:700;">Ring +47 777 29 400</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="hero-kicker">Landsdekkende · Elektro, Telekom &amp; Asbestsanering</span>
-          <h1>Teknisk infrastruktur bygget for krevende norske forhold</h1>
-          <p class="hero-lead">
-            Arctiq AS er en fleksibel og landsdekkende samarbeidspartner med høy teknisk kompetanse innen mobil (4G/5G), radiolinje (MW), fiber (FTTx), strukturert kabling og offentlig godkjent asbestsanering.
-          </p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#kontakt">Be om uforpliktende pristilbud</a>
-            <a class="btn btn-outline-light" href="#prosjekter">Se referanseprosjekter</a>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <div class="stat-num">2017</div>
-              <div class="stat-label">Etablert i Nordreisa</div>
-            </div>
-            <div>
-              <div class="stat-num">23</div>
-              <div class="stat-label">Fagfolk på laget</div>
-            </div>
-            <div>
-              <div class="stat-num">Hele Norge</div>
-              <div class="stat-label">Reisende montørteam</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-photo-wrap">
-            <img src="./images/client/hero-radiolinje.jpg" alt="Arctiq AS montør på radiolinje- og mobilanlegg i fjellet">
-            <div class="hero-photo-badge">
-              <div>
-                <strong>Mobil, radiolinje &amp; fiber i hele landet</strong>
-                <span>Prosjektledelse, utførelse og AS-BUILT-dokumentasjon</span>
-              </div>
-              <span class="pill-green">Ekomnettautorisert</span>
-            </div>
-          </div>
+  </section>
+</main>
+  <footer class="vvs-footer">
+  <div class="vvs-wrap">
+    <div class="vvs-footer-grid">
+      <div>
+        <h3>Arctiq AS</h3>
+        <p style="max-width:44ch;font-size:0.92rem;margin:0;">Elektroinstallasjon og tekniske løsninger i Sørkjosen.</p>
+      </div>
+      <div>
+        <h3>Sider</h3>
+        <div class="vvs-footer-links">
+          <a href="index.html">Forside</a>
+          <a href="tjenester.html">Tjenester</a>
+          <a href="om-oss.html">Om oss</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="personvern.html">Personvern</a>
         </div>
       </div>
-    </section>
-
-    <div class="trust-bar">
-      <div class="container trust-items">
-        <span class="trust-item"><span class="trust-dot"></span>Elvirksomhetsregisteret</span>
-        <span class="trust-item"><span class="trust-dot"></span>Ekomnettautorisert</span>
-        <span class="trust-item"><span class="trust-dot"></span>Godkjent for asbestsanering</span>
-        <span class="trust-item"><span class="trust-dot"></span>Godkjent lærebedrift</span>
-        <span class="trust-item"><span class="trust-dot"></span>HMS- og kvalitetssystem</span>
+      <div>
+        <h3>Kontakt</h3>
+        <div class="vvs-footer-links">
+          <span>Sørkjosen</span>
+          <a href="tel:+4777729400">+4777729400</a>
+          <a href="mailto:post@arctiq.no">post@arctiq.no</a>
+          <span>Org.nr. 918 545 085</span>
+        </div>
       </div>
     </div>
-
-    <section id="tjenester" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Våre tjenester</span>
-          <h2>Bred fagkompetanse under samme tak</h2>
-          <p class="section-lead">
-            Vi setter høye mål for samarbeid, budsjettrammer og fleksibilitet – og strekker oss langt for å være en partner det er enkelt å handle med.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card">
-            <div>
-              <div class="service-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>
-              </div>
-              <h3>Mobil og Radiolinje</h3>
-              <p>Lang erfaring med bygging, installering og oppgradering av radiolinjer (MW) og mobile anlegg/basestasjoner (4G/5G), inkludert prosjektledelse og komplett AS-BUILT-dokumentasjon.</p>
-            </div>
-            <div class="service-tags">
-              <span class="tag">4G / 5G Rollout</span>
-              <span class="tag">Radiolinje (MW)</span>
-              <span class="tag">AS-BUILT</span>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <div>
-              <div class="service-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-              </div>
-              <h3>Fiber (FTTx / FTTH)</h3>
-              <p>Erfaring fra større FTTx-anlegg over hele landet – både i større borettslag og i bolig- og næringsområder. Vi utfører blåsing, skjøting i skap og boks, luft- og bakkeinstallasjon samt hjemmesentralbytter.</p>
-            </div>
-            <div class="service-tags">
-              <span class="tag">Blåsing &amp; skjøting</span>
-              <span class="tag">Borettslag &amp; næring</span>
-              <span class="tag">FTTH</span>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <div>
-              <div class="service-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-              </div>
-              <h3>Strukturert Kabling</h3>
-              <p>Våre fagfolk har forlagt tusenvis av mil med kabling. Vi leverer ryddig og dokumentert strukturert kabling og datapunkt i både nye og eksisterende næringsbygg og boliger.</p>
-            </div>
-            <div class="service-tags">
-              <span class="tag">Næringsbygg</span>
-              <span class="tag">Datapunkt</span>
-              <span class="tag">Dokumentert anlegg</span>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <div>
-              <div class="service-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <h3>Asbestsanering</h3>
-              <p>Godkjent av Arbeidstilsynet for trygg og lovlig asbestsanering over hele Norge. Vi bistår industri, kraftstasjoner, bygg og eiendomsforvaltere med grundig sanering og dokumentasjon.</p>
-            </div>
-            <div>
-              <div class="service-tags">
-                <span class="tag">Godkjent av Arbeidstilsynet</span>
-                <span class="tag">Hele Norge</span>
-              </div>
-              <div class="asbest-call">
-                <span>Direkte kontakt asbestsanering (Hans):</span>
-                <a href="tel:+4790881810">+47 908 81 810</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="prosjekter" class="section section-ice">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Referanseprosjekter</span>
-          <h2>Et utvalg av oppdrag vi har levert</h2>
-          <p class="section-lead">Fra 5G-utbygging på Øst- og Vestlandet til helikopteroppdrag i Finnmark og asbestsanering på kraftstasjon i Sør-Troms.</p>
-        </div>
-
-        <div class="filter-row" role="tablist" aria-label="Filtrer prosjekter">
-          <button class="filter-btn active" type="button" data-filter="alle">Alle prosjekter</button>
-          <button class="filter-btn" type="button" data-filter="mobil">Mobil &amp; Radiolinje</button>
-          <button class="filter-btn" type="button" data-filter="fiber">Fiber (FTTH)</button>
-          <button class="filter-btn" type="button" data-filter="asbest">Asbestsanering</button>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card" data-category="mobil">
-            <div class="project-img">
-              <img src="./images/client/prosjekt-5g.jpg" alt="5G Rollout Øst- og Vestlandet" loading="lazy">
-              <span class="project-year">2024</span>
-            </div>
-            <div class="project-body">
-              <span class="project-cat">Mobil &amp; 5G</span>
-              <h3>5G Rollout Øst- og Vestlandet</h3>
-              <p>Deltatt på Telia 5G Rollout på både Øst- og Vestlandet med våre reisende mobil-team, med ansvar for en stor andel basestasjoner.</p>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="mobil">
-            <div class="project-img">
-              <img src="./images/client/prosjekt-radiolinje.jpg" alt="Oppgradering av radiolinje i Buskerud" loading="lazy">
-              <span class="project-year">2024</span>
-            </div>
-            <div class="project-body">
-              <span class="project-cat">Radiolinje (MW)</span>
-              <h3>Radiolinjeoppgradering i Buskerud</h3>
-              <p>Oppgradering av mobilutstyr og radiolinjekapasitet i Buskerud som en sentral del av 5G-utbyggingen.</p>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="fiber">
-            <div class="project-img">
-              <img src="./images/client/prosjekt-fiber.jpg" alt="FTTH fiberinstallasjoner i Østfold og Oslo" loading="lazy">
-              <span class="project-year">2019–2024</span>
-            </div>
-            <div class="project-body">
-              <span class="project-cat">Fiber (FTTH)</span>
-              <h3>Fiberinstallasjoner i Østfold og Oslo</h3>
-              <p>Løpende FTTH-leveranser (Altibox): blåsing, skjøting i skap og boks, fremføring fra tomtegrense i luft og bakke samt hjemmesentralbytter.</p>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="mobil">
-            <div class="project-img">
-              <img src="./images/client/prosjekt-finnmark.jpg" alt="Driftsoppdrag radiolinje med helikopter i Finnmark" loading="lazy">
-              <span class="project-year">2020</span>
-            </div>
-            <div class="project-body">
-              <span class="project-cat">Driftsoppdrag</span>
-              <h3>Utskifting av radom i Finnmark</h3>
-              <p>Akutt driftsoppdrag etter vinterstorm der skadet radom høyt til fjells ble skiftet ut med støtte av helikopterløft.</p>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="asbest">
-            <div class="project-img">
-              <img src="./images/client/prosjekt-asbest.jpg" alt="Asbestsanering på kraftstasjon i Sør-Troms" loading="lazy">
-              <span class="project-year">Kraftstasjon</span>
-            </div>
-            <div class="project-body">
-              <span class="project-cat">Asbestsanering</span>
-              <h3>Sanering på kraftstasjon i Sør-Troms</h3>
-              <p>Grundig nedvasking og rens for asbest på kraftgenerator i Sør-Troms i henhold til Arbeidstilsynets krav.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="godkjenninger" class="section section-dark">
-      <div class="container about-grid">
-        <div>
-          <span class="eyebrow">Om Arctiq AS</span>
-          <h2>Fokus på langsiktig samarbeid og grønne verdikjeder</h2>
-          <p class="section-lead">
-            Fra hovedkontoret i Flyplassvegen 4A i Sørkjosen leverer våre 23 ansatte oppdrag over hele Norge. Vi kombinerer solid felterfaring med ryddig prosjektledelse, HMS og dokumentasjon.
-          </p>
-          <p class="section-lead" style="margin-top: 1rem;">
-            Vi er godkjent lærebedrift og jobber målrettet med å bygge bærekraftig kompetanse og grønne verdikjeder i elektro- og telekombransjen.
-          </p>
-        </div>
-
-        <div class="cert-list">
-          <div class="cert-card">
-            <span class="cert-check">✓</span>
-            <div>
-              <strong>Elvirksomhetsregisteret &amp; Ekomnettautorisert</strong>
-              <span>Offentlig registrert og autorisert for elektro- og elektroniske kommunikasjonsnett.</span>
-            </div>
-          </div>
-          <div class="cert-card">
-            <span class="cert-check">✓</span>
-            <div>
-              <strong>Godkjent for asbestsanering</strong>
-              <span>Tillatelse fra Arbeidstilsynet for lovlig og sikker asbestsanering i hele landet.</span>
-            </div>
-          </div>
-          <div class="cert-card">
-            <span class="cert-check">✓</span>
-            <div>
-              <strong>Godkjent lærebedrift &amp; HMS-system</strong>
-              <span>Strukturert HMS- og kvalitetssystem i alle prosjekter – fra befaring til AS-BUILT.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="kontakt" class="section">
-      <div class="container contact-grid">
-        <div class="contact-info-card">
-          <span class="eyebrow" style="color:#38BDF8;">Kontakt Arctiq AS</span>
-          <h3>Ta en prat om ditt neste prosjekt</h3>
-          <p>Ring oss direkte eller send en forespørsel, så kommer vi raskt tilbake med en konkret tilbakemelding og uforpliktende pristilbud.</p>
-          <div class="contact-rows">
-            <div class="contact-row">
-              <small>Sentralbord</small>
-              <a href="tel:+4777729400">+47 777 29 400</a>
-            </div>
-            <div class="contact-row">
-              <small>Asbestsanering (Hans)</small>
-              <a href="tel:+4790881810">+47 908 81 810</a>
-            </div>
-            <div class="contact-row">
-              <small>E-post</small>
-              <a href="mailto:post@arctiq.no">post@arctiq.no</a>
-            </div>
-            <div class="contact-row">
-              <small>Besøksadresse</small>
-              <strong>Flyplassvegen 4A, 9152 Sørkjosen</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-card">
-          <h3 style="font-size:1.35rem; color:var(--navy-900); margin-bottom:0.35rem;">Be om uforpliktende pristilbud</h3>
-          <p style="color:var(--slate-600); font-size:0.93rem; margin:0 0 1.4rem;">Fyll ut skjemaet under, så tar riktig fagansvarlig kontakt med deg.</p>
-          <form id="quoteForm">
-            <div class="form-grid">
-              <div class="field">
-                <label for="fName">Navn</label>
-                <input id="fName" name="name" type="text" required placeholder="Ola Nordmann">
-              </div>
-              <div class="field">
-                <label for="fCompany">Bedrift</label>
-                <input id="fCompany" name="company" type="text" placeholder="Firmanavn AS">
-              </div>
-            </div>
-            <div class="form-grid">
-              <div class="field">
-                <label for="fEmail">E-post</label>
-                <input id="fEmail" name="email" type="email" required placeholder="navn@bedrift.no">
-              </div>
-              <div class="field">
-                <label for="fService">Fagområde</label>
-                <select id="fService" name="service">
-                  <option>Mobil og Radiolinje (4G/5G/MW)</option>
-                  <option>Fiber (FTTx / FTTH)</option>
-                  <option>Strukturert Kabling</option>
-                  <option>Asbestsanering</option>
-                  <option>Annet oppdrag</option>
-                </select>
-              </div>
-            </div>
-            <div class="field">
-              <label for="fMsg">Kort om oppdraget</label>
-              <textarea id="fMsg" name="message" rows="4" required placeholder="Fortell kort om lokasjon, omfang og ønsket tidsplan..."></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit" style="width:100%;">Send forespørsel</button>
-            <div class="form-status" id="formStatus" role="status">
-              Takk for din henvendelse! I den ferdige versjonen sendes dette skjemaet direkte til post@arctiq.no.
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <img src="./images/client/logo.webp" alt="Arctiq AS" width="160" height="37">
-        <div class="footer-links">
-          <a href="#tjenester">Tjenester</a>
-          <a href="#prosjekter">Prosjekter</a>
-          <a href="#godkjenninger">Godkjenninger</a>
-          <a href="#kontakt">Kontakt</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Arctiq AS · Org.nr. 918 545 085</div>
-        <div>Flyplassvegen 4A, 9152 Sørkjosen · Tlf: +47 777 29 400</div>
-      </div>
+    <div class="vvs-footer-end">
+      <span>© Arctiq AS</span>
+      <span><a href="personvern.html">Personvernerklæring</a></span>
     </div>
-  </footer>
-
+  </div>
+</footer>
   <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileDrawer = document.getElementById('mobileDrawer');
-    if (menuToggle && mobileDrawer) {
-      menuToggle.addEventListener('click', () => {
-        const open = mobileDrawer.classList.toggle('open');
-        menuToggle.setAttribute('aria-expanded', String(open));
-      });
-      mobileDrawer.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-          mobileDrawer.classList.remove('open');
-          menuToggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
-
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.project-card');
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const cat = btn.dataset.filter;
-        cards.forEach(c => {
-          c.classList.toggle('hidden', cat !== 'alle' && c.dataset.category !== cat);
-        });
+(function () {
+  var toggles = document.querySelectorAll('[data-menu-toggle]');
+  toggles.forEach(function (btn) {
+    var targetId = btn.getAttribute('aria-controls');
+    var drawer = targetId ? document.getElementById(targetId) : null;
+    if (!drawer) return;
+    btn.addEventListener('click', function () {
+      var open = drawer.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    drawer.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
       });
     });
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape' && drawer.classList.contains('is-open')) {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.focus();
+      }
+    });
+  });
 
-    const form = document.getElementById('quoteForm');
-    const formStatus = document.getElementById('formStatus');
-    if (form && formStatus) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        formStatus.classList.add('show');
-        form.reset();
-      });
-    }
+  var forms = document.querySelectorAll('form[data-demo-form]');
+  forms.forEach(function (form) {
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var hp = form.querySelector('input[name="website_url"]');
+      if (hp && hp.value.trim() !== '') return;
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+      var box = form.querySelector('[data-form-feedback]');
+      if (box) {
+        var company = form.getAttribute('data-company') || 'bedriften';
+        box.textContent = 'Takk for henvendelsen! Dette er en interaktiv forhåndsvisning for ' + company + '. I produksjon sendes meldingen direkte til deres e-post.';
+        box.classList.add('is-visible');
+        box.setAttribute('tabindex', '-1');
+        box.focus();
+      }
+      form.reset();
+      window.setTimeout(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      }, 900);
+    });
+  });
+})();
   </script>
 </body>
 </html>

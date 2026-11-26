@@ -3,351 +3,496 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt oss | Follo Brønnboring AS</title>
-  <meta name="description" content="Kontakt Follo Brønnboring AS for uforpliktende pristilbud eller befaring.">
+  <title>Kontakt – Follo Brønnboring AS</title>
+  <meta name="description" content="Ta kontakt med Follo Brønnboring AS i Askim for en uforpliktende prat.">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@600;700;800&amp;display=swap">
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0; font-family: 'Inter', system-ui, sans-serif; color: #0F172A;
-      background: #FFFFFF; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden;
-    }
-    h1, h2, h3, h4 { font-family: 'Outfit', system-ui, sans-serif; line-height: 1.16; margin: 0 0 0.75rem; overflow-wrap: break-word; hyphens: auto; }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  max-width: 100%;
+  overflow-x: clip;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, picture { max-width: 100%; display: block; }
+img { height: auto; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; touch-action: manipulation; }
+h1, h2, h3, h4 { margin: 0 0 0.7rem; line-height: 1.16; overflow-wrap: break-word; }
+p { margin: 0 0 1rem; overflow-wrap: break-word; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
 
-    .demo-banner {
-      background: #060C18; color: #CBD5E1; font-size: 0.82rem; padding: 0.55rem 1rem;
-      text-align: center; border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .demo-banner strong { color: #FFFFFF; }
-    .demo-banner a { color: #FBBF24; font-weight: 600; text-decoration: underline; margin-left: 0.35rem; }
+/* Tastatur- og TV-fjernkontrollfokus */
+:focus-visible {
+  outline: 3px solid var(--focus-ring, var(--accent));
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.75rem;
+  z-index: 200;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: var(--accent-ink, #ffffff);
+  font-weight: 700;
+  border-radius: 8px;
+}
+.skip-link:focus { left: 1rem; }
 
-    .site-header {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(11, 16, 38, 0.96); backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.1); color: #F1F5F9;
-    }
-    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 74px; }
-    .brand { display: inline-flex; align-items: center; gap: 0.7rem; font-family: 'Outfit', system-ui, sans-serif; font-weight: 700; font-size: 1.05rem; }
-    .brand-mark {
-      width: 36px; height: 36px; border-radius: 10px; background: #4F46E5; color: #FFFFFF;
-      display: inline-flex; align-items: center; justify-content: center; font-size: 0.88rem; font-weight: 800; flex-shrink: 0;
-    }
-    .logo-pill { background: #FFFFFF; padding: 6px 12px; border-radius: 10px; display: inline-flex; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
-    .logo-pill img { height: 30px; max-width: 165px; width: auto; object-fit: contain; }
-    .nav-desktop { display: flex; align-items: center; gap: 1.55rem; font-size: 0.94rem; font-weight: 500; }
-    .nav-desktop a:hover, .nav-desktop a.active { color: #4F46E5; font-weight: 600; }
-    .header-actions { display: flex; align-items: center; gap: 0.85rem; }
-    .phone-link { font-weight: 600; font-size: 0.9rem; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
-      padding: 0.84rem 1.4rem; border-radius: 10px; font-weight: 600; font-size: 0.95rem;
-      border: 1px solid transparent; cursor: pointer; transition: all 0.18s ease;
-    }
-    .btn-primary { background: #4F46E5; color: #FFFFFF; }
-    .btn-primary:hover { background: #4338CA; transform: translateY(-1px); }
-    .btn-secondary {
-      background: rgba(255,255,255,0.08);
-      color: #FFFFFF;
-      border-color: rgba(255,255,255,0.24);
-    }
-    .btn-outline { background: transparent; color: #4F46E5; border-color: #4F46E5; }
-    .btn-outline:hover { background: #4F46E5; color: #FFFFFF; }
-    .btn-sm { padding: 0.56rem 1.05rem; font-size: 0.88rem; }
-    .menu-toggle {
-      display: none; background: transparent; color: inherit;
-      border: 1px solid currentColor; border-radius: 8px; padding: 0.4rem 0.6rem; cursor: pointer;
-    }
-    .mobile-drawer { display: none; background: rgba(11, 16, 38, 0.96); border-top: 1px solid rgba(255,255,255,0.1); padding: 1rem 1.25rem 1.4rem; }
-    .mobile-drawer.open { display: grid; gap: 0.8rem; }
+/* Demo-topplinje */
+.demo-strip {
+  font-size: 0.84rem;
+  line-height: 1.4;
+  padding: 0.55rem 1rem;
+  text-align: center;
+  background: var(--strip-bg, #090d16);
+  color: var(--strip-fg, #e2e8f0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.demo-strip strong { color: #ffffff; }
+.demo-strip a {
+  display: inline-block;
+  margin-left: 0.45rem;
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--strip-link, #fbbf24);
+}
 
-    .hero { background: radial-gradient(circle at 82% 20%, rgba(79,70,229,0.26), transparent 52%), linear-gradient(135deg, #0B1026 0%, #172042 100%); color: #FFFFFF; padding: clamp(3.25rem, 6.5vw, 5.5rem) 0; }
-    .page-hero { background: radial-gradient(circle at 82% 20%, rgba(79,70,229,0.26), transparent 52%), linear-gradient(135deg, #0B1026 0%, #172042 100%); color: #FFFFFF; padding: clamp(2.75rem, 5vw, 4.25rem) 0; }
-    .page-hero p { color: #CBD5E1; max-width: 64ch; font-size: 1.06rem; margin: 0.5rem 0 0; }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: center; }
-    .hero-grid.reverse .hero-visual { order: -1; }
-    .hero-kicker { display: inline-block; background: #E0E7FF; color: #4338CA; font-weight: 700; font-size: 0.8rem; padding: 0.36rem 0.88rem; border-radius: 999px; margin-bottom: 1.1rem; }
-    .hero h1, .page-hero h1 { font-size: clamp(2rem, 4.1vw, 3.25rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1rem; }
-    .hero-lead { font-size: clamp(1rem, 1.45vw, 1.13rem); color: #CBD5E1; max-width: 58ch; margin: 0 0 1.75rem; }
-    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 2rem; }
-    .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; padding-top: 1.4rem; border-top: 1px solid rgba(255,255,255,0.14); }
-    .stat-num { font-family: 'Outfit', system-ui, sans-serif; font-size: 1.25rem; font-weight: 800; }
-    .stat-label { font-size: 0.8rem; opacity: 0.78; margin-top: 0.12rem; }
-    .hero-photo-wrap {
-      position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 54px rgba(0,0,0,0.22);
-      border: 1px solid rgba(255,255,255,0.15); aspect-ratio: 4 / 3.4; background: #0F172A;
-    }
-    .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
-    .hero-photo-badge {
-      position: absolute; left: 1rem; right: 1rem; bottom: 1rem;
-      background: rgba(11, 22, 40, 0.88); backdrop-filter: blur(10px); color: #FFFFFF;
-      border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 0.85rem 1.05rem;
-      display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
-    }
-    .hero-photo-badge strong { display: block; font-size: 0.92rem; }
-    .hero-photo-badge span { font-size: 0.78rem; color: #CBD5E1; }
-    .pill-ok { background: rgba(16,185,129,0.2); color: #6EE7B7; border: 1px solid rgba(16,185,129,0.4); font-size: 0.74rem; font-weight: 700; padding: 0.28rem 0.65rem; border-radius: 999px; white-space: nowrap; }
+/* Minimum 44x44px berøringsmål på mobil/pad/TV */
+.tap-target, .btn, .nav-link, .menu-toggle, summary {
+  min-height: 44px;
+}
+.menu-toggle {
+  display: none;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  border: 1.5px solid currentColor;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.mobile-nav {
+  display: none;
+  padding: 1rem 1.25rem 1.5rem;
+}
+.mobile-nav.is-open {
+  display: grid;
+  gap: 0.5rem;
+}
+.mobile-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
 
-    .trust-bar { background: #F5F7FF; border-bottom: 1px solid #E2E8F0; padding: 1.15rem 0; }
-    .trust-items { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1.5rem; }
-    .trust-item { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 600; }
-    .trust-dot { width: 8px; height: 8px; border-radius: 50%; background: #4F46E5; flex-shrink: 0; }
+/* Felles skjema- og underside-stiler som bruker hver mals tokens */
+.form-card {
+  background: var(--surface-card);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 16px);
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.form-field.full { grid-column: 1 / -1; }
+.form-field label { font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm, 8px);
+  border: 1.5px solid var(--border-strong, var(--border));
+  background: var(--input-bg, #ffffff);
+  color: var(--input-ink, #0f172a);
+  font-size: 16px;
+}
+.form-field textarea { min-height: 120px; resize: vertical; }
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.form-feedback {
+  display: none;
+  margin-top: 1rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 10px;
+  background: var(--tint);
+  color: var(--ink);
+  border: 1.5px solid var(--accent);
+  font-weight: 600;
+}
+.form-feedback.is-visible { display: block; }
 
-    .section { padding: clamp(3.5rem, 6vw, 5.5rem) 0; }
-    .section-alt { background: #F5F7FF; }
-    .section-dark { background: #0B1026; color: #FFFFFF; }
-    .section-dark .section-lead { color: #CBD5E1; }
-    .section-head { max-width: 720px; margin-bottom: 2.5rem; }
-    .eyebrow { display: inline-block; color: #4F46E5; font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.45rem; }
-    .section h2 { font-size: clamp(1.65rem, 3.1vw, 2.45rem); font-weight: 800; letter-spacing: -0.02em; }
-    .section-lead { color: #475569; font-size: 1.03rem; margin: 0.45rem 0 0; }
+.subpage-hero {
+  padding: clamp(2.5rem, 5vw, 4.25rem) 0;
+  background: var(--subhero-bg, var(--hero-bg));
+  color: var(--subhero-ink, var(--hero-ink));
+  border-bottom: 1px solid var(--border);
+}
+.subpage-hero p {
+  max-width: 64ch;
+  color: var(--subhero-muted, var(--hero-muted));
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+}
+.prose-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 16px);
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  max-width: 860px;
+}
+.prose-card h2 { font-size: clamp(1.25rem, 2vw, 1.55rem); margin-top: 1.6rem; }
+.prose-card h2:first-child { margin-top: 0; }
+.prose-card p, .prose-card li { color: var(--muted); }
+.prose-card ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; display: grid; gap: 0.4rem; }
 
-    .services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-    .service-card {
-      background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px;
-      padding: 1.85rem; display: flex; flex-direction: column; justify-content: space-between;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-    .service-card:hover { transform: translateY(-2px); border-color: #4F46E5; box-shadow: 0 18px 38px rgba(15,23,42,0.08); }
-    .service-icon { width: 46px; height: 46px; border-radius: 12px; background: #E0E7FF; color: #4338CA; display: flex; align-items: center; justify-content: center; margin-bottom: 1.05rem; }
-    .service-card h3 { font-size: 1.24rem; }
-    .service-card p { color: #475569; font-size: 0.95rem; margin: 0.4rem 0 1rem; }
-    .bullet-list { list-style: none; padding: 0; margin: 0 0 1.25rem; display: grid; gap: 0.42rem; font-size: 0.9rem; }
-    .bullet-list li { display: flex; align-items: center; gap: 0.5rem; }
-    .bullet-list li::before { content: "✓"; color: #4F46E5; font-weight: 800; }
-    .card-link { color: #4F46E5; font-weight: 700; font-size: 0.92rem; display: inline-flex; align-items: center; gap: 0.35rem; }
+.contact-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.85fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: start;
+}
+.info-stack { display: grid; gap: 1rem; }
+.info-tile {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 12px);
+  padding: 1.2rem 1.35rem;
+}
+.info-tile strong { display: block; margin-bottom: 0.25rem; color: var(--ink); }
+.info-tile span, .info-tile a { color: var(--muted); font-size: 0.95rem; }
 
-    .wizard-box {
-      background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px;
-      padding: clamp(1.5rem, 3.5vw, 2.5rem); box-shadow: 0 14px 36px rgba(15,23,42,0.05);
-    }
-    .wizard-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; margin: 1.5rem 0; }
-    .wizard-btn {
-      background: #F5F7FF; border: 1px solid #E2E8F0; border-radius: 12px;
-      padding: 1rem 1.1rem; font-weight: 600; font-size: 0.93rem; text-align: left; cursor: pointer;
-      color: #0F172A; transition: all 0.15s ease;
-    }
-    .wizard-btn:hover, .wizard-btn.selected { border-color: #4F46E5; background: #E0E7FF; color: #4338CA; }
+/* TV (1920x1080+): skalerbar lesbar typografi >= 18px og sentrert beholder */
+@media (min-width: 1800px) {
+  html { font-size: 112.5%; }
+}
 
-    .why-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.35rem; }
-    .why-card {
-      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px; padding: 1.5rem;
-    }
-    .why-card h3 { font-size: 1.1rem; color: #FFFFFF; margin-bottom: 0.45rem; }
-    .why-card p { color: #CBD5E1; font-size: 0.92rem; margin: 0; }
+/* Pad (<= 1080px) */
+@media (max-width: 1080px) {
+  .contact-split { grid-template-columns: 1fr; }
+}
 
-    .showcase-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
-    .showcase-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
-    .showcase-img { position: relative; aspect-ratio: 16 / 10.5; overflow: hidden; background: #0F172A; }
-    .showcase-img img { width: 100%; height: 100%; object-fit: cover; }
-    .step-pill { position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(11, 22, 40, 0.86); color: #FFFFFF; font-size: 0.75rem; font-weight: 700; padding: 0.26rem 0.65rem; border-radius: 999px; }
-    .showcase-body { padding: 1.35rem; }
-    .showcase-body h3 { font-size: 1.12rem; margin-bottom: 0.45rem; }
-    .showcase-body p { color: #475569; font-size: 0.92rem; margin: 0; }
+/* Mobil (<= 768px) */
+@media (max-width: 768px) {
+  .desktop-nav, .header-cta-desktop { display: none !important; }
+  .menu-toggle { display: inline-flex !important; }
+  .form-grid { grid-template-columns: 1fr; }
+}
 
-    .faq-list { display: grid; gap: 0.85rem; max-width: 860px; }
-    .faq-item { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; overflow: hidden; }
-    .faq-item summary {
-      padding: 1.15rem 1.35rem; font-weight: 700; font-size: 1rem; cursor: pointer;
-      list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-    }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: "+"; color: #4F46E5; font-size: 1.3rem; font-weight: 700; }
-    .faq-item[open] summary::after { content: "−"; }
-    .faq-item p { padding: 0 1.35rem 1.2rem; margin: 0; color: #475569; font-size: 0.95rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
-    .contact-grid { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr); gap: 2rem; align-items: start; }
-    .contact-info { background: #0B1026; color: #FFFFFF; border-radius: 20px; padding: 2rem; }
-    .contact-info p { color: #CBD5E1; font-size: 0.95rem; margin: 0 0 1.4rem; }
-    .contact-rows { display: grid; gap: 0.9rem; }
-    .contact-row { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 0.9rem 1.05rem; }
-    .contact-row small { display: block; color: #94A3B8; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .contact-row a, .contact-row strong { display: block; color: #FFFFFF; font-size: 0.98rem; font-weight: 600; margin-top: 0.15rem; word-break: break-word; }
-    .contact-form { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 2rem; box-shadow: 0 14px 36px rgba(15,23,42,0.06); }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.95rem; }
-    .field { display: flex; flex-direction: column; gap: 0.32rem; margin-bottom: 0.95rem; }
-    .field label { font-size: 0.85rem; font-weight: 600; }
-    .field input, .field select, .field textarea {
-      width: 100%; padding: 0.75rem 0.9rem; border-radius: 10px; border: 1px solid #E2E8F0;
-      font-family: inherit; font-size: 0.95rem; background: #FFFFFF; color: #0F172A;
-    }
-    .form-status { display: none; margin-top: 1rem; padding: 0.9rem 1rem; border-radius: 10px; background: #ECFDF5; border: 1px solid #A7F3D0; color: #065F46; font-size: 0.9rem; font-weight: 500; }
-    .form-status.show { display: block; }
+:root {
+  --bm-forest: #234B36;
+  --bm-deep: #0A1610;
+  --bm-linen: #F6F4EE;
+  --bm-sage: #EAF2EC;
+  --bm-ochre: #9A4306;
+  --accent: #234B36;
+  --accent-ink: #FFFFFF;
+  --focus-ring: #9A4306;
+  --strip-bg: #0A1610;
+  --strip-fg: #DCE8E0;
+  --strip-link: #FBBF24;
+  --hero-bg: #F6F4EE;
+  --hero-ink: #0A1610;
+  --hero-muted: #374B40;
+  --surface-card: #FFFFFF;
+  --ink: #0A1610;
+  --muted: #374B40;
+  --border: #D9E2DC;
+  --border-strong: #B7C9BD;
+  --tint: #EAF2EC;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+}
+body.tpl-byggmester {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bm-linen);
+  color: var(--ink);
+}
+.tpl-byggmester h1, .tpl-byggmester h2, .tpl-byggmester h3 {
+  font-family: 'Outfit', system-ui, sans-serif;
+  letter-spacing: -0.025em;
+}
+.bm-wrap { width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 clamp(1rem, 3vw, 2rem); }
+.bm-header {
+  position: sticky; top: 0; z-index: 60;
+  background: rgba(246, 244, 238, 0.96); color: #0A1610;
+  border-bottom: 1px solid #D9E2DC;
+}
+.bm-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 78px; }
+.bm-brand { display: inline-flex; align-items: center; gap: 0.7rem; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.12rem; color: #0A1610; }
+.bm-emblem { width: 38px; height: 38px; border-radius: 10px; background: #234B36; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 800; }
+.bm-nav { display: flex; align-items: center; gap: 1.6rem; font-size: 0.94rem; font-weight: 600; }
+.bm-nav a { display: inline-flex; align-items: center; padding: 0.35rem 0; border-bottom: 2px solid transparent; }
+.bm-nav a:hover, .bm-nav a.active { color: #234B36; border-bottom-color: #234B36; }
+.bm-btn-forest {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  background: #234B36; color: #FFFFFF; font-weight: 600; padding: 0.82rem 1.5rem;
+  border-radius: 10px; border: 2px solid #234B36;
+}
+.bm-btn-forest:hover { background: #1B3B2A; }
+.bm-btn-outline {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  background: #FFFFFF; color: #234B36; font-weight: 600; padding: 0.82rem 1.5rem;
+  border-radius: 10px; border: 1.5px solid #234B36;
+}
+.bm-btn-outline:hover { background: #EAF2EC; }
 
-    .prose { max-width: 78ch; display: grid; gap: 1.25rem; }
-    .prose h2 { font-size: 1.4rem; margin-top: 0.75rem; }
-    .prose p { margin: 0; color: #475569; }
+.bm-hero { padding: clamp(2.5rem, 5vw, 4.5rem) 0 clamp(3rem, 6vw, 5rem); }
+.bm-hero-top { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 2rem; align-items: end; margin-bottom: 2rem; }
+.bm-kicker { display: inline-block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #9A4306; margin-bottom: 0.75rem; }
+.bm-hero h1 { font-size: clamp(2.2rem, 4.4vw, 3.6rem); color: #0A1610; margin: 0; }
+.bm-hero-aside p { color: var(--muted); font-size: 1.04rem; margin-bottom: 1.25rem; }
+.bm-hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.bm-framed-stage { position: relative; }
+.bm-framed-photo { border-radius: 22px; overflow: hidden; border: 1px solid #D9E2DC; box-shadow: 0 24px 50px rgba(10, 22, 16, 0.12); }
+.bm-framed-photo img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.bm-overlap-card {
+  position: relative; z-index: 2; margin: -3.2rem 1.5rem 0 auto; max-width: 760px;
+  background: #FFFFFF; border: 1px solid #D9E2DC; border-radius: 16px;
+  padding: 1.4rem 1.75rem; box-shadow: 0 18px 40px rgba(10, 22, 16, 0.1);
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem;
+}
+.bm-fact strong { display: block; font-family: 'Outfit', sans-serif; color: #234B36; font-size: 1.05rem; }
+.bm-fact span { font-size: 0.86rem; color: var(--muted); }
 
-    .site-footer { background: #07101F; color: #94A3B8; padding: 3.5rem 0 2rem; }
-    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.1fr; gap: 2rem; padding-bottom: 2.25rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .footer-grid h4 { color: #FFFFFF; font-size: 0.95rem; margin-bottom: 0.85rem; }
-    .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; font-size: 0.88rem; }
-    .footer-grid a:hover { color: #FFFFFF; }
-    .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; font-size: 0.84rem; }
+.bm-section { padding: clamp(3rem, 6vw, 5rem) 0; }
+.bm-section-sage { background: #EAF2EC; border-top: 1px solid #D9E2DC; border-bottom: 1px solid #D9E2DC; }
+.bm-head { max-width: 700px; margin-bottom: 2.25rem; }
+.bm-head h2 { font-size: clamp(1.75rem, 3.1vw, 2.55rem); }
+.bm-head p { color: var(--muted); font-size: 1.03rem; }
 
-    @media (max-width: 980px) {
-      .hero-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
-      .hero-grid.reverse .hero-visual { order: 0; }
-      .why-grid, .showcase-grid, .wizard-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .nav-desktop, .phone-link { display: none; }
-      .menu-toggle { display: inline-flex; }
-    }
-    @media (max-width: 680px) {
-      .services-grid, .why-grid, .showcase-grid, .wizard-grid, .form-grid { grid-template-columns: 1fr; }
-      .header-actions .btn-sm { display: none; }
-    }
+.bm-projects-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem; }
+.bm-proj-card { background: #FFFFFF; border: 1px solid #D9E2DC; border-radius: 18px; overflow: hidden; }
+.bm-proj-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.bm-proj-body { padding: 1.6rem; }
+.bm-proj-tag { display: inline-block; background: #EAF2EC; color: #234B36; font-size: 0.78rem; font-weight: 700; padding: 0.28rem 0.7rem; border-radius: 999px; margin-bottom: 0.65rem; }
+.bm-proj-body h3 { font-size: 1.3rem; }
+.bm-proj-body p { color: var(--muted); margin: 0; }
+
+.bm-pillars-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; }
+.bm-pillar { background: #FFFFFF; border: 1px solid #D9E2DC; border-radius: 16px; padding: 1.65rem; }
+.bm-pillar-idx { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.4rem; color: #9A4306; margin-bottom: 0.5rem; }
+.bm-pillar h3 { font-size: 1.18rem; }
+.bm-pillar p { color: var(--muted); font-size: 0.94rem; margin: 0; }
+
+.bm-story-split { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: clamp(1.75rem, 4vw, 3.5rem); align-items: center; }
+.bm-story-photo { border-radius: 18px; overflow: hidden; border: 1px solid #D9E2DC; }
+.bm-story-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.bm-srv-list { display: grid; gap: 0.9rem; margin-top: 1.25rem; }
+.bm-srv-row { background: #FFFFFF; border: 1px solid #D9E2DC; border-radius: 12px; padding: 1.1rem 1.25rem; }
+.bm-srv-row strong { display: block; color: #0A1610; margin-bottom: 0.2rem; }
+.bm-srv-row span { color: var(--muted); font-size: 0.92rem; }
+
+.bm-cta-banner { background: #234B36; color: #FFFFFF; padding: clamp(2.5rem, 5vw, 4rem) 0; }
+.bm-cta-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.bm-cta-inner p { color: #DCE8E0; max-width: 56ch; margin: 0; }
+.bm-btn-light { display: inline-flex; align-items: center; justify-content: center; background: #FFFFFF; color: #0A1610; font-weight: 700; padding: 0.88rem 1.6rem; border-radius: 10px; }
+
+.bm-footer { background: #0A1610; color: #DCE8E0; padding: 3rem 0 2rem; }
+.bm-footer-cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.bm-footer h3 { color: #FFFFFF; font-size: 1rem; margin-bottom: 0.8rem; }
+.bm-footer-links { display: grid; gap: 0.45rem; font-size: 0.92rem; }
+.bm-footer-links a { display: inline-flex; align-items: center; min-height: 36px; }
+.bm-footer-links a:hover { color: #FBBF24; }
+.bm-footer-bar { border-top: 1px solid rgba(255, 255, 255, 0.14); padding-top: 1.2rem; font-size: 0.86rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; }
+.tpl-byggmester .mobile-nav { background: #F6F4EE; color: #0A1610; border-top: 1px solid #D9E2DC; }
+
+@media (max-width: 1080px) {
+  .bm-hero-top, .bm-story-split { grid-template-columns: 1fr; }
+  .bm-overlap-card { margin: 1.25rem 0 0; max-width: none; }
+  .bm-pillars-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .bm-overlap-card, .bm-projects-2, .bm-pillars-3, .bm-footer-cols { grid-template-columns: 1fr; }
+}
   </style>
 </head>
-<body>
-  <div class="demo-banner">
-    Live-utkast laget for <strong>Follo Brønnboring AS</strong> · Ønsker dere tilpasninger og lansering?
-    <a href="https://vikingnet.no/landingsside" target="_blank" rel="noopener">Se løsning på vikingnet.no</a>
+<body class="tpl-byggmester" data-template="byggmester">
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
+  <div class="demo-strip" role="note">Forhåndsvisning utarbeidet for <strong>Follo Brønnboring AS</strong>. <a href="kontakt.html">Ønsker dere å gå videre med løsningen?</a></div>
+  <header class="bm-header">
+  <div class="bm-wrap bm-header-inner">
+    <a href="index.html" class="bm-brand"><span class="bm-emblem" aria-hidden="true">FB</span><span>Follo Brønnboring AS</span></a>
+    <nav class="bm-nav desktop-nav" aria-label="Hovedmeny"><a href="index.html" class="nav-link">Forside</a>
+<a href="tjenester.html" class="nav-link">Tjenester</a>
+<a href="om-oss.html" class="nav-link">Om oss</a>
+<a href="kontakt.html" class="nav-link active" aria-current="page">Kontakt</a></nav>
+    <div class="header-cta-desktop"><a href="kontakt.html" class="btn bm-btn-forest">Avtal befaring</a></div>
+    <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åpne meny">Meny ☰</button>
   </div>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html"><span class="brand-mark">FB</span><span class="brand-name">Follo Brønnboring AS</span></a>
-      <nav class="nav-desktop" aria-label="Hovedmeny">
-        <a href="./index.html">Hjem</a>
-        <a href="./tjenester.html">Tjenester</a>
-        <a href="./om-oss.html">Om oss</a>
-        <a href="./kontakt.html" class="active">Kontakt</a>
-      </nav>
-      <div class="header-actions">
-        
-        <a class="btn btn-primary btn-sm" href="./kontakt.html">Be om tilbud</a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Åpne meny" aria-expanded="false">☰</button>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobilmeny"><a href="index.html">Forside</a>
+<a href="tjenester.html">Tjenester</a>
+<a href="om-oss.html">Om oss</a>
+<a href="kontakt.html" aria-current="page">Kontakt</a><a href="personvern.html">Personvern</a></nav>
+</header>
+  <main id="main-content">
+  <section class="subpage-hero">
+    <div class="bm-wrap">
+      <p style="text-transform:uppercase;letter-spacing:0.09em;font-weight:700;font-size:0.82rem;margin-bottom:0.5rem;">Kontakt</p>
+      <h1>Skal du i gang med grave- eller grunnarbeid?</h1>
+      <p>Kontakt Follo Brønnboring AS for en befaring og et uforpliktende tilbud.</p>
+    </div>
+  </section>
+  <section style="padding:clamp(2.75rem,5vw,4.5rem) 0;">
+    <div class="bm-wrap contact-split">
+      <div><form class="form-card" id="kontakt-skjema" data-demo-form="true" data-company="Follo Brønnboring AS" novalidate>
+  <div class="form-grid">
+    <div class="form-field">
+      <label for="kontakt-skjema-name">Navn</label>
+      <input id="kontakt-skjema-name" name="name" type="text" autocomplete="name" required placeholder="Ditt navn">
+    </div>
+    <div class="form-field">
+      <label for="kontakt-skjema-phone">Telefon</label>
+      <input id="kontakt-skjema-phone" name="phone" type="tel" autocomplete="tel" placeholder="+47 90 00 00 00">
+    </div>
+    <div class="form-field full">
+      <label for="kontakt-skjema-email">E-post</label>
+      <input id="kontakt-skjema-email" name="email" type="email" autocomplete="email" required placeholder="navn@bedrift.no">
+    </div>
+    <div class="form-field full">
+      <label for="kontakt-skjema-msg">Hva kan vi hjelpe med?</label>
+      <textarea id="kontakt-skjema-msg" name="message" required placeholder="Fortell kort om behov, ønsket tidspunkt og eventuelle spørsmål."></textarea>
+    </div>
+    <div class="hp-field" aria-hidden="true">
+      <label for="kontakt-skjema-hp">Nettside</label>
+      <input id="kontakt-skjema-hp" name="website_url" type="text" tabindex="-1" autocomplete="off">
+    </div>
+  </div>
+  <div style="margin-top: 1.25rem;">
+    <button type="submit" class="btn bm-btn-forest">Send forespørsel</button>
+  </div>
+  <div class="form-feedback" data-form-feedback="true" role="status" aria-live="polite"></div>
+</form></div>
+      <aside class="info-stack"><div class="info-tile"><strong>Bedrift</strong><span>Follo Brønnboring AS</span></div><div class="info-tile"><strong>Område</strong><span>Askim</span></div><div class="info-tile"><strong>E-post</strong><a href="mailto:post@follobronn.no">post@follobronn.no</a></div><div class="info-tile"><strong>Adresse</strong><span>Osloveien 335, 1815 Askim</span></div><div class="info-tile"><strong>Organisasjonsnummer</strong><span>Org.nr. 983 878 490</span></div><div style="border-radius:14px;overflow:hidden;border:1px solid var(--border);"><img src="../assets/curated/anlegg/05-byggegrop-fundament.webp" alt="Utgravd byggegrop klargjort for fundamentering og rørgrøfter" width="1024" height="683" loading="eager" fetchpriority="high" decoding="sync"></div></aside>
+    </div>
+  </section>
+</main>
+  <footer class="bm-footer">
+  <div class="bm-wrap">
+    <div class="bm-footer-cols">
+      <div>
+        <h3>Follo Brønnboring AS</h3>
+        <p style="max-width:44ch;font-size:0.92rem;margin:0;">Grunnarbeid, graving og utomhus i Askim.</p>
+      </div>
+      <div>
+        <h3>Sider</h3>
+        <div class="bm-footer-links">
+          <a href="index.html">Forside</a>
+          <a href="tjenester.html">Tjenester</a>
+          <a href="om-oss.html">Om oss</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="personvern.html">Personvern</a>
+        </div>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <div class="bm-footer-links">
+          <span>Askim</span>
+          <span>Osloveien 335, 1815 Askim</span>
+          <a href="mailto:post@follobronn.no">post@follobronn.no</a>
+          <span>Org.nr. 983 878 490</span>
+        </div>
       </div>
     </div>
-    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobilmeny">
-      <a href="./index.html">Hjem</a>
-      <a href="./tjenester.html">Tjenester</a>
-      <a href="./om-oss.html">Om oss</a>
-      <a href="./kontakt.html">Kontakt oss</a>
-      <a href="./personvern.html">Personvern</a>
-      
-    </nav>
-  </header>
-
-  <main>
-    
-    <section class="page-hero">
-      <div class="container">
-        <span class="hero-kicker">Kontakt</span>
-        <h1>Kontakt Follo Brønnboring AS</h1>
-        <p>Har du spørsmål, ønsker en befaring eller vil ha et uforpliktende pristilbud? Ta kontakt via skjemaet, e-post eller telefon.</p>
-      </div>
-    </section>
-    
-    <section id="kontakt" class="section">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <span class="eyebrow" style="color:#FBBF24;">Ta kontakt</span>
-          <h2 style="color:#FFFFFF;font-size:1.75rem;margin-bottom:0.5rem;">Send forespørsel eller bestill befaring</h2>
-          <p>Ta kontakt med Follo Brønnboring AS for en uforpliktende prat, kapasitet eller et skriftlig pristilbud.</p>
-          <div class="contact-rows">
-            <div class="contact-row"><small>Bedrift</small><strong>Follo Brønnboring AS</strong></div>
-            <div class="contact-row"><small>Organisasjonsnummer</small><strong>Org.nr. 983 878 490</strong></div>
-            
-            <div class="contact-row"><small>E-post</small><a href="mailto:post@follobronn.no">post@follobronn.no</a></div>
-            <div class="contact-row"><small>Adresse</small><strong>Osloveien 335, 1815 Askim</strong></div>
-          </div>
-        </div>
-        <div class="contact-form">
-          <h3 style="font-size:1.35rem;margin-bottom:0.35rem;">Be om uforpliktende pristilbud</h3>
-          <p style="font-size:0.93rem;opacity:0.78;margin:0 0 1.35rem;">Fyll ut skjemaet under, så tar vi kontakt så snart vi har anledning.</p>
-          <form id="quoteForm">
-            <div class="form-grid">
-              <div class="field"><label for="qName">Navn</label><input id="qName" type="text" required placeholder="Ola Nordmann"></div>
-              <div class="field"><label for="qPhone">Telefon</label><input id="qPhone" type="tel" placeholder="+47 900 00 000"></div>
-            </div>
-            <div class="form-grid">
-              <div class="field"><label for="qEmail">E-post</label><input id="qEmail" type="email" required placeholder="navn@bedrift.no"></div>
-              <div class="field"><label for="qService">Type oppdrag</label><select id="qService"><option value="Asfaltering av gårdsplass">Asfaltering av gårdsplass</option><option value="Parkeringsplass / borettslag">Parkeringsplass / borettslag</option><option value="Grunnarbeid &amp; drenering">Grunnarbeid &amp; drenering</option><option value="Reparasjon &amp; lapping">Reparasjon &amp; lapping</option><option value="Utomhus &amp; kantstein">Utomhus &amp; kantstein</option><option value="Nærings- / anleggsoppdrag">Nærings- / anleggsoppdrag</option></select></div>
-            </div>
-            <div class="field"><label for="qMsg">Beskrivelse av oppdraget</label><textarea id="qMsg" rows="4" required placeholder="Fortell kort om lokasjon, omfang og ønsket tidsplan..."></textarea></div>
-            <button class="btn btn-primary" type="submit" style="width:100%;">Send uforpliktende forespørsel</button>
-            <div class="form-status" id="formStatus" role="status">Takk for din henvendelse! I den publiserte versjonen sendes dette skjemaet direkte til post@follobronn.no.</div>
-          </form>
-        </div>
-      </div>
-    </section>
-    
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Ofte stilte spørsmål</span>
-          <h2>Nyttig før du tar kontakt</h2>
-        </div>
-        <div class="faq-list"><details class="faq-item"><summary>Må dere komme på befaring før dere gir pris?</summary><p>For de fleste oppdrag anbefaler vi en rask og uforpliktende befaring slik at vi kan sjekke underlag, adkomst og drenering før vi gir et presist tilbud.</p></details><details class="faq-item"><summary>Tar dere både private gårdsplasser og store næringsarealer?</summary><p>Ja, vi tilpasser mannskap og maskiner etter størrelsen på oppdraget.</p></details><details class="faq-item"><summary>Hvor viktig er grunnarbeidet før legging?</summary><p>Grunnarbeidet er avgjørende for at dekket skal holde seg jevnt og uten sprekker over mange år. Vi vurderer alltid dette under befaring.</p></details><details class="faq-item"><summary>Når på året kan arbeidet utføres?</summary><p>Grunnarbeid kan ofte planlegges hele året, mens dekkelegging følger sesong og temperatur. Ta kontakt tidlig for å sikre plass i planen.</p></details><details class="faq-item"><summary>Hvordan bestiller jeg befaring?</summary><p>Fyll ut skjemaet på denne siden eller send oss en e-post med adresse og omtrentlig areal, så tar vi raskt kontakt.</p></details></div>
-      </div>
-    </section>
-    
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h4 style="font-size:1.08rem;">Follo Brønnboring AS</h4>
-          <p style="font-size:0.88rem;margin:0 0 0.75rem;">Follo Brønnboring AS leverer varige dekker, grunnarbeid og utomhusprosjekter for privatkunder, borettslag og næring i Askim – med moderne utstyr, ryddig HMS og tydelig fr</p>
-          <div style="font-size:0.84rem;">Org.nr. 983 878 490</div>
-        </div>
-        <div>
-          <h4>Tjenester</h4>
-          <ul>
-            <li><a href="./tjenester.html">Asfaltering &amp; dekkelegging</a></li><li><a href="./tjenester.html">Grunnarbeid &amp; klargjøring</a></li><li><a href="./tjenester.html">Vedlikehold &amp; utbedring</a></li><li><a href="./tjenester.html">Befaring &amp; prosjektgjennomføring</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Sider</h4>
-          <ul>
-            <li><a href="./index.html">Forside</a></li>
-            <li><a href="./tjenester.html">Tjenester</a></li>
-            <li><a href="./om-oss.html">Om oss</a></li>
-            <li><a href="./kontakt.html">Kontakt oss</a></li>
-            <li><a href="./personvern.html">Personvern</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Kontakt</h4>
-          <ul>
-            
-            <li><a href="mailto:post@follobronn.no">post@follobronn.no</a></li>
-            <li>Osloveien 335, 1815 Askim</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Follo Brønnboring AS. Alle rettigheter forbeholdt.</div>
-        <div><a href="./personvern.html">Personvernerklæring</a></div>
-      </div>
+    <div class="bm-footer-bar">
+      <span>© Follo Brønnboring AS</span>
+      <span><a href="personvern.html">Personvernerklæring</a></span>
     </div>
-  </footer>
-
+  </div>
+</footer>
   <script>
-    const mt = document.getElementById('menuToggle'), md = document.getElementById('mobileDrawer');
-    if (mt && md) {
-      mt.addEventListener('click', () => { const o = md.classList.toggle('open'); mt.setAttribute('aria-expanded', String(o)); });
-    }
-    const wBtns = document.querySelectorAll('.wizard-btn');
-    const svcSel = document.getElementById('qService');
-    wBtns.forEach(b => b.addEventListener('click', () => {
-      wBtns.forEach(x => x.classList.remove('selected'));
-      b.classList.add('selected');
-      if (svcSel) { svcSel.value = b.dataset.opt || ''; }
-      const cf = document.getElementById('kontakt');
-      if (cf) cf.scrollIntoView({ behavior: 'smooth' });
-    }));
-    const qf = document.getElementById('quoteForm'), fs = document.getElementById('formStatus');
-    if (qf && fs) qf.addEventListener('submit', e => { e.preventDefault(); fs.classList.add('show'); qf.reset(); });
+(function () {
+  var toggles = document.querySelectorAll('[data-menu-toggle]');
+  toggles.forEach(function (btn) {
+    var targetId = btn.getAttribute('aria-controls');
+    var drawer = targetId ? document.getElementById(targetId) : null;
+    if (!drawer) return;
+    btn.addEventListener('click', function () {
+      var open = drawer.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    drawer.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape' && drawer.classList.contains('is-open')) {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.focus();
+      }
+    });
+  });
+
+  var forms = document.querySelectorAll('form[data-demo-form]');
+  forms.forEach(function (form) {
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var hp = form.querySelector('input[name="website_url"]');
+      if (hp && hp.value.trim() !== '') return;
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+      var box = form.querySelector('[data-form-feedback]');
+      if (box) {
+        var company = form.getAttribute('data-company') || 'bedriften';
+        box.textContent = 'Takk for henvendelsen! Dette er en interaktiv forhåndsvisning for ' + company + '. I produksjon sendes meldingen direkte til deres e-post.';
+        box.classList.add('is-visible');
+        box.setAttribute('tabindex', '-1');
+        box.focus();
+      }
+      form.reset();
+      window.setTimeout(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      }, 900);
+    });
+  });
+})();
   </script>
 </body>
 </html>

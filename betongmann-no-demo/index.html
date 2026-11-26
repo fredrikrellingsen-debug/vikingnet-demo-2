@@ -3,415 +3,528 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Betongmann AS – Kløfta</title>
-  <meta name="description" content="Betongmann AS hjelper privatkunder, borettslag og bedrifter i Kløfta med solid håndverk, tydelig fremdriftsplan og ryddig oppfølging fra første befaring til ferdig prosjekt.">
+  <title>Betongmann AS – Anlegg &amp; Grunnarbeid i Kløfta</title>
+  <meta name="description" content="Betongmann AS utfører graving, tomteklargjøring, drenering og utomhusarbeider for både privatpersoner, entreprenører og næringskunder.">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap">
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0; font-family: 'Source Sans 3', system-ui, sans-serif; color: #1E293B;
-      background: #FDFBF7; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden;
-    }
-    h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.16; margin: 0 0 0.75rem; overflow-wrap: break-word; hyphens: auto; }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  max-width: 100%;
+  overflow-x: clip;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, picture { max-width: 100%; display: block; }
+img { height: auto; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; touch-action: manipulation; }
+h1, h2, h3, h4 { margin: 0 0 0.7rem; line-height: 1.16; overflow-wrap: break-word; }
+p { margin: 0 0 1rem; overflow-wrap: break-word; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
 
-    .demo-banner {
-      background: #060C18; color: #CBD5E1; font-size: 0.82rem; padding: 0.55rem 1rem;
-      text-align: center; border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .demo-banner strong { color: #FFFFFF; }
-    .demo-banner a { color: #FBBF24; font-weight: 600; text-decoration: underline; margin-left: 0.35rem; }
+/* Tastatur- og TV-fjernkontrollfokus */
+:focus-visible {
+  outline: 3px solid var(--focus-ring, var(--accent));
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.75rem;
+  z-index: 200;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: var(--accent-ink, #ffffff);
+  font-weight: 700;
+  border-radius: 8px;
+}
+.skip-link:focus { left: 1rem; }
 
-    .site-header {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(253, 251, 247, 0.96); backdrop-filter: blur(12px);
-      border-bottom: 1px solid #E5DFD5; color: #1E293B;
-    }
-    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 74px; }
-    .brand { display: inline-flex; align-items: center; gap: 0.7rem; font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.05rem; }
-    .brand-mark {
-      width: 36px; height: 36px; border-radius: 10px; background: #9F1239; color: #FFFFFF;
-      display: inline-flex; align-items: center; justify-content: center; font-size: 0.88rem; font-weight: 800; flex-shrink: 0;
-    }
-    .logo-pill { background: #FFFFFF; padding: 6px 12px; border-radius: 10px; display: inline-flex; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
-    .logo-pill img { height: 30px; max-width: 165px; width: auto; object-fit: contain; }
-    .nav-desktop { display: flex; align-items: center; gap: 1.55rem; font-size: 0.94rem; font-weight: 500; }
-    .nav-desktop a:hover, .nav-desktop a.active { color: #9F1239; font-weight: 600; }
-    .header-actions { display: flex; align-items: center; gap: 0.85rem; }
-    .phone-link { font-weight: 600; font-size: 0.9rem; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
-      padding: 0.84rem 1.4rem; border-radius: 10px; font-weight: 600; font-size: 0.95rem;
-      border: 1px solid transparent; cursor: pointer; transition: all 0.18s ease;
-    }
-    .btn-primary { background: #9F1239; color: #FFFFFF; }
-    .btn-primary:hover { background: #881337; transform: translateY(-1px); }
-    .btn-secondary {
-      background: #FFFFFF;
-      color: #1E293B;
-      border-color: #E5DFD5;
-    }
-    .btn-outline { background: transparent; color: #9F1239; border-color: #9F1239; }
-    .btn-outline:hover { background: #9F1239; color: #FFFFFF; }
-    .btn-sm { padding: 0.56rem 1.05rem; font-size: 0.88rem; }
-    .menu-toggle {
-      display: none; background: transparent; color: inherit;
-      border: 1px solid currentColor; border-radius: 8px; padding: 0.4rem 0.6rem; cursor: pointer;
-    }
-    .mobile-drawer { display: none; background: rgba(253, 251, 247, 0.96); border-top: 1px solid #E5DFD5; padding: 1rem 1.25rem 1.4rem; }
-    .mobile-drawer.open { display: grid; gap: 0.8rem; }
+/* Demo-topplinje */
+.demo-strip {
+  font-size: 0.84rem;
+  line-height: 1.4;
+  padding: 0.55rem 1rem;
+  text-align: center;
+  background: var(--strip-bg, #090d16);
+  color: var(--strip-fg, #e2e8f0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.demo-strip strong { color: #ffffff; }
+.demo-strip a {
+  display: inline-block;
+  margin-left: 0.45rem;
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--strip-link, #fbbf24);
+}
 
-    .hero { background: linear-gradient(135deg, #FDFBF7 0%, #F6F0E8 100%); color: #1E293B; padding: clamp(3.25rem, 6.5vw, 5.5rem) 0; }
-    .page-hero { background: linear-gradient(135deg, #FDFBF7 0%, #F6F0E8 100%); color: #1E293B; padding: clamp(2.75rem, 5vw, 4.25rem) 0; }
-    .page-hero p { color: #475569; max-width: 64ch; font-size: 1.06rem; margin: 0.5rem 0 0; }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: center; }
-    .hero-grid.reverse .hero-visual { order: -1; }
-    .hero-kicker { display: inline-block; background: #FFE4E6; color: #881337; font-weight: 700; font-size: 0.8rem; padding: 0.36rem 0.88rem; border-radius: 999px; margin-bottom: 1.1rem; }
-    .hero h1, .page-hero h1 { font-size: clamp(2rem, 4.1vw, 3.25rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1rem; }
-    .hero-lead { font-size: clamp(1rem, 1.45vw, 1.13rem); color: #475569; max-width: 58ch; margin: 0 0 1.75rem; }
-    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 2rem; }
-    .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; padding-top: 1.4rem; border-top: 1px solid #E5DFD5; }
-    .stat-num { font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; font-weight: 800; }
-    .stat-label { font-size: 0.8rem; opacity: 0.78; margin-top: 0.12rem; }
-    .hero-photo-wrap {
-      position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 54px rgba(0,0,0,0.22);
-      border: 1px solid #E5DFD5; aspect-ratio: 4 / 3.4; background: #0F172A;
-    }
-    .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
-    .hero-photo-badge {
-      position: absolute; left: 1rem; right: 1rem; bottom: 1rem;
-      background: rgba(11, 22, 40, 0.88); backdrop-filter: blur(10px); color: #FFFFFF;
-      border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 0.85rem 1.05rem;
-      display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
-    }
-    .hero-photo-badge strong { display: block; font-size: 0.92rem; }
-    .hero-photo-badge span { font-size: 0.78rem; color: #CBD5E1; }
-    .pill-ok { background: rgba(16,185,129,0.2); color: #6EE7B7; border: 1px solid rgba(16,185,129,0.4); font-size: 0.74rem; font-weight: 700; padding: 0.28rem 0.65rem; border-radius: 999px; white-space: nowrap; }
+/* Minimum 44x44px berøringsmål på mobil/pad/TV */
+.tap-target, .btn, .nav-link, .menu-toggle, summary {
+  min-height: 44px;
+}
+.menu-toggle {
+  display: none;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  border: 1.5px solid currentColor;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.mobile-nav {
+  display: none;
+  padding: 1rem 1.25rem 1.5rem;
+}
+.mobile-nav.is-open {
+  display: grid;
+  gap: 0.5rem;
+}
+.mobile-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
 
-    .trust-bar { background: #F4EFE6; border-bottom: 1px solid #E5DFD5; padding: 1.15rem 0; }
-    .trust-items { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1.5rem; }
-    .trust-item { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 600; }
-    .trust-dot { width: 8px; height: 8px; border-radius: 50%; background: #9F1239; flex-shrink: 0; }
+/* Felles skjema- og underside-stiler som bruker hver mals tokens */
+.form-card {
+  background: var(--surface-card);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 16px);
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.form-field.full { grid-column: 1 / -1; }
+.form-field label { font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm, 8px);
+  border: 1.5px solid var(--border-strong, var(--border));
+  background: var(--input-bg, #ffffff);
+  color: var(--input-ink, #0f172a);
+  font-size: 16px;
+}
+.form-field textarea { min-height: 120px; resize: vertical; }
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.form-feedback {
+  display: none;
+  margin-top: 1rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 10px;
+  background: var(--tint);
+  color: var(--ink);
+  border: 1.5px solid var(--accent);
+  font-weight: 600;
+}
+.form-feedback.is-visible { display: block; }
 
-    .section { padding: clamp(3.5rem, 6vw, 5.5rem) 0; }
-    .section-alt { background: #F4EFE6; }
-    .section-dark { background: #1E293B; color: #FFFFFF; }
-    .section-dark .section-lead { color: #CBD5E1; }
-    .section-head { max-width: 720px; margin-bottom: 2.5rem; }
-    .eyebrow { display: inline-block; color: #9F1239; font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.45rem; }
-    .section h2 { font-size: clamp(1.65rem, 3.1vw, 2.45rem); font-weight: 800; letter-spacing: -0.02em; }
-    .section-lead { color: #475569; font-size: 1.03rem; margin: 0.45rem 0 0; }
+.subpage-hero {
+  padding: clamp(2.5rem, 5vw, 4.25rem) 0;
+  background: var(--subhero-bg, var(--hero-bg));
+  color: var(--subhero-ink, var(--hero-ink));
+  border-bottom: 1px solid var(--border);
+}
+.subpage-hero p {
+  max-width: 64ch;
+  color: var(--subhero-muted, var(--hero-muted));
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+}
+.prose-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 16px);
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  max-width: 860px;
+}
+.prose-card h2 { font-size: clamp(1.25rem, 2vw, 1.55rem); margin-top: 1.6rem; }
+.prose-card h2:first-child { margin-top: 0; }
+.prose-card p, .prose-card li { color: var(--muted); }
+.prose-card ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; display: grid; gap: 0.4rem; }
 
-    .services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-    .service-card {
-      background: #FDFBF7; border: 1px solid #E5DFD5; border-radius: 18px;
-      padding: 1.85rem; display: flex; flex-direction: column; justify-content: space-between;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-    .service-card:hover { transform: translateY(-2px); border-color: #9F1239; box-shadow: 0 18px 38px rgba(15,23,42,0.08); }
-    .service-icon { width: 46px; height: 46px; border-radius: 12px; background: #FFE4E6; color: #881337; display: flex; align-items: center; justify-content: center; margin-bottom: 1.05rem; }
-    .service-card h3 { font-size: 1.24rem; }
-    .service-card p { color: #475569; font-size: 0.95rem; margin: 0.4rem 0 1rem; }
-    .bullet-list { list-style: none; padding: 0; margin: 0 0 1.25rem; display: grid; gap: 0.42rem; font-size: 0.9rem; }
-    .bullet-list li { display: flex; align-items: center; gap: 0.5rem; }
-    .bullet-list li::before { content: "✓"; color: #9F1239; font-weight: 800; }
-    .card-link { color: #9F1239; font-weight: 700; font-size: 0.92rem; display: inline-flex; align-items: center; gap: 0.35rem; }
+.contact-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.85fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: start;
+}
+.info-stack { display: grid; gap: 1rem; }
+.info-tile {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 12px);
+  padding: 1.2rem 1.35rem;
+}
+.info-tile strong { display: block; margin-bottom: 0.25rem; color: var(--ink); }
+.info-tile span, .info-tile a { color: var(--muted); font-size: 0.95rem; }
 
-    .wizard-box {
-      background: #FDFBF7; border: 1px solid #E5DFD5; border-radius: 20px;
-      padding: clamp(1.5rem, 3.5vw, 2.5rem); box-shadow: 0 14px 36px rgba(15,23,42,0.05);
-    }
-    .wizard-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; margin: 1.5rem 0; }
-    .wizard-btn {
-      background: #F4EFE6; border: 1px solid #E5DFD5; border-radius: 12px;
-      padding: 1rem 1.1rem; font-weight: 600; font-size: 0.93rem; text-align: left; cursor: pointer;
-      color: #1E293B; transition: all 0.15s ease;
-    }
-    .wizard-btn:hover, .wizard-btn.selected { border-color: #9F1239; background: #FFE4E6; color: #881337; }
+/* TV (1920x1080+): skalerbar lesbar typografi >= 18px og sentrert beholder */
+@media (min-width: 1800px) {
+  html { font-size: 112.5%; }
+}
 
-    .why-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.35rem; }
-    .why-card {
-      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px; padding: 1.5rem;
-    }
-    .why-card h3 { font-size: 1.1rem; color: #FFFFFF; margin-bottom: 0.45rem; }
-    .why-card p { color: #CBD5E1; font-size: 0.92rem; margin: 0; }
+/* Pad (<= 1080px) */
+@media (max-width: 1080px) {
+  .contact-split { grid-template-columns: 1fr; }
+}
 
-    .showcase-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
-    .showcase-card { background: #FDFBF7; border: 1px solid #E5DFD5; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
-    .showcase-img { position: relative; aspect-ratio: 16 / 10.5; overflow: hidden; background: #0F172A; }
-    .showcase-img img { width: 100%; height: 100%; object-fit: cover; }
-    .step-pill { position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(11, 22, 40, 0.86); color: #FFFFFF; font-size: 0.75rem; font-weight: 700; padding: 0.26rem 0.65rem; border-radius: 999px; }
-    .showcase-body { padding: 1.35rem; }
-    .showcase-body h3 { font-size: 1.12rem; margin-bottom: 0.45rem; }
-    .showcase-body p { color: #475569; font-size: 0.92rem; margin: 0; }
+/* Mobil (<= 768px) */
+@media (max-width: 768px) {
+  .desktop-nav, .header-cta-desktop { display: none !important; }
+  .menu-toggle { display: inline-flex !important; }
+  .form-grid { grid-template-columns: 1fr; }
+}
 
-    .faq-list { display: grid; gap: 0.85rem; max-width: 860px; }
-    .faq-item { background: #FDFBF7; border: 1px solid #E5DFD5; border-radius: 14px; overflow: hidden; }
-    .faq-item summary {
-      padding: 1.15rem 1.35rem; font-weight: 700; font-size: 1rem; cursor: pointer;
-      list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-    }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: "+"; color: #9F1239; font-size: 1.3rem; font-weight: 700; }
-    .faq-item[open] summary::after { content: "−"; }
-    .faq-item p { padding: 0 1.35rem 1.2rem; margin: 0; color: #475569; font-size: 0.95rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
-    .contact-grid { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr); gap: 2rem; align-items: start; }
-    .contact-info { background: #1E293B; color: #FFFFFF; border-radius: 20px; padding: 2rem; }
-    .contact-info p { color: #CBD5E1; font-size: 0.95rem; margin: 0 0 1.4rem; }
-    .contact-rows { display: grid; gap: 0.9rem; }
-    .contact-row { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 0.9rem 1.05rem; }
-    .contact-row small { display: block; color: #94A3B8; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .contact-row a, .contact-row strong { display: block; color: #FFFFFF; font-size: 0.98rem; font-weight: 600; margin-top: 0.15rem; word-break: break-word; }
-    .contact-form { background: #FDFBF7; border: 1px solid #E5DFD5; border-radius: 20px; padding: 2rem; box-shadow: 0 14px 36px rgba(15,23,42,0.06); }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.95rem; }
-    .field { display: flex; flex-direction: column; gap: 0.32rem; margin-bottom: 0.95rem; }
-    .field label { font-size: 0.85rem; font-weight: 600; }
-    .field input, .field select, .field textarea {
-      width: 100%; padding: 0.75rem 0.9rem; border-radius: 10px; border: 1px solid #E5DFD5;
-      font-family: inherit; font-size: 0.95rem; background: #FFFFFF; color: #0F172A;
-    }
-    .form-status { display: none; margin-top: 1rem; padding: 0.9rem 1rem; border-radius: 10px; background: #ECFDF5; border: 1px solid #A7F3D0; color: #065F46; font-size: 0.9rem; font-weight: 500; }
-    .form-status.show { display: block; }
+:root {
+  --rg-violet: #6D28D9;
+  --rg-violet-dark: #5B21B6;
+  --rg-lavender: #F5F3FF;
+  --rg-graphite: #111827;
+  --accent: #6D28D9;
+  --accent-ink: #FFFFFF;
+  --focus-ring: #6D28D9;
+  --strip-bg: #111827;
+  --strip-fg: #E5E7EB;
+  --strip-link: #C4B5FD;
+  --hero-bg: #F9FAFB;
+  --hero-ink: #111827;
+  --hero-muted: #4B5563;
+  --surface-card: #FFFFFF;
+  --ink: #111827;
+  --muted: #4B5563;
+  --border: #E5E7EB;
+  --border-strong: #D1D5DB;
+  --tint: #F5F3FF;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+}
+body.tpl-regnskap {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #F9FAFB;
+  color: var(--ink);
+}
+.tpl-regnskap h1, .tpl-regnskap h2, .tpl-regnskap h3 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  letter-spacing: -0.03em;
+}
+.rg-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+.rg-wrap { width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 clamp(1rem, 3vw, 2rem); }
+.rg-header {
+  position: sticky; top: 0; z-index: 60;
+  background: rgba(255, 255, 255, 0.96); color: #111827;
+  border-bottom: 1px solid #E5E7EB;
+}
+.rg-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 76px; }
+.rg-brand { display: inline-flex; align-items: center; gap: 0.7rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.06rem; }
+.rg-logo-sq { width: 36px; height: 36px; border-radius: 10px; background: #6D28D9; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 600; }
+.rg-nav { display: flex; align-items: center; gap: 1.5rem; font-size: 0.93rem; font-weight: 600; }
+.rg-nav a { display: inline-flex; align-items: center; color: #374151; }
+.rg-nav a:hover, .rg-nav a.active { color: #6D28D9; }
+.rg-btn-violet {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+  background: #6D28D9; color: #FFFFFF; font-weight: 600; padding: 0.8rem 1.45rem;
+  border-radius: 999px; border: 2px solid #6D28D9;
+}
+.rg-btn-violet:hover { background: #5B21B6; border-color: #5B21B6; }
+.rg-btn-soft {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+  background: #FFFFFF; color: #111827; font-weight: 600; padding: 0.8rem 1.45rem;
+  border-radius: 999px; border: 1.5px solid #D1D5DB;
+}
 
-    .prose { max-width: 78ch; display: grid; gap: 1.25rem; }
-    .prose h2 { font-size: 1.4rem; margin-top: 0.75rem; }
-    .prose p { margin: 0; color: #475569; }
+/* Sentrert typografi-hero over bredt bilde */
+.rg-hero { padding: clamp(3rem, 6vw, 5rem) 0 clamp(2.5rem, 5vw, 4rem); text-align: center; }
+.rg-pill {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  background: #F5F3FF; color: #5B21B6; border: 1px solid #DDD6FE;
+  padding: 0.36rem 0.9rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1.2rem;
+}
+.rg-hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.7rem); max-width: 22ch; margin: 0 auto 1.1rem; }
+.rg-hero-lead { color: var(--muted); font-size: clamp(1rem, 1.4vw, 1.15rem); max-width: 60ch; margin: 0 auto 1.8rem; }
+.rg-hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.85rem; margin-bottom: 2.5rem; }
+.rg-wide-visual { border-radius: 22px; overflow: hidden; border: 1px solid #E5E7EB; box-shadow: 0 24px 60px rgba(17, 24, 39, 0.1); }
+.rg-wide-visual img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
 
-    .site-footer { background: #07101F; color: #94A3B8; padding: 3.5rem 0 2rem; }
-    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.1fr; gap: 2rem; padding-bottom: 2.25rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .footer-grid h4 { color: #FFFFFF; font-size: 0.95rem; margin-bottom: 0.85rem; }
-    .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; font-size: 0.88rem; }
-    .footer-grid a:hover { color: #FFFFFF; }
-    .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; font-size: 0.84rem; }
+/* Tall-highlight i JetBrains Mono */
+.rg-metrics-bar {
+  margin-top: 1.75rem;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; text-align: left;
+}
+.rg-metric { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 16px; padding: 1.3rem 1.45rem; }
+.rg-metric-code { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: #5B21B6; font-weight: 600; margin-bottom: 0.35rem; }
+.rg-metric strong { display: block; font-size: 1.12rem; color: #111827; margin-bottom: 0.2rem; }
+.rg-metric span { color: var(--muted); font-size: 0.9rem; }
 
-    @media (max-width: 980px) {
-      .hero-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
-      .hero-grid.reverse .hero-visual { order: 0; }
-      .why-grid, .showcase-grid, .wizard-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .nav-desktop, .phone-link { display: none; }
-      .menu-toggle { display: inline-flex; }
-    }
-    @media (max-width: 680px) {
-      .services-grid, .why-grid, .showcase-grid, .wizard-grid, .form-grid { grid-template-columns: 1fr; }
-      .header-actions .btn-sm { display: none; }
-    }
+/* Bento-grid tjenester */
+.rg-section { padding: clamp(3rem, 6vw, 5rem) 0; }
+.rg-head { max-width: 720px; margin-bottom: 2.25rem; }
+.rg-head h2 { font-size: clamp(1.75rem, 3.1vw, 2.5rem); }
+.rg-head p { color: var(--muted); }
+
+.rg-bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1.35rem; }
+.rg-bento-wide { grid-column: span 7; background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 20px; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; }
+.rg-bento-wide img { width: 100%; height: 100%; min-height: 240px; object-fit: cover; }
+.rg-bento-dark { grid-column: span 5; background: #111827; color: #F9FAFB; border-radius: 20px; padding: 1.85rem; display: flex; flex-direction: column; justify-content: space-between; }
+.rg-bento-dark p { color: #D1D5DB; }
+.rg-bento-half { grid-column: span 6; background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; }
+.rg-bento-half img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.rg-bento-pad { padding: 1.65rem; }
+.rg-bento-pad h3 { font-size: 1.24rem; }
+.rg-bento-pad p { color: var(--muted); font-size: 0.94rem; }
+.rg-bento-list { display: grid; gap: 0.38rem; margin-top: 0.8rem; font-size: 0.89rem; color: #374151; }
+.rg-bento-dark .rg-bento-list { color: #E5E7EB; }
+.rg-bento-list li::before { content: "+ "; color: #6D28D9; font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+.rg-bento-dark .rg-bento-list li::before { color: #C4B5FD; }
+
+.rg-steps-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.35rem; }
+.rg-step-card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 16px; padding: 1.6rem; }
+.rg-step-card .rg-mono { color: #5B21B6; font-size: 0.82rem; font-weight: 600; display: block; margin-bottom: 0.5rem; }
+.rg-step-card p { color: var(--muted); font-size: 0.93rem; margin: 0; }
+
+.rg-cta-box {
+  background: linear-gradient(135deg, #5B21B6 0%, #111827 100%);
+  color: #FFFFFF; border-radius: 22px; padding: clamp(2rem, 4.5vw, 3.5rem);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem;
+}
+.rg-cta-box p { color: #E9D5FF; max-width: 54ch; margin: 0; }
+.rg-btn-white { display: inline-flex; align-items: center; justify-content: center; background: #FFFFFF; color: #111827; font-weight: 700; padding: 0.85rem 1.55rem; border-radius: 999px; }
+
+.rg-footer { background: #111827; color: #D1D5DB; padding: 3rem 0 2rem; margin-top: 2rem; }
+.rg-footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.rg-footer h3 { color: #FFFFFF; font-size: 1rem; margin-bottom: 0.8rem; }
+.rg-footer-links { display: grid; gap: 0.45rem; font-size: 0.92rem; }
+.rg-footer-links a { display: inline-flex; align-items: center; min-height: 36px; }
+.rg-footer-links a:hover { color: #C4B5FD; }
+.rg-footer-end { border-top: 1px solid rgba(255, 255, 255, 0.12); padding-top: 1.2rem; font-size: 0.86rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; }
+.tpl-regnskap .mobile-nav { background: #FFFFFF; color: #111827; border-top: 1px solid #E5E7EB; }
+
+@media (max-width: 1080px) {
+  .rg-bento-wide, .rg-bento-dark, .rg-bento-half { grid-column: span 12; }
+  .rg-bento-wide { grid-template-columns: 1fr; }
+  .rg-steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .rg-wide-visual img { aspect-ratio: 16 / 10; }
+  .rg-metrics-bar, .rg-steps-grid, .rg-footer-grid { grid-template-columns: 1fr; }
+}
   </style>
 </head>
-<body>
-  <div class="demo-banner">
-    Live-utkast laget for <strong>Betongmann AS</strong> · Ønsker dere tilpasninger og lansering?
-    <a href="https://vikingnet.no/landingsside" target="_blank" rel="noopener">Se løsning på vikingnet.no</a>
+<body class="tpl-regnskap" data-template="regnskap">
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
+  <div class="demo-strip" role="note">Forhåndsvisning utarbeidet for <strong>Betongmann AS</strong>. <a href="kontakt.html">Ønsker dere å gå videre med løsningen?</a></div>
+  <header class="rg-header">
+  <div class="rg-wrap rg-header-inner">
+    <a href="index.html" class="rg-brand"><span class="rg-logo-sq" aria-hidden="true">BE</span><span>Betongmann AS</span></a>
+    <nav class="rg-nav desktop-nav" aria-label="Hovedmeny"><a href="index.html" class="nav-link active" aria-current="page">Forside</a>
+<a href="tjenester.html" class="nav-link">Tjenester</a>
+<a href="om-oss.html" class="nav-link">Om oss</a>
+<a href="kontakt.html" class="nav-link">Kontakt</a></nav>
+    <div class="header-cta-desktop"><a href="kontakt.html" class="btn rg-btn-violet">Book møte</a></div>
+    <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åpne meny">Meny ☰</button>
   </div>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html"><span class="brand-mark">BE</span><span class="brand-name">Betongmann AS</span></a>
-      <nav class="nav-desktop" aria-label="Hovedmeny">
-        <a href="./index.html" class="active">Hjem</a>
-        <a href="./tjenester.html">Tjenester</a>
-        <a href="./om-oss.html">Om oss</a>
-        <a href="./kontakt.html">Kontakt</a>
-      </nav>
-      <div class="header-actions">
-        
-        <a class="btn btn-primary btn-sm" href="./kontakt.html">Be om tilbud</a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Åpne meny" aria-expanded="false">☰</button>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobilmeny"><a href="index.html" aria-current="page">Forside</a>
+<a href="tjenester.html">Tjenester</a>
+<a href="om-oss.html">Om oss</a>
+<a href="kontakt.html">Kontakt</a><a href="personvern.html">Personvern</a></nav>
+</header>
+  <main id="main-content">
+  <section class="rg-hero">
+    <div class="rg-wrap">
+      <span class="rg-pill rg-mono">Grunnarbeid, graving og utomhus</span>
+      <h1>Presist grunnarbeid og anleggstjenester i Kløfta</h1>
+      <p class="rg-hero-lead">Betongmann AS utfører graving, tomteklargjøring, drenering og utomhusarbeider for både privatpersoner, entreprenører og næringskunder.</p>
+      <div class="rg-hero-actions">
+        <a href="kontakt.html" class="btn rg-btn-violet">Avtal uforpliktende møte</a>
+        <a href="tjenester.html" class="btn rg-btn-soft">Se alle tjenester</a>
+      </div>
+      <div class="rg-wide-visual"><img src="../assets/curated/anlegg/04-beltegraver-grunnarbeid.webp" alt="Beltegraver i arbeid med utgraving og klargjøring av tomt" width="1024" height="683" loading="eager" fetchpriority="high" decoding="sync"></div>
+      <div class="rg-metrics-bar"><div class="rg-metric"><div class="rg-metric-code">01 / FOKUS</div><strong>Solid grunnarbeid</strong><span>Riktige masser og godt fall</span></div><div class="rg-metric"><div class="rg-metric-code">02 / FOKUS</div><strong>Moderne maskinpark</strong><span>Effektiv og sikker gjennomføring</span></div><div class="rg-metric"><div class="rg-metric-code">03 / FOKUS</div><strong>Pålitelig fremdrift</strong><span>Tydelige avtaler fra start til slutt</span></div></div>
+    </div>
+  </section>
+  <section class="rg-section">
+    <div class="rg-wrap">
+      <div class="rg-head"><span class="rg-mono" style="color:#5B21B6;font-size:0.82rem;font-weight:600;">TJENESTEOVERSIKT</span><h2>Strukturerte leveranser for Kløfta</h2><p>Kombinasjonen av fagkompetanse, ryddige prosesser og personlig oppfølging.</p></div>
+      <div class="rg-bento">
+        <article class="rg-bento-wide">
+          <img src="../assets/curated/anlegg/05-byggegrop-fundament.webp" alt="Utgravd byggegrop klargjort for fundamentering og rørgrøfter" width="1024" height="683" loading="lazy" decoding="async">
+          <div class="rg-bento-pad">
+            <span class="rg-mono" style="color:#5B21B6;font-size:0.78rem;">01</span>
+            <h3>Tomtegraving og klargjøring</h3><p>Utgraving, planering og klargjøring av tomt for bolig, hytte, garasje eller næringsbygg.</p>
+            <ul class="rg-bento-list"><li>Nøyaktig høyde- og fallsetting</li><li>Riktig masseutskifting</li><li>Klart underlag for neste fag</li></ul>
+          </div>
+        </article>
+        <article class="rg-bento-dark">
+          <div>
+            <span class="rg-mono" style="color:#C4B5FD;font-size:0.78rem;">02 / NØKKELTJENESTE</span>
+            <h3 style="margin-top:0.5rem;">Drenering og vann/avløp</h3><p>Sikker bortledning av overvann, ny drenering rundt grunnmur og grøfting for VA.</p>
+            <ul class="rg-bento-list"><li>Beskytter bygg mot fukt</li><li>Skånsom graving nær mur</li><li>Komplett tilbakefylling</li></ul>
+          </div>
+          <a href="tjenester.html" style="color:#C4B5FD;font-weight:700;margin-top:1.25rem;display:inline-block;">Utforsk detaljer →</a>
+        </article>
+        <article class="rg-bento-half">
+          <img src="../assets/curated/anlegg/06-veigraving-drenering.webp" alt="Gravemaskin under grøftearbeid og utbedring langs vei" width="1023" height="681" loading="lazy" decoding="async">
+          <div class="rg-bento-pad">
+            <span class="rg-mono" style="color:#5B21B6;font-size:0.78rem;">03</span>
+            <h3>Gårdsplass, vei og opparbeidelse</h3><p>Oppbygging av innkjørsel, parkeringsareal, stikkveier og bærelag klart for dekke.</p>
+            <ul class="rg-bento-list"><li>God komprimering i lag</li><li>Tåler tele og tung belastning</li><li>Pen avslutning mot kanter</li></ul>
+          </div>
+        </article>
+        <article class="rg-bento-half">
+          <img src="../assets/curated/anlegg/07-masseforflytning-anlegg.webp" alt="Gravemaskin og hjullaster i samspill under masseforflytning" width="1024" height="683" loading="lazy" decoding="async">
+          <div class="rg-bento-pad">
+            <span class="rg-mono" style="color:#5B21B6;font-size:0.78rem;">04</span>
+            <h3>Natursteinsmur og utomhus</h3><p>Støttemurer, terrengforming og ferdigstilling av uteområder som utnytter tomten bedre.</p>
+            <ul class="rg-bento-list"><li>Stabil oppbygging</li><li>Tilpasset omkringliggende terreng</li><li>Helhetlig sluttresultat</li></ul>
+          </div>
+        </article>
       </div>
     </div>
-    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobilmeny">
-      <a href="./index.html">Hjem</a>
-      <a href="./tjenester.html">Tjenester</a>
-      <a href="./om-oss.html">Om oss</a>
-      <a href="./kontakt.html">Kontakt oss</a>
-      <a href="./personvern.html">Personvern</a>
-      
-    </nav>
-  </header>
-
-  <main>
-    
-        <section class="hero">
-          <div class="container hero-grid">
-            <div>
-              <span class="hero-kicker">Bygg &amp; Håndverk · Kløfta</span>
-              <h1>Pålitelig fagpartner innen bygg og håndverk i Kløfta</h1>
-              <p class="hero-lead">Betongmann AS hjelper privatkunder, borettslag og bedrifter i Kløfta med solid håndverk, tydelig fremdriftsplan og ryddig oppfølging fra første befaring til ferdig prosjekt.</p>
-              <div class="hero-cta">
-                <a class="btn btn-primary" href="./kontakt.html">Be om uforpliktende tilbud</a>
-                <a class="btn btn-secondary" href="./tjenester.html">Utforsk alle tjenester</a>
-              </div>
-              <div class="hero-stats"><div><div class="stat-num">1988</div><div class="stat-label">Etablert</div></div><div><div class="stat-num">Kløfta</div><div class="stat-label">Tilholdssted</div></div><div><div class="stat-num">948 158 833</div><div class="stat-label">Org.nr.</div></div></div>
-            </div>
-            <div class="hero-visual">
-              <div class="hero-photo-wrap">
-                <img src="../assets/stock/bygg.jpg" alt="Betongmann AS – Bygg &amp; Håndverk">
-                <div class="hero-photo-badge">
-                  <div><strong>Betongmann AS</strong><span>Kløfta · Bygg &amp; Håndverk</span></div>
-                  <span class="pill-ok">Klar for oppdrag</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="trust-bar"><div class="container trust-items"><span class="trust-item"><span class="trust-dot"></span>Org.nr. 948 158 833</span><span class="trust-item"><span class="trust-dot"></span>Kløfta</span><span class="trust-item"><span class="trust-dot"></span>Org.nr. 948 158 833</span><span class="trust-item"><span class="trust-dot"></span>Skriftlig tilbud før oppstart</span></div></div>
-
-        <section class="section">
-          <div class="container">
-            <div class="section-head">
-              <span class="eyebrow">Våre tjenester</span>
-              <h2>Våre tjenester i Kløfta</h2>
-              <p class="section-lead">Fagmessige leveranser for privatkunder, borettslag og næring – med tydelig plan og direkte dialog.</p>
-            </div>
-            <div class="services-grid"><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h3>Rehabilitering &amp; modernisering</h3><p>Helhetlig fornyelse av boliger, rom og næringslokaler med fokus på varige løsninger og god finish.</p><ul class="bullet-list"><li>Planlegging &amp; utførelse</li><li>Kvalitetsmaterialer</li><li>Ryddig byggeplass</li></ul></div><a class="card-link" href="./kontakt.html">Be om tilbud →</a></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Nybygg, tilbygg &amp; ombygging</h3><p>Utvidelse av bolig eller næringsareal med strukturert prosjektgjennomføring og god dialog underveis.</p><ul class="bullet-list"><li>Tydelige rammer</li><li>Fagmessig utførelse</li><li>God koordinering</li></ul></div><a class="card-link" href="./kontakt.html">Be om tilbud →</a></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div><h3>Overflater, gulv &amp; detaljarbeid</h3><p>Presist fagarbeid på gulv, vegger, fasade og tekniske detaljer som tåler daglig bruk.</p><ul class="bullet-list"><li>Nøyaktig finish</li><li>Varig resultat</li><li>Tilpasset bygget</li></ul></div><a class="card-link" href="./kontakt.html">Be om tilbud →</a></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Befaring &amp; uforpliktende tilbud</h3><p>Vi går gjennom prosjektet sammen med deg og utarbeider et skriftlig og oversiktlig tilbud.</p><ul class="bullet-list"><li>Uforpliktende befaring</li><li>Skriftlig tilbud</li><li>Ingen overraskelser</li></ul></div><a class="card-link" href="./kontakt.html">Be om tilbud →</a></article></div>
-          </div>
-        </section>
-
-        <section class="section section-alt">
-          <div class="container">
-            <div class="wizard-box">
-              <span class="eyebrow">Rask avklaring</span>
-              <h2>Velg prosjekt for uforpliktende vurdering</h2>
-              <p class="section-lead">Klikk på oppdraget som passer best, så hopper du rett til forespørselsskjemaet med valget ferdig utfylt.</p>
-              <div class="wizard-grid"><button type="button" class="wizard-btn" data-opt="Rehabilitering / oppussing">Rehabilitering / oppussing</button><button type="button" class="wizard-btn" data-opt="Tilbygg / ombygging">Tilbygg / ombygging</button><button type="button" class="wizard-btn" data-opt="Gulv / overflater / mur">Gulv / overflater / mur</button><button type="button" class="wizard-btn" data-opt="Nybygg">Nybygg</button><button type="button" class="wizard-btn" data-opt="Vedlikehold / service">Vedlikehold / service</button><button type="button" class="wizard-btn" data-opt="Borettslag / næring">Borettslag / næring</button></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section-dark">
-          <div class="container">
-            <div class="section-head">
-              <span class="eyebrow" style="color:#FBBF24;">Trygt valg</span>
-              <h2 style="color:#FFFFFF;">Derfor velger kunder Betongmann AS</h2>
-              <p class="section-lead">Vi bygger langsiktige relasjoner gjennom ryddige prosesser, god fagkunnskap og avtaler du kan stole på.</p>
-            </div>
-            <div class="why-grid"><article class="why-card"><h3>Solid håndverkskvalitet</h3><p>Vi legger stolthet i detaljene og leverer arbeid vi står inne for over tid.</p></article><article class="why-card"><h3>Forutsigbar fremdrift</h3><p>Klare milepæler og løpende oppdatering slik at du alltid vet hva som skjer.</p></article><article class="why-card"><h3>Ryddig kommunikasjon</h3><p>Direkte kontakt med fagfolkene som faktisk gjennomfører jobben.</p></article><article class="why-card"><h3>Trygge rammer</h3><p>Tydelig avtale og skriftlig tilbud før arbeidet settes i gang.</p></article></div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container">
-            <div class="section-head">
-              <span class="eyebrow">Arbeidsmetode</span>
-              <h2>Slik jobber vi – fra befaring til ferdig leveranse</h2>
-              <p class="section-lead">En forutsigbar prosess i tre steg gjør det enkelt å bestille og trygt å følge opp.</p>
-            </div>
-            <div class="showcase-grid"><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/nybygg.jpg" alt="Uforpliktende befaring i Kløfta – Betongmann AS" loading="lazy"><span class="step-pill">Steg 01</span></div><div class="showcase-body"><h3>Uforpliktende befaring i Kløfta</h3><p>Vi går gjennom oppdraget sammen med deg og avklarer behov, tekniske forhold og tidsplan.</p></div></article><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/rehab.jpg" alt="Skriftlig tilbud &amp; fremdriftsplan – Betongmann AS" loading="lazy"><span class="step-pill">Steg 02</span></div><div class="showcase-body"><h3>Skriftlig tilbud &amp; fremdriftsplan</h3><p>Du mottar et oversiktlig tilbud med tydelig beskrivelse av hva som inngår før vi starter.</p></div></article><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/terrasse.jpg" alt="Fagmessig utførelse &amp; overlevering – Betongmann AS" loading="lazy"><span class="step-pill">Steg 03</span></div><div class="showcase-body"><h3>Fagmessig utførelse &amp; overlevering</h3><p>Vi gjennomfører jobben til avtalt tid og kvalitet, og avslutter med en ryddig gjennomgang.</p></div></article></div>
-          </div>
-        </section>
-
-        <section class="section section-alt">
-          <div class="container">
-            <div class="section-head">
-              <span class="eyebrow">Ofte stilte spørsmål</span>
-              <h2>Spørsmål og svar</h2>
-            </div>
-            <div class="faq-list"><details class="faq-item"><summary>Hvordan starter vi et bygge- eller oppussingsprosjekt?</summary><p>Send oss en kort beskrivelse via kontaktskjemaet, så avtaler vi en uforpliktende befaring for å gå gjennom ønsker, muligheter og tidsplan.</p></details><details class="faq-item"><summary>Gir dere skriftlig pristilbud på forhånd?</summary><p>Ja, vi lager alltid et ryddig og oversiktlig pristilbud basert på befaringen før arbeidet starter.</p></details><details class="faq-item"><summary>Utfører dere oppdrag for både privatpersoner og bedrifter?</summary><p>Ja, vi tar både private boligprosjekter, borettslag/sameier og næringsoppdrag.</p></details><details class="faq-item"><summary>Kan dere hjelpe med planlegging og materialvalg?</summary><p>Absolutt – vi deler gjerne vår erfaring rundt praktiske løsninger og materialer som varer.</p></details><details class="faq-item"><summary>Hvor i området tar dere oppdrag?</summary><p>Vi har base i Kløfta og tar oppdrag i nærområdet og etter avtale i omkringliggende kommuner.</p></details></div>
-          </div>
-        </section>
-
-        
-    <section id="kontakt" class="section">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <span class="eyebrow" style="color:#FBBF24;">Ta kontakt</span>
-          <h2 style="color:#FFFFFF;font-size:1.75rem;margin-bottom:0.5rem;">Send forespørsel eller bestill befaring</h2>
-          <p>Ta kontakt med Betongmann AS for en uforpliktende prat, kapasitet eller et skriftlig pristilbud.</p>
-          <div class="contact-rows">
-            <div class="contact-row"><small>Bedrift</small><strong>Betongmann AS</strong></div>
-            <div class="contact-row"><small>Organisasjonsnummer</small><strong>Org.nr. 948 158 833</strong></div>
-            
-            <div class="contact-row"><small>E-post</small><a href="mailto:post@betongmann.no">post@betongmann.no</a></div>
-            <div class="contact-row"><small>Adresse</small><strong>Myrvangvegen 2, 2040 Kløfta</strong></div>
-          </div>
-        </div>
-        <div class="contact-form">
-          <h3 style="font-size:1.35rem;margin-bottom:0.35rem;">Be om uforpliktende pristilbud</h3>
-          <p style="font-size:0.93rem;opacity:0.78;margin:0 0 1.35rem;">Fyll ut skjemaet under, så tar vi kontakt så snart vi har anledning.</p>
-          <form id="quoteForm">
-            <div class="form-grid">
-              <div class="field"><label for="qName">Navn</label><input id="qName" type="text" required placeholder="Ola Nordmann"></div>
-              <div class="field"><label for="qPhone">Telefon</label><input id="qPhone" type="tel" placeholder="+47 900 00 000"></div>
-            </div>
-            <div class="form-grid">
-              <div class="field"><label for="qEmail">E-post</label><input id="qEmail" type="email" required placeholder="navn@bedrift.no"></div>
-              <div class="field"><label for="qService">Type oppdrag</label><select id="qService"><option value="Rehabilitering / oppussing">Rehabilitering / oppussing</option><option value="Tilbygg / ombygging">Tilbygg / ombygging</option><option value="Gulv / overflater / mur">Gulv / overflater / mur</option><option value="Nybygg">Nybygg</option><option value="Vedlikehold / service">Vedlikehold / service</option><option value="Borettslag / næring">Borettslag / næring</option></select></div>
-            </div>
-            <div class="field"><label for="qMsg">Beskrivelse av oppdraget</label><textarea id="qMsg" rows="4" required placeholder="Fortell kort om lokasjon, omfang og ønsket tidsplan..."></textarea></div>
-            <button class="btn btn-primary" type="submit" style="width:100%;">Send uforpliktende forespørsel</button>
-            <div class="form-status" id="formStatus" role="status">Takk for din henvendelse! I den publiserte versjonen sendes dette skjemaet direkte til post@betongmann.no.</div>
-          </form>
-        </div>
-      </div>
-    </section>
-    
-        
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h4 style="font-size:1.08rem;">Betongmann AS</h4>
-          <p style="font-size:0.88rem;margin:0 0 0.75rem;">Betongmann AS hjelper privatkunder, borettslag og bedrifter i Kløfta med solid håndverk, tydelig fremdriftsplan og ryddig oppfølging fra første befaring til ferdig prosje</p>
-          <div style="font-size:0.84rem;">Org.nr. 948 158 833</div>
-        </div>
-        <div>
-          <h4>Tjenester</h4>
-          <ul>
-            <li><a href="./tjenester.html">Rehabilitering &amp; modernisering</a></li><li><a href="./tjenester.html">Nybygg, tilbygg &amp; ombygging</a></li><li><a href="./tjenester.html">Overflater, gulv &amp; detaljarbeid</a></li><li><a href="./tjenester.html">Befaring &amp; uforpliktende tilbud</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Sider</h4>
-          <ul>
-            <li><a href="./index.html">Forside</a></li>
-            <li><a href="./tjenester.html">Tjenester</a></li>
-            <li><a href="./om-oss.html">Om oss</a></li>
-            <li><a href="./kontakt.html">Kontakt oss</a></li>
-            <li><a href="./personvern.html">Personvern</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Kontakt</h4>
-          <ul>
-            
-            <li><a href="mailto:post@betongmann.no">post@betongmann.no</a></li>
-            <li>Myrvangvegen 2, 2040 Kløfta</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Betongmann AS. Alle rettigheter forbeholdt.</div>
-        <div><a href="./personvern.html">Personvernerklæring</a></div>
+  </section>
+  <section class="rg-section" style="padding-top:0;">
+    <div class="rg-wrap">
+      <div class="rg-head"><span class="rg-mono" style="color:#5B21B6;font-size:0.82rem;font-weight:600;">ARBEIDSFLYT</span><h2>Enkel og ryddig oppstart</h2></div>
+      <div class="rg-steps-grid"><article class="rg-step-card"><span class="rg-mono">STEG 01</span><h3>Befaring og vurdering</h3><p>Vi vurderer tilkomst, grunnforhold, masser og riktig utførelse.</p></article><article class="rg-step-card"><span class="rg-mono">STEG 02</span><h3>Plan og pristilbud</h3><p>Du får en ryddig gjennomgang av omfang, massetransport og fremdrift.</p></article><article class="rg-step-card"><span class="rg-mono">STEG 03</span><h3>Utførelse og finish</h3><p>Vi graver, komprimerer og leverer et ferdig og ryddig område.</p></article></div>
+    </div>
+  </section>
+  <section class="rg-section" style="padding-top:0;">
+    <div class="rg-wrap">
+      <div class="rg-cta-box">
+        <div><h2>Skal du i gang med grave- eller grunnarbeid?</h2><p>Kontakt Betongmann AS for en befaring og et uforpliktende tilbud.</p></div>
+        <a href="kontakt.html" class="btn rg-btn-white">Ta kontakt nå</a>
       </div>
     </div>
-  </footer>
-
+  </section>
+</main>
+  <footer class="rg-footer">
+  <div class="rg-wrap">
+    <div class="rg-footer-grid">
+      <div>
+        <h3>Betongmann AS</h3>
+        <p style="max-width:44ch;font-size:0.92rem;margin:0;">Grunnarbeid, graving og utomhus i Kløfta.</p>
+      </div>
+      <div>
+        <h3>Sider</h3>
+        <div class="rg-footer-links">
+          <a href="index.html">Forside</a>
+          <a href="tjenester.html">Tjenester</a>
+          <a href="om-oss.html">Om oss</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="personvern.html">Personvern</a>
+        </div>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <div class="rg-footer-links">
+          <span>Kløfta</span>
+          <span>Myrvangvegen 2, 2040 Kløfta</span>
+          <a href="mailto:post@betongmann.no">post@betongmann.no</a>
+          <span>Org.nr. 948 158 833</span>
+        </div>
+      </div>
+    </div>
+    <div class="rg-footer-end">
+      <span>© Betongmann AS</span>
+      <span><a href="personvern.html">Personvernerklæring</a></span>
+    </div>
+  </div>
+</footer>
   <script>
-    const mt = document.getElementById('menuToggle'), md = document.getElementById('mobileDrawer');
-    if (mt && md) {
-      mt.addEventListener('click', () => { const o = md.classList.toggle('open'); mt.setAttribute('aria-expanded', String(o)); });
-    }
-    const wBtns = document.querySelectorAll('.wizard-btn');
-    const svcSel = document.getElementById('qService');
-    wBtns.forEach(b => b.addEventListener('click', () => {
-      wBtns.forEach(x => x.classList.remove('selected'));
-      b.classList.add('selected');
-      if (svcSel) { svcSel.value = b.dataset.opt || ''; }
-      const cf = document.getElementById('kontakt');
-      if (cf) cf.scrollIntoView({ behavior: 'smooth' });
-    }));
-    const qf = document.getElementById('quoteForm'), fs = document.getElementById('formStatus');
-    if (qf && fs) qf.addEventListener('submit', e => { e.preventDefault(); fs.classList.add('show'); qf.reset(); });
+(function () {
+  var toggles = document.querySelectorAll('[data-menu-toggle]');
+  toggles.forEach(function (btn) {
+    var targetId = btn.getAttribute('aria-controls');
+    var drawer = targetId ? document.getElementById(targetId) : null;
+    if (!drawer) return;
+    btn.addEventListener('click', function () {
+      var open = drawer.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    drawer.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape' && drawer.classList.contains('is-open')) {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.focus();
+      }
+    });
+  });
+
+  var forms = document.querySelectorAll('form[data-demo-form]');
+  forms.forEach(function (form) {
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var hp = form.querySelector('input[name="website_url"]');
+      if (hp && hp.value.trim() !== '') return;
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+      var box = form.querySelector('[data-form-feedback]');
+      if (box) {
+        var company = form.getAttribute('data-company') || 'bedriften';
+        box.textContent = 'Takk for henvendelsen! Dette er en interaktiv forhåndsvisning for ' + company + '. I produksjon sendes meldingen direkte til deres e-post.';
+        box.classList.add('is-visible');
+        box.setAttribute('tabindex', '-1');
+        box.focus();
+      }
+      form.reset();
+      window.setTimeout(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      }, 900);
+    });
+  });
+})();
   </script>
 </body>
 </html>

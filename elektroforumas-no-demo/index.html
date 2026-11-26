@@ -3,415 +3,494 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elektroforum AS – Sætre</title>
-  <meta name="description" content="Elektroforum AS utfører trygge og moderne elektriske installasjoner, service og oppgraderinger for bolig, borettslag og næring i Sætre. Vi leverer ryddig dokumentasjon og forutsigbare rammer.">
+  <title>Elektroforum AS – Elektro &amp; Installasjon i Sætre</title>
+  <meta name="description" content="Elektroforum AS leverer fagmessige elektroinstallasjoner, feilsøking, belysning og moderne energiløsninger med fokus på sikkerhet og ryddig dokumentasjon.">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap">
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0; font-family: 'DM Sans', system-ui, sans-serif; color: #1B241F;
-      background: #FAF8F4; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden;
-    }
-    h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; line-height: 1.16; margin: 0 0 0.75rem; overflow-wrap: break-word; hyphens: auto; }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  max-width: 100%;
+  overflow-x: clip;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, picture { max-width: 100%; display: block; }
+img { height: auto; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; touch-action: manipulation; }
+h1, h2, h3, h4 { margin: 0 0 0.7rem; line-height: 1.16; overflow-wrap: break-word; }
+p { margin: 0 0 1rem; overflow-wrap: break-word; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
 
-    .demo-banner {
-      background: #060C18; color: #CBD5E1; font-size: 0.82rem; padding: 0.55rem 1rem;
-      text-align: center; border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .demo-banner strong { color: #FFFFFF; }
-    .demo-banner a { color: #FBBF24; font-weight: 600; text-decoration: underline; margin-left: 0.35rem; }
+/* Tastatur- og TV-fjernkontrollfokus */
+:focus-visible {
+  outline: 3px solid var(--focus-ring, var(--accent));
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.75rem;
+  z-index: 200;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: var(--accent-ink, #ffffff);
+  font-weight: 700;
+  border-radius: 8px;
+}
+.skip-link:focus { left: 1rem; }
 
-    .site-header {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(250, 248, 244, 0.96); backdrop-filter: blur(12px);
-      border-bottom: 1px solid #DFD9CD; color: #1B241F;
-    }
-    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 74px; }
-    .brand { display: inline-flex; align-items: center; gap: 0.7rem; font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 1.05rem; }
-    .brand-mark {
-      width: 36px; height: 36px; border-radius: 10px; background: #1B4332; color: #FFFFFF;
-      display: inline-flex; align-items: center; justify-content: center; font-size: 0.88rem; font-weight: 800; flex-shrink: 0;
-    }
-    .logo-pill { background: #FFFFFF; padding: 6px 12px; border-radius: 10px; display: inline-flex; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
-    .logo-pill img { height: 30px; max-width: 165px; width: auto; object-fit: contain; }
-    .nav-desktop { display: flex; align-items: center; gap: 1.55rem; font-size: 0.94rem; font-weight: 500; }
-    .nav-desktop a:hover, .nav-desktop a.active { color: #1B4332; font-weight: 600; }
-    .header-actions { display: flex; align-items: center; gap: 0.85rem; }
-    .phone-link { font-weight: 600; font-size: 0.9rem; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
-      padding: 0.84rem 1.4rem; border-radius: 10px; font-weight: 600; font-size: 0.95rem;
-      border: 1px solid transparent; cursor: pointer; transition: all 0.18s ease;
-    }
-    .btn-primary { background: #1B4332; color: #FFFFFF; }
-    .btn-primary:hover { background: #133024; transform: translateY(-1px); }
-    .btn-secondary {
-      background: #FFFFFF;
-      color: #1B241F;
-      border-color: #DFD9CD;
-    }
-    .btn-outline { background: transparent; color: #1B4332; border-color: #1B4332; }
-    .btn-outline:hover { background: #1B4332; color: #FFFFFF; }
-    .btn-sm { padding: 0.56rem 1.05rem; font-size: 0.88rem; }
-    .menu-toggle {
-      display: none; background: transparent; color: inherit;
-      border: 1px solid currentColor; border-radius: 8px; padding: 0.4rem 0.6rem; cursor: pointer;
-    }
-    .mobile-drawer { display: none; background: rgba(250, 248, 244, 0.96); border-top: 1px solid #DFD9CD; padding: 1rem 1.25rem 1.4rem; }
-    .mobile-drawer.open { display: grid; gap: 0.8rem; }
+/* Demo-topplinje */
+.demo-strip {
+  font-size: 0.84rem;
+  line-height: 1.4;
+  padding: 0.55rem 1rem;
+  text-align: center;
+  background: var(--strip-bg, #090d16);
+  color: var(--strip-fg, #e2e8f0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.demo-strip strong { color: #ffffff; }
+.demo-strip a {
+  display: inline-block;
+  margin-left: 0.45rem;
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--strip-link, #fbbf24);
+}
 
-    .hero { background: linear-gradient(135deg, #F7F4EE 0%, #ECE6DA 100%); color: #1B241F; padding: clamp(3.25rem, 6.5vw, 5.5rem) 0; }
-    .page-hero { background: linear-gradient(135deg, #F7F4EE 0%, #ECE6DA 100%); color: #1B241F; padding: clamp(2.75rem, 5vw, 4.25rem) 0; }
-    .page-hero p { color: #4A5850; max-width: 64ch; font-size: 1.06rem; margin: 0.5rem 0 0; }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: center; }
-    .hero-grid.reverse .hero-visual { order: -1; }
-    .hero-kicker { display: inline-block; background: #D8F3DC; color: #133024; font-weight: 700; font-size: 0.8rem; padding: 0.36rem 0.88rem; border-radius: 999px; margin-bottom: 1.1rem; }
-    .hero h1, .page-hero h1 { font-size: clamp(2rem, 4.1vw, 3.25rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1rem; }
-    .hero-lead { font-size: clamp(1rem, 1.45vw, 1.13rem); color: #4A5850; max-width: 58ch; margin: 0 0 1.75rem; }
-    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 2rem; }
-    .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; padding-top: 1.4rem; border-top: 1px solid #DFD9CD; }
-    .stat-num { font-family: 'Fraunces', Georgia, serif; font-size: 1.25rem; font-weight: 800; }
-    .stat-label { font-size: 0.8rem; opacity: 0.78; margin-top: 0.12rem; }
-    .hero-photo-wrap {
-      position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 54px rgba(0,0,0,0.22);
-      border: 1px solid #DFD9CD; aspect-ratio: 4 / 3.4; background: #0F172A;
-    }
-    .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
-    .hero-photo-badge {
-      position: absolute; left: 1rem; right: 1rem; bottom: 1rem;
-      background: rgba(11, 22, 40, 0.88); backdrop-filter: blur(10px); color: #FFFFFF;
-      border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 0.85rem 1.05rem;
-      display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
-    }
-    .hero-photo-badge strong { display: block; font-size: 0.92rem; }
-    .hero-photo-badge span { font-size: 0.78rem; color: #CBD5E1; }
-    .pill-ok { background: rgba(16,185,129,0.2); color: #6EE7B7; border: 1px solid rgba(16,185,129,0.4); font-size: 0.74rem; font-weight: 700; padding: 0.28rem 0.65rem; border-radius: 999px; white-space: nowrap; }
+/* Minimum 44x44px berøringsmål på mobil/pad/TV */
+.tap-target, .btn, .nav-link, .menu-toggle, summary {
+  min-height: 44px;
+}
+.menu-toggle {
+  display: none;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  border: 1.5px solid currentColor;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.mobile-nav {
+  display: none;
+  padding: 1rem 1.25rem 1.5rem;
+}
+.mobile-nav.is-open {
+  display: grid;
+  gap: 0.5rem;
+}
+.mobile-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
 
-    .trust-bar { background: #F1ECE2; border-bottom: 1px solid #DFD9CD; padding: 1.15rem 0; }
-    .trust-items { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1.5rem; }
-    .trust-item { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 600; }
-    .trust-dot { width: 8px; height: 8px; border-radius: 50%; background: #1B4332; flex-shrink: 0; }
+/* Felles skjema- og underside-stiler som bruker hver mals tokens */
+.form-card {
+  background: var(--surface-card);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 16px);
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.form-field.full { grid-column: 1 / -1; }
+.form-field label { font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm, 8px);
+  border: 1.5px solid var(--border-strong, var(--border));
+  background: var(--input-bg, #ffffff);
+  color: var(--input-ink, #0f172a);
+  font-size: 16px;
+}
+.form-field textarea { min-height: 120px; resize: vertical; }
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.form-feedback {
+  display: none;
+  margin-top: 1rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 10px;
+  background: var(--tint);
+  color: var(--ink);
+  border: 1.5px solid var(--accent);
+  font-weight: 600;
+}
+.form-feedback.is-visible { display: block; }
 
-    .section { padding: clamp(3.5rem, 6vw, 5.5rem) 0; }
-    .section-alt { background: #F1ECE2; }
-    .section-dark { background: #1B2E25; color: #FFFFFF; }
-    .section-dark .section-lead { color: #CBD5E1; }
-    .section-head { max-width: 720px; margin-bottom: 2.5rem; }
-    .eyebrow { display: inline-block; color: #1B4332; font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.45rem; }
-    .section h2 { font-size: clamp(1.65rem, 3.1vw, 2.45rem); font-weight: 800; letter-spacing: -0.02em; }
-    .section-lead { color: #4A5850; font-size: 1.03rem; margin: 0.45rem 0 0; }
+.subpage-hero {
+  padding: clamp(2.5rem, 5vw, 4.25rem) 0;
+  background: var(--subhero-bg, var(--hero-bg));
+  color: var(--subhero-ink, var(--hero-ink));
+  border-bottom: 1px solid var(--border);
+}
+.subpage-hero p {
+  max-width: 64ch;
+  color: var(--subhero-muted, var(--hero-muted));
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+}
+.prose-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 16px);
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  max-width: 860px;
+}
+.prose-card h2 { font-size: clamp(1.25rem, 2vw, 1.55rem); margin-top: 1.6rem; }
+.prose-card h2:first-child { margin-top: 0; }
+.prose-card p, .prose-card li { color: var(--muted); }
+.prose-card ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; display: grid; gap: 0.4rem; }
 
-    .services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-    .service-card {
-      background: #FAF8F4; border: 1px solid #DFD9CD; border-radius: 18px;
-      padding: 1.85rem; display: flex; flex-direction: column; justify-content: space-between;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-    .service-card:hover { transform: translateY(-2px); border-color: #1B4332; box-shadow: 0 18px 38px rgba(15,23,42,0.08); }
-    .service-icon { width: 46px; height: 46px; border-radius: 12px; background: #D8F3DC; color: #133024; display: flex; align-items: center; justify-content: center; margin-bottom: 1.05rem; }
-    .service-card h3 { font-size: 1.24rem; }
-    .service-card p { color: #4A5850; font-size: 0.95rem; margin: 0.4rem 0 1rem; }
-    .bullet-list { list-style: none; padding: 0; margin: 0 0 1.25rem; display: grid; gap: 0.42rem; font-size: 0.9rem; }
-    .bullet-list li { display: flex; align-items: center; gap: 0.5rem; }
-    .bullet-list li::before { content: "✓"; color: #1B4332; font-weight: 800; }
-    .card-link { color: #1B4332; font-weight: 700; font-size: 0.92rem; display: inline-flex; align-items: center; gap: 0.35rem; }
+.contact-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.85fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: start;
+}
+.info-stack { display: grid; gap: 1rem; }
+.info-tile {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 12px);
+  padding: 1.2rem 1.35rem;
+}
+.info-tile strong { display: block; margin-bottom: 0.25rem; color: var(--ink); }
+.info-tile span, .info-tile a { color: var(--muted); font-size: 0.95rem; }
 
-    .wizard-box {
-      background: #FAF8F4; border: 1px solid #DFD9CD; border-radius: 20px;
-      padding: clamp(1.5rem, 3.5vw, 2.5rem); box-shadow: 0 14px 36px rgba(15,23,42,0.05);
-    }
-    .wizard-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; margin: 1.5rem 0; }
-    .wizard-btn {
-      background: #F1ECE2; border: 1px solid #DFD9CD; border-radius: 12px;
-      padding: 1rem 1.1rem; font-weight: 600; font-size: 0.93rem; text-align: left; cursor: pointer;
-      color: #1B241F; transition: all 0.15s ease;
-    }
-    .wizard-btn:hover, .wizard-btn.selected { border-color: #1B4332; background: #D8F3DC; color: #133024; }
+/* TV (1920x1080+): skalerbar lesbar typografi >= 18px og sentrert beholder */
+@media (min-width: 1800px) {
+  html { font-size: 112.5%; }
+}
 
-    .why-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.35rem; }
-    .why-card {
-      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px; padding: 1.5rem;
-    }
-    .why-card h3 { font-size: 1.1rem; color: #FFFFFF; margin-bottom: 0.45rem; }
-    .why-card p { color: #CBD5E1; font-size: 0.92rem; margin: 0; }
+/* Pad (<= 1080px) */
+@media (max-width: 1080px) {
+  .contact-split { grid-template-columns: 1fr; }
+}
 
-    .showcase-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
-    .showcase-card { background: #FAF8F4; border: 1px solid #DFD9CD; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
-    .showcase-img { position: relative; aspect-ratio: 16 / 10.5; overflow: hidden; background: #0F172A; }
-    .showcase-img img { width: 100%; height: 100%; object-fit: cover; }
-    .step-pill { position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(11, 22, 40, 0.86); color: #FFFFFF; font-size: 0.75rem; font-weight: 700; padding: 0.26rem 0.65rem; border-radius: 999px; }
-    .showcase-body { padding: 1.35rem; }
-    .showcase-body h3 { font-size: 1.12rem; margin-bottom: 0.45rem; }
-    .showcase-body p { color: #4A5850; font-size: 0.92rem; margin: 0; }
+/* Mobil (<= 768px) */
+@media (max-width: 768px) {
+  .desktop-nav, .header-cta-desktop { display: none !important; }
+  .menu-toggle { display: inline-flex !important; }
+  .form-grid { grid-template-columns: 1fr; }
+}
 
-    .faq-list { display: grid; gap: 0.85rem; max-width: 860px; }
-    .faq-item { background: #FAF8F4; border: 1px solid #DFD9CD; border-radius: 14px; overflow: hidden; }
-    .faq-item summary {
-      padding: 1.15rem 1.35rem; font-weight: 700; font-size: 1rem; cursor: pointer;
-      list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-    }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: "+"; color: #1B4332; font-size: 1.3rem; font-weight: 700; }
-    .faq-item[open] summary::after { content: "−"; }
-    .faq-item p { padding: 0 1.35rem 1.2rem; margin: 0; color: #4A5850; font-size: 0.95rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
-    .contact-grid { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr); gap: 2rem; align-items: start; }
-    .contact-info { background: #1B2E25; color: #FFFFFF; border-radius: 20px; padding: 2rem; }
-    .contact-info p { color: #CBD5E1; font-size: 0.95rem; margin: 0 0 1.4rem; }
-    .contact-rows { display: grid; gap: 0.9rem; }
-    .contact-row { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 0.9rem 1.05rem; }
-    .contact-row small { display: block; color: #94A3B8; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .contact-row a, .contact-row strong { display: block; color: #FFFFFF; font-size: 0.98rem; font-weight: 600; margin-top: 0.15rem; word-break: break-word; }
-    .contact-form { background: #FAF8F4; border: 1px solid #DFD9CD; border-radius: 20px; padding: 2rem; box-shadow: 0 14px 36px rgba(15,23,42,0.06); }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.95rem; }
-    .field { display: flex; flex-direction: column; gap: 0.32rem; margin-bottom: 0.95rem; }
-    .field label { font-size: 0.85rem; font-weight: 600; }
-    .field input, .field select, .field textarea {
-      width: 100%; padding: 0.75rem 0.9rem; border-radius: 10px; border: 1px solid #DFD9CD;
-      font-family: inherit; font-size: 0.95rem; background: #FFFFFF; color: #0F172A;
-    }
-    .form-status { display: none; margin-top: 1rem; padding: 0.9rem 1rem; border-radius: 10px; background: #ECFDF5; border: 1px solid #A7F3D0; color: #065F46; font-size: 0.9rem; font-weight: 500; }
-    .form-status.show { display: block; }
+:root {
+  --vvs-deep: #060D17;
+  --vvs-navy: #0B192C;
+  --vvs-fjord: #13263E;
+  --vvs-copper: #F59E0B;
+  --vvs-copper-dark: #B45309;
+  --accent: #0B192C;
+  --accent-ink: #FFFFFF;
+  --focus-ring: #D97706;
+  --strip-bg: #060D17;
+  --strip-fg: #CBD5E1;
+  --strip-link: #FBBF24;
+  --hero-bg: #0B192C;
+  --hero-ink: #FFFFFF;
+  --hero-muted: #CBD5E1;
+  --surface-card: #FFFFFF;
+  --ink: #0B192C;
+  --muted: #334E68;
+  --border: #D9E2EC;
+  --border-strong: #9FB3C8;
+  --tint: #F0F4F8;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+body.tpl-vvs {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: #FFFFFF;
+  color: var(--ink);
+}
+.tpl-vvs h1, .tpl-vvs h2, .tpl-vvs h3 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  letter-spacing: -0.025em;
+}
+.vvs-wrap { width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 clamp(1rem, 3vw, 2rem); }
+.vvs-header {
+  position: sticky; top: 0; z-index: 60;
+  background: #060D17; color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.vvs-header-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 76px; }
+.vvs-brand { display: inline-flex; align-items: center; gap: 0.7rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.08rem; }
+.vvs-badge-icon { width: 38px; height: 38px; border-radius: 50%; background: #13263E; border: 2px solid #F59E0B; color: #F59E0B; display: inline-flex; align-items: center; justify-content: center; font-size: 0.88rem; font-weight: 800; }
+.vvs-nav { display: flex; align-items: center; gap: 1.5rem; font-size: 0.94rem; font-weight: 500; }
+.vvs-nav a { display: inline-flex; align-items: center; color: #E2E9F2; }
+.vvs-nav a:hover, .vvs-nav a.active { color: #FBBF24; }
+.vvs-btn-copper {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+  background: #F59E0B; color: #060D17; font-weight: 700; padding: 0.82rem 1.45rem;
+  border-radius: 10px; border: 2px solid #F59E0B;
+}
+.vvs-btn-copper:hover { background: #FBBF24; }
+.vvs-btn-glass {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.08); color: #FFFFFF; font-weight: 600;
+  padding: 0.82rem 1.45rem; border-radius: 10px; border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
 
-    .prose { max-width: 78ch; display: grid; gap: 1.25rem; }
-    .prose h2 { font-size: 1.4rem; margin-top: 0.75rem; }
-    .prose p { margin: 0; color: #4A5850; }
+.vvs-hero {
+  background: linear-gradient(155deg, #060D17 0%, #0B192C 55%, #13263E 100%);
+  color: #FFFFFF; padding: clamp(3rem, 6vw, 5.25rem) 0;
+}
+.vvs-hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: center; }
+.vvs-kicker { display: inline-block; background: rgba(245, 158, 11, 0.16); color: #FCD34D; border: 1px solid rgba(245, 158, 11, 0.4); font-size: 0.8rem; font-weight: 700; padding: 0.34rem 0.85rem; border-radius: 999px; margin-bottom: 1rem; }
+.vvs-hero h1 { font-size: clamp(2.1rem, 4.1vw, 3.35rem); margin-bottom: 1rem; }
+.vvs-hero-lead { color: #CBD5E1; font-size: clamp(1rem, 1.4vw, 1.14rem); max-width: 56ch; margin-bottom: 1.75rem; }
+.vvs-hero-cta { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+.vvs-hero-img { border-radius: 18px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: 0 24px 55px rgba(0, 0, 0, 0.4); }
+.vvs-hero-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 
-    .site-footer { background: #07101F; color: #94A3B8; padding: 3.5rem 0 2rem; }
-    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.1fr; gap: 2rem; padding-bottom: 2.25rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .footer-grid h4 { color: #FFFFFF; font-size: 0.95rem; margin-bottom: 0.85rem; }
-    .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; font-size: 0.88rem; }
-    .footer-grid a:hover { color: #FFFFFF; }
-    .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; font-size: 0.84rem; }
+.vvs-trust-line { background: #F0F4F8; border-bottom: 1px solid #D9E2EC; padding: 1.15rem 0; }
+.vvs-trust-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.vvs-trust-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; font-weight: 600; color: #0B192C; }
+.vvs-trust-dot { width: 10px; height: 10px; border-radius: 50%; background: #B45309; flex-shrink: 0; }
 
-    @media (max-width: 980px) {
-      .hero-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
-      .hero-grid.reverse .hero-visual { order: 0; }
-      .why-grid, .showcase-grid, .wizard-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .nav-desktop, .phone-link { display: none; }
-      .menu-toggle { display: inline-flex; }
-    }
-    @media (max-width: 680px) {
-      .services-grid, .why-grid, .showcase-grid, .wizard-grid, .form-grid { grid-template-columns: 1fr; }
-      .header-actions .btn-sm { display: none; }
-    }
+.vvs-section { padding: clamp(3rem, 6vw, 5rem) 0; }
+.vvs-section-tint { background: #F0F4F8; }
+.vvs-head { max-width: 720px; margin-bottom: 2.25rem; }
+.vvs-eyebrow { display: block; color: #B45309; font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.45rem; }
+.vvs-head h2 { font-size: clamp(1.7rem, 3vw, 2.45rem); }
+.vvs-head p { color: var(--muted); }
+
+/* Rene hvite tjenestekort med tydelig blå venstrekant */
+.vvs-cards-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.45rem; }
+.vvs-card {
+  background: #FFFFFF; border: 1px solid #D9E2EC; border-left: 5px solid #0B192C;
+  border-radius: 12px; padding: 1.7rem; box-shadow: 0 8px 24px rgba(11, 25, 44, 0.05);
+}
+.vvs-card h3 { font-size: 1.22rem; color: #0B192C; }
+.vvs-card p { color: var(--muted); font-size: 0.95rem; }
+.vvs-card ul { display: grid; gap: 0.35rem; margin-top: 0.85rem; font-size: 0.9rem; color: #1E3A5F; }
+.vvs-card li::before { content: "→ "; color: #B45309; font-weight: 700; }
+
+/* 3-stegs prosess med unike bilder */
+.vvs-steps-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.vvs-step { background: #FFFFFF; border: 1px solid #D9E2EC; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+.vvs-step img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.vvs-step-body { padding: 1.45rem; }
+.vvs-step-num { display: inline-block; background: #0B192C; color: #FCD34D; font-size: 0.78rem; font-weight: 800; padding: 0.25rem 0.65rem; border-radius: 6px; margin-bottom: 0.65rem; }
+.vvs-step-body h3 { font-size: 1.15rem; }
+.vvs-step-body p { color: var(--muted); font-size: 0.92rem; margin: 0; }
+
+.vvs-navy-band { background: #0B192C; color: #FFFFFF; padding: clamp(2.75rem, 5vw, 4.25rem) 0; }
+.vvs-why-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 2.25rem; }
+.vvs-why-box { background: #13263E; border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 12px; padding: 1.35rem; }
+.vvs-why-box h3 { color: #FFFFFF; font-size: 1.06rem; }
+.vvs-why-box p { color: #CBD5E1; font-size: 0.9rem; margin: 0; }
+.vvs-cta-strip { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem; padding-top: 1.75rem; border-top: 1px solid rgba(255, 255, 255, 0.14); }
+.vvs-cta-strip p { color: #CBD5E1; margin: 0; }
+
+.vvs-footer { background: #060D17; color: #CBD5E1; padding: 3rem 0 2rem; }
+.vvs-footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.vvs-footer h3 { color: #FFFFFF; font-size: 1rem; margin-bottom: 0.8rem; }
+.vvs-footer-links { display: grid; gap: 0.45rem; font-size: 0.92rem; }
+.vvs-footer-links a { display: inline-flex; align-items: center; min-height: 36px; }
+.vvs-footer-links a:hover { color: #FBBF24; }
+.vvs-footer-end { border-top: 1px solid rgba(255, 255, 255, 0.12); padding-top: 1.2rem; font-size: 0.86rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; }
+.tpl-vvs .mobile-nav { background: #060D17; color: #FFFFFF; border-top: 1px solid rgba(255, 255, 255, 0.14); }
+
+@media (max-width: 1080px) {
+  .vvs-hero-grid { grid-template-columns: 1fr; }
+  .vvs-trust-grid, .vvs-why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vvs-steps-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .vvs-trust-grid, .vvs-cards-grid, .vvs-steps-3, .vvs-why-grid, .vvs-footer-grid { grid-template-columns: 1fr; }
+}
   </style>
 </head>
-<body>
-  <div class="demo-banner">
-    Live-utkast laget for <strong>Elektroforum AS</strong> · Ønsker dere tilpasninger og lansering?
-    <a href="https://vikingnet.no/landingsside" target="_blank" rel="noopener">Se løsning på vikingnet.no</a>
+<body class="tpl-vvs" data-template="vvs">
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
+  <div class="demo-strip" role="note">Forhåndsvisning utarbeidet for <strong>Elektroforum AS</strong>. <a href="kontakt.html">Ønsker dere å gå videre med løsningen?</a></div>
+  <header class="vvs-header">
+  <div class="vvs-wrap vvs-header-row">
+    <a href="index.html" class="vvs-brand"><span class="vvs-badge-icon" aria-hidden="true">EL</span><span>Elektroforum AS</span></a>
+    <nav class="vvs-nav desktop-nav" aria-label="Hovedmeny"><a href="index.html" class="nav-link active" aria-current="page">Forside</a>
+<a href="tjenester.html" class="nav-link">Tjenester</a>
+<a href="om-oss.html" class="nav-link">Om oss</a>
+<a href="kontakt.html" class="nav-link">Kontakt</a></nav>
+    <div class="header-cta-desktop"><a href="kontakt.html" class="btn vvs-btn-copper">Ta kontakt</a></div>
+    <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åpne meny">Meny ☰</button>
   </div>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html"><span class="brand-mark">EL</span><span class="brand-name">Elektroforum AS</span></a>
-      <nav class="nav-desktop" aria-label="Hovedmeny">
-        <a href="./index.html" class="active">Hjem</a>
-        <a href="./tjenester.html">Tjenester</a>
-        <a href="./om-oss.html">Om oss</a>
-        <a href="./kontakt.html">Kontakt</a>
-      </nav>
-      <div class="header-actions">
-        
-        <a class="btn btn-primary btn-sm" href="./kontakt.html">Be om tilbud</a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Åpne meny" aria-expanded="false">☰</button>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobilmeny"><a href="index.html" aria-current="page">Forside</a>
+<a href="tjenester.html">Tjenester</a>
+<a href="om-oss.html">Om oss</a>
+<a href="kontakt.html">Kontakt</a><a href="personvern.html">Personvern</a></nav>
+</header>
+  <main id="main-content">
+  <section class="vvs-hero">
+    <div class="vvs-wrap vvs-hero-grid">
+      <div>
+        <span class="vvs-kicker">Elektroinstallasjon og tekniske løsninger</span>
+        <h1>Trygge elektrotjenester for bolig og næring i Sætre</h1>
+        <p class="vvs-hero-lead">Elektroforum AS leverer fagmessige elektroinstallasjoner, feilsøking, belysning og moderne energiløsninger med fokus på sikkerhet og ryddig dokumentasjon.</p>
+        <div class="vvs-hero-cta">
+          <a href="kontakt.html" class="btn vvs-btn-copper">Be om pristilbud</a>
+          <a href="tjenester.html" class="btn vvs-btn-glass">Oversikt over tjenester</a>
+        </div>
+      </div>
+      <div class="vvs-hero-img"><img src="../assets/curated/elektro/04-fordelingsskap-installasjon.webp" alt="Elektriker under kabling og feilsøking i fordelingsskap" width="960" height="639" loading="eager" fetchpriority="high" decoding="sync"></div>
+    </div>
+  </section>
+  <div class="vvs-trust-line">
+    <div class="vvs-wrap vvs-trust-grid"><div class="vvs-trust-item"><span class="vvs-trust-dot" aria-hidden="true"></span><span>Fokus på elsikkerhet og forskriftsmessig arbeid</span></div><div class="vvs-trust-item"><span class="vvs-trust-dot" aria-hidden="true"></span><span>Ryddig befaring og tydelig pristilbud</span></div><div class="vvs-trust-item"><span class="vvs-trust-dot" aria-hidden="true"></span><span>Moderne løsninger for belysning og lading</span></div><div class="vvs-trust-item"><span class="vvs-trust-dot" aria-hidden="true"></span><span>Dokumentasjon ved ferdigstillelse</span></div></div>
+  </div>
+  <section class="vvs-section">
+    <div class="vvs-wrap">
+      <div class="vvs-head"><span class="vvs-eyebrow">Tjenester</span><h2>Faglig bredde og tydelige rammer</h2><p>Vi leverer ryddige og driftssikre løsninger tilpasset ditt behov.</p></div>
+      <div class="vvs-cards-grid"><article class="vvs-card"><h3>Elbillader og sikringsskap</h3><p>Sikker montering av hjemmeladere, lastbalansering og oppgradering av eldre sikringsskap.</p><ul><li>Gjennomgang av kapasitet</li><li>Montering med overspenningsvern</li><li>Tydelig sluttdokumentasjon</li></ul></article><article class="vvs-card"><h3>Belysning og smarthus</h3><p>Energieffektive LED-løsninger, utebelysning og enkel styring av lys og varme.</p><ul><li>Lysplan tilpasset rommene</li><li>Dimming og sonestyring</li><li>Lavere strømforbruk i hverdagen</li></ul></article><article class="vvs-card"><h3>Nybygg og rehabilitering</h3><p>Komplett elektrisk anlegg ved oppussing av kjøkken, bad, tilbygg eller ny bolig.</p><ul><li>God planlegging med øvrige fag</li><li>Skjult og ryddig føringsvei</li><li>Leveranse til avtalt tid</li></ul></article><article class="vvs-card"><h3>Service, feilsøking og næring</h3><p>Løpende service, feilretting og kontroll av elektriske anlegg for bedrifter og borettslag.</p><ul><li>Rask kartlegging av feil</li><li>Forebyggende gjennomgang</li><li>Fast kontaktperson</li></ul></article></div>
+    </div>
+  </section>
+  <section class="vvs-section vvs-section-tint">
+    <div class="vvs-wrap">
+      <div class="vvs-head"><span class="vvs-eyebrow">3-stegs prosess</span><h2>Slik jobber vi fra start til mål</h2></div>
+      <div class="vvs-steps-3"><article class="vvs-step"><img src="../assets/curated/elektro/05-belysning-takarmatur.webp" alt="Installatør på stige som monterer LED-belysning i tak" width="1024" height="683" loading="lazy" decoding="async"><div class="vvs-step-body"><span class="vvs-step-num">STEG 01</span><h3>Befaring og behov</h3><p>Vi går gjennom anlegget og anbefaler trygge, praktiske løsninger.</p></div></article><article class="vvs-step"><img src="../assets/curated/elektro/06-moderne-boligbelysning.webp" alt="Moderne stue og kjøkken med integrert arkitektonisk belysning" width="1200" height="816" loading="lazy" decoding="async"><div class="vvs-step-body"><span class="vvs-step-num">STEG 02</span><h3>Tydelig tilbud</h3><p>Du får oversikt over omfang, materialer og fremdriftsplan før oppstart.</p></div></article><article class="vvs-step"><img src="../assets/curated/elektro/07-teknisk-koblingsboks.webp" alt="Faglært elektriker som utfører tilkobling i veggboks" width="1200" height="801" loading="lazy" decoding="async"><div class="vvs-step-body"><span class="vvs-step-num">STEG 03</span><h3>Montering og kontroll</h3><p>Arbeidet utføres ryddig, testes grundig og dokumenteres ved overlevering.</p></div></article></div>
+    </div>
+  </section>
+  <section class="vvs-navy-band">
+    <div class="vvs-wrap">
+      <div class="vvs-why-grid"><div class="vvs-why-box"><h3>Sikkerhet først</h3><p>Alle oppdrag utføres med høyt fokus på elsikkerhet og varig driftssikkerhet.</p></div><div class="vvs-why-box"><h3>Ryddig på arbeidsplassen</h3><p>Vi møter til avtalt tid, beskytter overflater og rydder etter oss.</p></div><div class="vvs-why-box"><h3>Energismarte valg</h3><p>Råd om styring og belysning som reduserer unødvendig strømforbruk.</p></div><div class="vvs-why-box"><h3>Klar kommunikasjon</h3><p>Ingen skjulte overraskelser – vi avklarer endringer før de utføres.</p></div></div>
+      <div class="vvs-cta-strip">
+        <div><h2>Trenger du elektriker til neste prosjekt?</h2><p>Send en forespørsel til Elektroforum AS for befaring eller et ryddig pristilbud.</p></div>
+        <a href="kontakt.html" class="btn vvs-btn-copper">Send henvendelse</a>
       </div>
     </div>
-    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobilmeny">
-      <a href="./index.html">Hjem</a>
-      <a href="./tjenester.html">Tjenester</a>
-      <a href="./om-oss.html">Om oss</a>
-      <a href="./kontakt.html">Kontakt oss</a>
-      <a href="./personvern.html">Personvern</a>
-      
-    </nav>
-  </header>
-
-  <main>
-    
-        <section class="hero">
-          <div class="container hero-grid reverse">
-            <div>
-              <span class="hero-kicker">Elektro &amp; Installasjon · Sætre</span>
-              <h1>Pålitelig fagpartner innen elektro i Sætre</h1>
-              <p class="hero-lead">Elektroforum AS utfører trygge og moderne elektriske installasjoner, service og oppgraderinger for bolig, borettslag og næring i Sætre. Vi leverer ryddig dokumentasjon og forutsigbare rammer.</p>
-              <div class="hero-cta">
-                <a class="btn btn-primary" href="./kontakt.html">Be om uforpliktende tilbud</a>
-                <a class="btn btn-secondary" href="./tjenester.html">Utforsk alle tjenester</a>
-              </div>
-              <div class="hero-stats"><div><div class="stat-num">1995</div><div class="stat-label">Etablert</div></div><div><div class="stat-num">Sætre</div><div class="stat-label">Tilholdssted</div></div><div><div class="stat-num">975 363 112</div><div class="stat-label">Org.nr.</div></div></div>
-            </div>
-            <div class="hero-visual">
-              <div class="hero-photo-wrap">
-                <img src="../assets/stock/elektriker.jpg" alt="Elektroforum AS – Elektro &amp; Installasjon">
-                <div class="hero-photo-badge">
-                  <div><strong>Elektroforum AS</strong><span>Sætre · Elektro &amp; Installasjon</span></div>
-                  <span class="pill-ok">Klar for oppdrag</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="trust-bar"><div class="container trust-items"><span class="trust-item"><span class="trust-dot"></span>Org.nr. 975 363 112</span><span class="trust-item"><span class="trust-dot"></span>Sætre</span><span class="trust-item"><span class="trust-dot"></span>Org.nr. 975 363 112</span><span class="trust-item"><span class="trust-dot"></span>Skriftlig tilbud før oppstart</span></div></div>
-
-        <section class="section">
-          <div class="container">
-            <div class="section-head">
-              <span class="eyebrow">Våre tjenester</span>
-              <h2>Våre tjenester i Sætre</h2>
-              <p class="section-lead">Fagmessige leveranser for privatkunder, borettslag og næring – med tydelig plan og direkte dialog.</p>
-            </div>
-            <div class="services-grid"><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h3>Sikringsskap &amp; oppgradering</h3><p>Modernisering av eldre sikringsskap med jordfeilautomater, overspenningsvern og tydelig kursmerking for økt elsikkerhet.</p><ul class="bullet-list"><li>Jordfeilvern &amp; overspenningsvern</li><li>Ryddig kursfortegnelse</li><li>Dokumentert utførelse</li></ul></div><a class="card-link" href="./kontakt.html">Be om tilbud →</a></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Elbillader for bolig &amp; sameie</h3><p>Fagmessig prosjektering og montering av ladeløsninger for enebolig, garasje og fellesanlegg med lastbalansering.</p><ul class="bullet-list"><li>Enebolig &amp; borettslag</li><li>Kapasitetsvurdering</li><li>Trygg installasjon</li></ul></div><a class="card-link" href="./kontakt.html">Be om tilbud →</a></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div><h3>Service, feilsøking &amp; elkontroll</h3><p>Rask avklaring ved feil på anlegget, periodisk gjennomgang og forebyggende vedlikehold for bolig og bedrift.</p><ul class="bullet-list"><li>Feilsøking og utbedring</li><li>Gjennomgang av el-anlegg</li><li>Fast servicepartner</li></ul></div><a class="card-link" href="./kontakt.html">Be om tilbud →</a></article><article class="service-card"><div><div class="service-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Belysning, varme &amp; nyinstallasjon</h3><p>Energieffektiv LED-belysning, varmestyring og komplett elektrisk opplegg ved rehabilitering eller nybygg.</p><ul class="bullet-list"><li>Inne- og utebelysning</li><li>Smart varmestyring</li><li>Kjøkken, bad og næring</li></ul></div><a class="card-link" href="./kontakt.html">Be om tilbud →</a></article></div>
-          </div>
-        </section>
-
-        <section class="section section-alt">
-          <div class="container">
-            <div class="wizard-box">
-              <span class="eyebrow">Rask avklaring</span>
-              <h2>Velg elektrooppdrag for uforpliktende vurdering</h2>
-              <p class="section-lead">Klikk på oppdraget som passer best, så hopper du rett til forespørselsskjemaet med valget ferdig utfylt.</p>
-              <div class="wizard-grid"><button type="button" class="wizard-btn" data-opt="Elbillader (bolig / sameie)">Elbillader (bolig / sameie)</button><button type="button" class="wizard-btn" data-opt="Oppgradering av sikringsskap">Oppgradering av sikringsskap</button><button type="button" class="wizard-btn" data-opt="Belysning &amp; varmestyring">Belysning &amp; varmestyring</button><button type="button" class="wizard-btn" data-opt="Feilsøking / service">Feilsøking / service</button><button type="button" class="wizard-btn" data-opt="Rehabilitering / nybygg">Rehabilitering / nybygg</button><button type="button" class="wizard-btn" data-opt="Næringsoppdrag / serviceavtale">Næringsoppdrag / serviceavtale</button></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section-dark">
-          <div class="container">
-            <div class="section-head">
-              <span class="eyebrow" style="color:#FBBF24;">Trygt valg</span>
-              <h2 style="color:#FFFFFF;">Derfor velger kunder Elektroforum AS</h2>
-              <p class="section-lead">Vi bygger langsiktige relasjoner gjennom ryddige prosesser, god fagkunnskap og avtaler du kan stole på.</p>
-            </div>
-            <div class="why-grid"><article class="why-card"><h3>Fokus på elsikkerhet</h3><p>Alt arbeid utføres grundig etter gjeldende norske krav og med tydelig sluttdokumentasjon.</p></article><article class="why-card"><h3>Ryddig pris og plan</h3><p>Du får en klar avklaring på omfang, fremdrift og pris før arbeidet starter.</p></article><article class="why-card"><h3>Direkte dialog med fagfolk</h3><p>Kort vei fra spørsmål til svar – uten unødvendige mellomledd.</p></article><article class="why-card"><h3>Både privat og næring</h3><p>Vi bistår alt fra mindre serviceoppdrag hjemme til større nærings- og borettslagsprosjekter.</p></article></div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container">
-            <div class="section-head">
-              <span class="eyebrow">Arbeidsmetode</span>
-              <h2>Slik jobber vi – fra befaring til ferdig leveranse</h2>
-              <p class="section-lead">En forutsigbar prosess i tre steg gjør det enkelt å bestille og trygt å følge opp.</p>
-            </div>
-            <div class="showcase-grid"><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/elektriker.jpg" alt="Uforpliktende befaring i Sætre – Elektroforum AS" loading="lazy"><span class="step-pill">Steg 01</span></div><div class="showcase-body"><h3>Uforpliktende befaring i Sætre</h3><p>Vi går gjennom oppdraget sammen med deg og avklarer behov, tekniske forhold og tidsplan.</p></div></article><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/bygg.jpg" alt="Skriftlig tilbud &amp; fremdriftsplan – Elektroforum AS" loading="lazy"><span class="step-pill">Steg 02</span></div><div class="showcase-body"><h3>Skriftlig tilbud &amp; fremdriftsplan</h3><p>Du mottar et oversiktlig tilbud med tydelig beskrivelse av hva som inngår før vi starter.</p></div></article><article class="showcase-card"><div class="showcase-img"><img src="../assets/stock/b2b.jpg" alt="Fagmessig utførelse &amp; overlevering – Elektroforum AS" loading="lazy"><span class="step-pill">Steg 03</span></div><div class="showcase-body"><h3>Fagmessig utførelse &amp; overlevering</h3><p>Vi gjennomfører jobben til avtalt tid og kvalitet, og avslutter med en ryddig gjennomgang.</p></div></article></div>
-          </div>
-        </section>
-
-        <section class="section section-alt">
-          <div class="container">
-            <div class="section-head">
-              <span class="eyebrow">Ofte stilte spørsmål</span>
-              <h2>Spørsmål og svar</h2>
-            </div>
-            <div class="faq-list"><details class="faq-item"><summary>Hvordan får jeg et pristilbud på elektroarbeid?</summary><p>Send en kort beskrivelse via kontaktskjemaet eller på e-post til Elektroforum AS, så vurderer vi om vi kan gi pris direkte eller avtale en uforpliktende befaring.</p></details><details class="faq-item"><summary>Tar dere både små serviceoppdrag og større prosjekter?</summary><p>Ja, vi bistår både ved enkle oppdrag som elbillader, belysning og feilsøking, og ved større rehabiliteringer og næringsprosjekter.</p></details><details class="faq-item"><summary>Får jeg dokumentasjon etter utført arbeid?</summary><p>Ja, alle utførte installasjoner dokumenteres skikkelig slik at du har full oversikt over anlegget ditt.</p></details><details class="faq-item"><summary>Jobber dere med borettslag og næringsbygg?</summary><p>Ja, vi hjelper både styrer i borettslag/sameier og bedrifter med drift, oppgraderinger og ladeløsninger.</p></details><details class="faq-item"><summary>Hvor raskt kan dere komme på befaring?</summary><p>Ta kontakt med ønsket tidspunkt og adresse, så finner vi første ledige tidspunkt som passer for deg.</p></details></div>
-          </div>
-        </section>
-
-        
-    <section id="kontakt" class="section">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <span class="eyebrow" style="color:#FBBF24;">Ta kontakt</span>
-          <h2 style="color:#FFFFFF;font-size:1.75rem;margin-bottom:0.5rem;">Send forespørsel eller bestill befaring</h2>
-          <p>Ta kontakt med Elektroforum AS for en uforpliktende prat, kapasitet eller et skriftlig pristilbud.</p>
-          <div class="contact-rows">
-            <div class="contact-row"><small>Bedrift</small><strong>Elektroforum AS</strong></div>
-            <div class="contact-row"><small>Organisasjonsnummer</small><strong>Org.nr. 975 363 112</strong></div>
-            
-            <div class="contact-row"><small>E-post</small><a href="mailto:olav@elektroforum.as">olav@elektroforum.as</a></div>
-            <div class="contact-row"><small>Adresse</small><strong>Åsveien 5, 3475 Sætre</strong></div>
-          </div>
-        </div>
-        <div class="contact-form">
-          <h3 style="font-size:1.35rem;margin-bottom:0.35rem;">Be om uforpliktende pristilbud</h3>
-          <p style="font-size:0.93rem;opacity:0.78;margin:0 0 1.35rem;">Fyll ut skjemaet under, så tar vi kontakt så snart vi har anledning.</p>
-          <form id="quoteForm">
-            <div class="form-grid">
-              <div class="field"><label for="qName">Navn</label><input id="qName" type="text" required placeholder="Ola Nordmann"></div>
-              <div class="field"><label for="qPhone">Telefon</label><input id="qPhone" type="tel" placeholder="+47 900 00 000"></div>
-            </div>
-            <div class="form-grid">
-              <div class="field"><label for="qEmail">E-post</label><input id="qEmail" type="email" required placeholder="navn@bedrift.no"></div>
-              <div class="field"><label for="qService">Type oppdrag</label><select id="qService"><option value="Elbillader (bolig / sameie)">Elbillader (bolig / sameie)</option><option value="Oppgradering av sikringsskap">Oppgradering av sikringsskap</option><option value="Belysning &amp; varmestyring">Belysning &amp; varmestyring</option><option value="Feilsøking / service">Feilsøking / service</option><option value="Rehabilitering / nybygg">Rehabilitering / nybygg</option><option value="Næringsoppdrag / serviceavtale">Næringsoppdrag / serviceavtale</option></select></div>
-            </div>
-            <div class="field"><label for="qMsg">Beskrivelse av oppdraget</label><textarea id="qMsg" rows="4" required placeholder="Fortell kort om lokasjon, omfang og ønsket tidsplan..."></textarea></div>
-            <button class="btn btn-primary" type="submit" style="width:100%;">Send uforpliktende forespørsel</button>
-            <div class="form-status" id="formStatus" role="status">Takk for din henvendelse! I den publiserte versjonen sendes dette skjemaet direkte til olav@elektroforum.as.</div>
-          </form>
+  </section>
+</main>
+  <footer class="vvs-footer">
+  <div class="vvs-wrap">
+    <div class="vvs-footer-grid">
+      <div>
+        <h3>Elektroforum AS</h3>
+        <p style="max-width:44ch;font-size:0.92rem;margin:0;">Elektroinstallasjon og tekniske løsninger i Sætre.</p>
+      </div>
+      <div>
+        <h3>Sider</h3>
+        <div class="vvs-footer-links">
+          <a href="index.html">Forside</a>
+          <a href="tjenester.html">Tjenester</a>
+          <a href="om-oss.html">Om oss</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="personvern.html">Personvern</a>
         </div>
       </div>
-    </section>
-    
-        
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h4 style="font-size:1.08rem;">Elektroforum AS</h4>
-          <p style="font-size:0.88rem;margin:0 0 0.75rem;">Elektroforum AS utfører trygge og moderne elektriske installasjoner, service og oppgraderinger for bolig, borettslag og næring i Sætre. Vi leverer ryddig dokumentasjon og</p>
-          <div style="font-size:0.84rem;">Org.nr. 975 363 112</div>
+      <div>
+        <h3>Kontakt</h3>
+        <div class="vvs-footer-links">
+          <span>Sætre</span>
+          <span>Åsveien 5, 3475 Sætre</span>
+          <a href="mailto:olav@elektroforum.as">olav@elektroforum.as</a>
+          <span>Org.nr. 975 363 112</span>
         </div>
-        <div>
-          <h4>Tjenester</h4>
-          <ul>
-            <li><a href="./tjenester.html">Sikringsskap &amp; oppgradering</a></li><li><a href="./tjenester.html">Elbillader for bolig &amp; sameie</a></li><li><a href="./tjenester.html">Service, feilsøking &amp; elkontroll</a></li><li><a href="./tjenester.html">Belysning, varme &amp; nyinstallasjon</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Sider</h4>
-          <ul>
-            <li><a href="./index.html">Forside</a></li>
-            <li><a href="./tjenester.html">Tjenester</a></li>
-            <li><a href="./om-oss.html">Om oss</a></li>
-            <li><a href="./kontakt.html">Kontakt oss</a></li>
-            <li><a href="./personvern.html">Personvern</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Kontakt</h4>
-          <ul>
-            
-            <li><a href="mailto:olav@elektroforum.as">olav@elektroforum.as</a></li>
-            <li>Åsveien 5, 3475 Sætre</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Elektroforum AS. Alle rettigheter forbeholdt.</div>
-        <div><a href="./personvern.html">Personvernerklæring</a></div>
       </div>
     </div>
-  </footer>
-
+    <div class="vvs-footer-end">
+      <span>© Elektroforum AS</span>
+      <span><a href="personvern.html">Personvernerklæring</a></span>
+    </div>
+  </div>
+</footer>
   <script>
-    const mt = document.getElementById('menuToggle'), md = document.getElementById('mobileDrawer');
-    if (mt && md) {
-      mt.addEventListener('click', () => { const o = md.classList.toggle('open'); mt.setAttribute('aria-expanded', String(o)); });
-    }
-    const wBtns = document.querySelectorAll('.wizard-btn');
-    const svcSel = document.getElementById('qService');
-    wBtns.forEach(b => b.addEventListener('click', () => {
-      wBtns.forEach(x => x.classList.remove('selected'));
-      b.classList.add('selected');
-      if (svcSel) { svcSel.value = b.dataset.opt || ''; }
-      const cf = document.getElementById('kontakt');
-      if (cf) cf.scrollIntoView({ behavior: 'smooth' });
-    }));
-    const qf = document.getElementById('quoteForm'), fs = document.getElementById('formStatus');
-    if (qf && fs) qf.addEventListener('submit', e => { e.preventDefault(); fs.classList.add('show'); qf.reset(); });
+(function () {
+  var toggles = document.querySelectorAll('[data-menu-toggle]');
+  toggles.forEach(function (btn) {
+    var targetId = btn.getAttribute('aria-controls');
+    var drawer = targetId ? document.getElementById(targetId) : null;
+    if (!drawer) return;
+    btn.addEventListener('click', function () {
+      var open = drawer.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    drawer.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape' && drawer.classList.contains('is-open')) {
+        drawer.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.focus();
+      }
+    });
+  });
+
+  var forms = document.querySelectorAll('form[data-demo-form]');
+  forms.forEach(function (form) {
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var hp = form.querySelector('input[name="website_url"]');
+      if (hp && hp.value.trim() !== '') return;
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+      var box = form.querySelector('[data-form-feedback]');
+      if (box) {
+        var company = form.getAttribute('data-company') || 'bedriften';
+        box.textContent = 'Takk for henvendelsen! Dette er en interaktiv forhåndsvisning for ' + company + '. I produksjon sendes meldingen direkte til deres e-post.';
+        box.classList.add('is-visible');
+        box.setAttribute('tabindex', '-1');
+        box.focus();
+      }
+      form.reset();
+      window.setTimeout(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      }, 900);
+    });
+  });
+})();
   </script>
 </body>
 </html>

@@ -1,0 +1,1721 @@
+{
+  "version": "1.0",
+  "vertical_count": 19,
+  "total_images": 152,
+  "min_width": 960,
+  "max_width": 1280,
+  "max_size_kb": 242.0,
+  "unique_sha256_count": 152,
+  "verticals": {
+    "anlegg": [
+      {
+        "filename": "01-asfalt-vei-fjell.webp",
+        "rel_path": "anlegg/01-asfalt-vei-fjell.webp",
+        "curated_rel_path": "assets/curated/anlegg/01-asfalt-vei-fjell.webp",
+        "sha256": "d82db64a194f5c2023ada2c76f44d7c37d1f353fdd4d085ebeb6fdbf2b8fa721",
+        "width": 1200,
+        "height": 896,
+        "size_kb": 231.6,
+        "alt_nb": "Asfaltering og veibygging i norsk fjellandskap",
+        "role": "hero"
+      },
+      {
+        "filename": "02-gravemaskin-lastebil.webp",
+        "rel_path": "anlegg/02-gravemaskin-lastebil.webp",
+        "curated_rel_path": "assets/curated/anlegg/02-gravemaskin-lastebil.webp",
+        "sha256": "02f958e92abf89034e759a383bfd243b3c50ebe34a78e803149fb541a6c90597",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 237.8,
+        "alt_nb": "Gravemaskin som laster masser over i tippbil på anleggsplass",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-betong-armering-mannskap.webp",
+        "rel_path": "anlegg/03-betong-armering-mannskap.webp",
+        "curated_rel_path": "assets/curated/anlegg/03-betong-armering-mannskap.webp",
+        "sha256": "711e5f9d327459988ba2db018f8fc63e770e8e693cde7e9ce56160bdf28ea07f",
+        "width": 1200,
+        "height": 795,
+        "size_kb": 219.8,
+        "alt_nb": "Anleggsarbeidere i vernetøy under armering og betongarbeid",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-beltegraver-grunnarbeid.webp",
+        "rel_path": "anlegg/04-beltegraver-grunnarbeid.webp",
+        "curated_rel_path": "assets/curated/anlegg/04-beltegraver-grunnarbeid.webp",
+        "sha256": "c4cc84a5d4044c052706e7a6f8b000f0e1425b3aec0c1e9ffcbcc491959c550f",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 144.1,
+        "alt_nb": "Beltegraver i arbeid med utgraving og klargjøring av tomt",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-byggegrop-fundament.webp",
+        "rel_path": "anlegg/05-byggegrop-fundament.webp",
+        "curated_rel_path": "assets/curated/anlegg/05-byggegrop-fundament.webp",
+        "sha256": "7ed5e73df128c1814ad534e1f09e9b6352f024cd90631906cd43c8a8afc3bd77",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 238.3,
+        "alt_nb": "Utgravd byggegrop klargjort for fundamentering og rørgrøfter",
+        "role": "about"
+      },
+      {
+        "filename": "06-veigraving-drenering.webp",
+        "rel_path": "anlegg/06-veigraving-drenering.webp",
+        "curated_rel_path": "assets/curated/anlegg/06-veigraving-drenering.webp",
+        "sha256": "ce6d36684399bc381da271f805e007f546bcde872624ac3926c36b0a5f190a18",
+        "width": 1023,
+        "height": 681,
+        "size_kb": 146.3,
+        "alt_nb": "Gravemaskin under grøftearbeid og utbedring langs vei",
+        "role": "process"
+      },
+      {
+        "filename": "07-masseforflytning-anlegg.webp",
+        "rel_path": "anlegg/07-masseforflytning-anlegg.webp",
+        "curated_rel_path": "assets/curated/anlegg/07-masseforflytning-anlegg.webp",
+        "sha256": "9b9b88ba2459692ad20a595bf5e39f5360a907d69d74d97a229c44d4fba098d4",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 203.4,
+        "alt_nb": "Gravemaskin og hjullaster i samspill under masseforflytning",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-doser-terrengforming.webp",
+        "rel_path": "anlegg/08-doser-terrengforming.webp",
+        "curated_rel_path": "assets/curated/anlegg/08-doser-terrengforming.webp",
+        "sha256": "c05350497c24d150884963d57d3fa27cbfcc6012da310c5974b3e0f172971ec9",
+        "width": 1024,
+        "height": 768,
+        "size_kb": 125.3,
+        "alt_nb": "Anleggsmaskin i silhuett under planering og terrengforming",
+        "role": "cta"
+      }
+    ],
+    "elektro": [
+      {
+        "filename": "01-elektriker-sikringsskap.webp",
+        "rel_path": "elektro/01-elektriker-sikringsskap.webp",
+        "curated_rel_path": "assets/curated/elektro/01-elektriker-sikringsskap.webp",
+        "sha256": "0681d64f70aaaf9cde721273e5390e7a6bc0179c61bed7a4f3daf0ab5ed11cae",
+        "width": 1200,
+        "height": 896,
+        "size_kb": 141.0,
+        "alt_nb": "Autorisert elektriker som måler og kontrollerer sikringsskap",
+        "role": "hero"
+      },
+      {
+        "filename": "02-elbillader-tilkobling.webp",
+        "rel_path": "elektro/02-elbillader-tilkobling.webp",
+        "curated_rel_path": "assets/curated/elektro/02-elbillader-tilkobling.webp",
+        "sha256": "94951c4e1001bb1d9416d70d14eb76b6a7303f6b123f1be0c9253c2f5eb698c5",
+        "width": 1200,
+        "height": 798,
+        "size_kb": 31.1,
+        "alt_nb": "Ladekabel koblet til moderne elbil ved ladestasjon",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-montering-stikkontakt.webp",
+        "rel_path": "elektro/03-montering-stikkontakt.webp",
+        "curated_rel_path": "assets/curated/elektro/03-montering-stikkontakt.webp",
+        "sha256": "f01221867f3c35318d94671ff87e926b516bbf044e8283f725ee74eb1781ba6d",
+        "width": 960,
+        "height": 639,
+        "size_kb": 27.9,
+        "alt_nb": "Elektriker med vernehjelm som monterer ny stikkontakt",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-fordelingsskap-installasjon.webp",
+        "rel_path": "elektro/04-fordelingsskap-installasjon.webp",
+        "curated_rel_path": "assets/curated/elektro/04-fordelingsskap-installasjon.webp",
+        "sha256": "4ae69407bfc937bba4619ce56325414e428c10a6974efdddb0b2b0d25326c7f8",
+        "width": 960,
+        "height": 639,
+        "size_kb": 38.4,
+        "alt_nb": "Elektriker under kabling og feilsøking i fordelingsskap",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-belysning-takarmatur.webp",
+        "rel_path": "elektro/05-belysning-takarmatur.webp",
+        "curated_rel_path": "assets/curated/elektro/05-belysning-takarmatur.webp",
+        "sha256": "6e61f12a7e945afc97aea30dc604bea11fc8aef3c8f58026684bb50d7be18870",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 49.3,
+        "alt_nb": "Installatør på stige som monterer LED-belysning i tak",
+        "role": "about"
+      },
+      {
+        "filename": "06-moderne-boligbelysning.webp",
+        "rel_path": "elektro/06-moderne-boligbelysning.webp",
+        "curated_rel_path": "assets/curated/elektro/06-moderne-boligbelysning.webp",
+        "sha256": "e96b2dff679ad9cc4f5d2ec3469c5159037c8a3fb04dd14f34502b4c8f9b4bfa",
+        "width": 1200,
+        "height": 816,
+        "size_kb": 118.3,
+        "alt_nb": "Moderne stue og kjøkken med integrert arkitektonisk belysning",
+        "role": "process"
+      },
+      {
+        "filename": "07-teknisk-koblingsboks.webp",
+        "rel_path": "elektro/07-teknisk-koblingsboks.webp",
+        "curated_rel_path": "assets/curated/elektro/07-teknisk-koblingsboks.webp",
+        "sha256": "c9409fc6215cacdba1f2a1e1a23c7cd78744576480ac62f3391f42c16432e60e",
+        "width": 1200,
+        "height": 801,
+        "size_kb": 58.7,
+        "alt_nb": "Faglært elektriker som utfører tilkobling i veggboks",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-presisjonsarbeid-elektro.webp",
+        "rel_path": "elektro/08-presisjonsarbeid-elektro.webp",
+        "curated_rel_path": "assets/curated/elektro/08-presisjonsarbeid-elektro.webp",
+        "sha256": "fdd720f27edbd989b670887a87c8bb094f21f8bb80ec7c3c889961ff6dec61e5",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 52.7,
+        "alt_nb": "Tekniker som utfører finjustering på elektrisk installasjon",
+        "role": "cta"
+      }
+    ],
+    "bygg": [
+      {
+        "filename": "01-takkonstruksjon-snekker.webp",
+        "rel_path": "bygg/01-takkonstruksjon-snekker.webp",
+        "curated_rel_path": "assets/curated/bygg/01-takkonstruksjon-snekker.webp",
+        "sha256": "c1f8ef5d1b5cc380f0942e2fab655199003efe5b40eb859acfee05451c55ce6d",
+        "width": 1200,
+        "height": 896,
+        "size_kb": 204.8,
+        "alt_nb": "Tømrere på stillas under oppføring av ny takkonstruksjon ved sjøen",
+        "role": "hero"
+      },
+      {
+        "filename": "02-nybygg-enebolig-nordisk.webp",
+        "rel_path": "bygg/02-nybygg-enebolig-nordisk.webp",
+        "curated_rel_path": "assets/curated/bygg/02-nybygg-enebolig-nordisk.webp",
+        "sha256": "d238f7ce5bdda8ddacfe607e4c4d87c8693ca55cf34c162f29063e1bd08ec2d9",
+        "width": 1200,
+        "height": 896,
+        "size_kb": 234.2,
+        "alt_nb": "Nyoppført nordisk enebolig med trekledning og opparbeidet innkjørsel",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-moderne-trehytte-kyst.webp",
+        "rel_path": "bygg/03-moderne-trehytte-kyst.webp",
+        "curated_rel_path": "assets/curated/bygg/03-moderne-trehytte-kyst.webp",
+        "sha256": "6849459ebe03afcc04245fb088b53ddc5e291d14691faeb851b75aa58413f4f0",
+        "width": 1200,
+        "height": 669,
+        "size_kb": 163.7,
+        "alt_nb": "Moderne trebolig med store vindusflater og solid håndverk",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-taktekking-fagarbeider.webp",
+        "rel_path": "bygg/04-taktekking-fagarbeider.webp",
+        "curated_rel_path": "assets/curated/bygg/04-taktekking-fagarbeider.webp",
+        "sha256": "af865435472c8a1ad3812b70ba088abd59e6451c949143127a29186e6f7e2d66",
+        "width": 1200,
+        "height": 900,
+        "size_kb": 139.5,
+        "alt_nb": "Håndverker som legger nytt takbelegg med høy presisjon",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-innvendig-rehabilitering.webp",
+        "rel_path": "bygg/05-innvendig-rehabilitering.webp",
+        "curated_rel_path": "assets/curated/bygg/05-innvendig-rehabilitering.webp",
+        "sha256": "66fb2df97eb8b44b9c801df8a377bc6b06e8d7e0182994c9cfe91a71fe611c22",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 59.4,
+        "alt_nb": "Lyst og nyoppusset skandinavisk oppholdsrom med tregulv",
+        "role": "about"
+      },
+      {
+        "filename": "06-trebjelkelag-takstoler.webp",
+        "rel_path": "bygg/06-trebjelkelag-takstoler.webp",
+        "curated_rel_path": "assets/curated/bygg/06-trebjelkelag-takstoler.webp",
+        "sha256": "bf5981f4820658f1bb151f8a4164cc4122d414fd421bbad82ab88f28aa455b00",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 104.6,
+        "alt_nb": "Synlige takstoler og bærende trekonstruksjon i nybygg",
+        "role": "process"
+      },
+      {
+        "filename": "07-bindingsverk-oppføring.webp",
+        "rel_path": "bygg/07-bindingsverk-oppføring.webp",
+        "curated_rel_path": "assets/curated/bygg/07-bindingsverk-oppføring.webp",
+        "sha256": "0b08646b4c4100d12b5ae3c8c83b501a6ce8e00509e1bab6e32ebd587d26f6a5",
+        "width": 1200,
+        "height": 674,
+        "size_kb": 104.8,
+        "alt_nb": "Bindingsverk i tre under oppføring av nytt boligprosjekt",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-arkitekttegnet-tilbygg.webp",
+        "rel_path": "bygg/08-arkitekttegnet-tilbygg.webp",
+        "curated_rel_path": "assets/curated/bygg/08-arkitekttegnet-tilbygg.webp",
+        "sha256": "9de7508ba9a7ae9f3980f86b4ad579905905b5362e061690221fb32501757565",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 178.4,
+        "alt_nb": "Moderne bolig med stort glassparti og kveldssatt fasade",
+        "role": "cta"
+      }
+    ],
+    "rekruttering": [
+      {
+        "filename": "01-rekrutteringsteam-mote.webp",
+        "rel_path": "rekruttering/01-rekrutteringsteam-mote.webp",
+        "curated_rel_path": "assets/curated/rekruttering/01-rekrutteringsteam-mote.webp",
+        "sha256": "1c7ba59b0ed9e7993ba2142766a2e6d5f00c8a1d414b6aee1cb7551d075d944a",
+        "width": 960,
+        "height": 640,
+        "size_kb": 50.5,
+        "alt_nb": "Rekrutteringsteam samlet rundt møtebord med PC og dokumenter",
+        "role": "hero"
+      },
+      {
+        "filename": "02-kandidatgjennomgang-bord.webp",
+        "rel_path": "rekruttering/02-kandidatgjennomgang-bord.webp",
+        "curated_rel_path": "assets/curated/rekruttering/02-kandidatgjennomgang-bord.webp",
+        "sha256": "063aef7a07e2c60cfff3f291dc410c3b0c3a1ea0e76e1ed28f4fa074dd1d82ad",
+        "width": 960,
+        "height": 641,
+        "size_kb": 42.5,
+        "alt_nb": "Rådgivere som gjennomgår kandidatprofiler og notater sammen",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-arbeidsmote-kontorbord.webp",
+        "rel_path": "rekruttering/03-arbeidsmote-kontorbord.webp",
+        "curated_rel_path": "assets/curated/rekruttering/03-arbeidsmote-kontorbord.webp",
+        "sha256": "4f951a0d87fc786c83fbb76d6a4d83a9a4eb47113adc6d7e4797a72857299d13",
+        "width": 960,
+        "height": 640,
+        "size_kb": 43.8,
+        "alt_nb": "Kollegaer i engasjert samtale rundt trebord med bærbare PC-er",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-lederskap-teamsamtale.webp",
+        "rel_path": "rekruttering/04-lederskap-teamsamtale.webp",
+        "curated_rel_path": "assets/curated/rekruttering/04-lederskap-teamsamtale.webp",
+        "sha256": "f8850954e4b7ba6d8a2d33c6f8a17714d37e06940d8f683e45b0c37f37393824",
+        "width": 1024,
+        "height": 681,
+        "size_kb": 58.3,
+        "alt_nb": "Smilende teamleder i dialog med ansatte på arbeidsplassen",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-intervju-notater-team.webp",
+        "rel_path": "rekruttering/05-intervju-notater-team.webp",
+        "curated_rel_path": "assets/curated/rekruttering/05-intervju-notater-team.webp",
+        "sha256": "062a5664e70fd431f18e4afca637d9f2e1ceb473d4dfc761f6a4739af94f17c9",
+        "width": 960,
+        "height": 640,
+        "size_kb": 45.0,
+        "alt_nb": "Samarbeid rundt notatbok og laptop i moderne kontormiljø",
+        "role": "about"
+      },
+      {
+        "filename": "06-kompetansekartlegging.webp",
+        "rel_path": "rekruttering/06-kompetansekartlegging.webp",
+        "curated_rel_path": "assets/curated/rekruttering/06-kompetansekartlegging.webp",
+        "sha256": "d45e9dddb0157f77d9ed19a4d8894382bb0fffc0e9878b29dd3963d1202f10da",
+        "width": 960,
+        "height": 636,
+        "size_kb": 23.4,
+        "alt_nb": "Planlegging av bemanning og roller med gule lapper i workshop",
+        "role": "process"
+      },
+      {
+        "filename": "07-digitalt-rekrutteringsmote.webp",
+        "rel_path": "rekruttering/07-digitalt-rekrutteringsmote.webp",
+        "curated_rel_path": "assets/curated/rekruttering/07-digitalt-rekrutteringsmote.webp",
+        "sha256": "631a1bdf92b3e5d87282687237608709bfe975364919b8c8b8626aa2df752fd2",
+        "width": 960,
+        "height": 640,
+        "size_kb": 35.3,
+        "alt_nb": "Arbeidsgruppe ved møtebord med flere bærbare datamaskiner",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-planlegging-hr-samtale.webp",
+        "rel_path": "rekruttering/08-planlegging-hr-samtale.webp",
+        "curated_rel_path": "assets/curated/rekruttering/08-planlegging-hr-samtale.webp",
+        "sha256": "2368e5611c802529838f25f0754a04329472689093de0bc4bf1c37e7f843358f",
+        "width": 960,
+        "height": 640,
+        "size_kb": 48.1,
+        "alt_nb": "Nærbilde av notater, kaffe og laptop under strukturert samtale",
+        "role": "cta"
+      }
+    ],
+    "radgivning": [
+      {
+        "filename": "01-strategi-presentasjon.webp",
+        "rel_path": "radgivning/01-strategi-presentasjon.webp",
+        "curated_rel_path": "assets/curated/radgivning/01-strategi-presentasjon.webp",
+        "sha256": "10c02591e87bcb4da138ff9ab0953c286e2cc25c79f61388ebc1cb5402fb6f1b",
+        "width": 960,
+        "height": 640,
+        "size_kb": 30.0,
+        "alt_nb": "Rådgiver som presenterer strategiplan på tavle for ledergruppe",
+        "role": "hero"
+      },
+      {
+        "filename": "02-en-til-en-radgivning.webp",
+        "rel_path": "radgivning/02-en-til-en-radgivning.webp",
+        "curated_rel_path": "assets/curated/radgivning/02-en-til-en-radgivning.webp",
+        "sha256": "8aa3c5e384f4d5b49ddc63f24fa8af0361e591c035a6fc69f1ce81d770132c4c",
+        "width": 960,
+        "height": 640,
+        "size_kb": 55.4,
+        "alt_nb": "To rådgivere i konsentrert samtale ved vindu i kontorbygg",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-workshop-moterom.webp",
+        "rel_path": "radgivning/03-workshop-moterom.webp",
+        "curated_rel_path": "assets/curated/radgivning/03-workshop-moterom.webp",
+        "sha256": "69368a37776302bdeacbdab66b242e804d6c4cf76f26b6702d735d038459137a",
+        "width": 960,
+        "height": 641,
+        "size_kb": 57.3,
+        "alt_nb": "Fagperson som leder gjennomgang ved whiteboard i møterom",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-prosjektplan-tavle.webp",
+        "rel_path": "radgivning/04-prosjektplan-tavle.webp",
+        "curated_rel_path": "assets/curated/radgivning/04-prosjektplan-tavle.webp",
+        "sha256": "070a0ed116a16fed6bb86b83a1dfb8c9672b220c293651a80835828164892ac7",
+        "width": 960,
+        "height": 640,
+        "size_kb": 49.9,
+        "alt_nb": "Strukturert fremdriftsplan med fargekodede lapper på tavle",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-analyse-nettbrett.webp",
+        "rel_path": "radgivning/05-analyse-nettbrett.webp",
+        "curated_rel_path": "assets/curated/radgivning/05-analyse-nettbrett.webp",
+        "sha256": "50ce49aee78f42f6b19bd72da5e948b993aa8fc4506e9c88dd3eadb3192d5acb",
+        "width": 960,
+        "height": 636,
+        "size_kb": 54.9,
+        "alt_nb": "Rådgiver som gjennomgår nøkkeltall og grafer på nettbrett",
+        "role": "about"
+      },
+      {
+        "filename": "06-ledermote-diskusjon.webp",
+        "rel_path": "radgivning/06-ledermote-diskusjon.webp",
+        "curated_rel_path": "assets/curated/radgivning/06-ledermote-diskusjon.webp",
+        "sha256": "a8784426f554ed5769f60aff4feee4447878a6ccbe361774324ec82e0cd864e8",
+        "width": 960,
+        "height": 640,
+        "size_kb": 39.0,
+        "alt_nb": "Tverrfaglig rådgivningsteam i konstruktiv dialog rundt bordet",
+        "role": "process"
+      },
+      {
+        "filename": "07-strategisk-planlegging.webp",
+        "rel_path": "radgivning/07-strategisk-planlegging.webp",
+        "curated_rel_path": "assets/curated/radgivning/07-strategisk-planlegging.webp",
+        "sha256": "689ca026682ee274cdbd6a635e65ddc05b2c8d7014569a14e989164301942a15",
+        "width": 960,
+        "height": 657,
+        "size_kb": 41.3,
+        "alt_nb": "Konsulent som skisserer løsningsforslag på vegghengt tavle",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-digital-radgivning-bord.webp",
+        "rel_path": "radgivning/08-digital-radgivning-bord.webp",
+        "curated_rel_path": "assets/curated/radgivning/08-digital-radgivning-bord.webp",
+        "sha256": "e5e8e471ecd6671451f320f1e39d2ceeaf34108e83eac83265bfd63c9c71aac9",
+        "width": 960,
+        "height": 554,
+        "size_kb": 47.8,
+        "alt_nb": "Samarbeid over bærbar PC og dokumenter på rådgiverkontor",
+        "role": "cta"
+      }
+    ],
+    "vvs": [
+      {
+        "filename": "01-moderne-baderom-badekar.webp",
+        "rel_path": "vvs/01-moderne-baderom-badekar.webp",
+        "curated_rel_path": "assets/curated/vvs/01-moderne-baderom-badekar.webp",
+        "sha256": "5240b239dac74a783dbb214a547f185fa83c81bcb767849bfca262bbe35d6199",
+        "width": 1200,
+        "height": 801,
+        "size_kb": 39.2,
+        "alt_nb": "Lyst og moderne baderom med frittstående badekar og servant",
+        "role": "hero"
+      },
+      {
+        "filename": "02-dusjvegg-dobbel-servant.webp",
+        "rel_path": "vvs/02-dusjvegg-dobbel-servant.webp",
+        "curated_rel_path": "assets/curated/vvs/02-dusjvegg-dobbel-servant.webp",
+        "sha256": "d019e2bd23f5548ec51cc097f55dc674629eb2862b1bc645a8a00d09d876bee1",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 69.8,
+        "alt_nb": "Nyoppusset bad med glassdusj, regndusj og dobbel servant",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-kjokkenkran-vask-vindu.webp",
+        "rel_path": "vvs/03-kjokkenkran-vask-vindu.webp",
+        "curated_rel_path": "assets/curated/vvs/03-kjokkenkran-vask-vindu.webp",
+        "sha256": "fba647c9a2a776c36bb880a547ed371b202b1b07a397479539fd63a092c25bd6",
+        "width": 960,
+        "height": 640,
+        "size_kb": 38.7,
+        "alt_nb": "Moderne kjøkkenvask med høy blandebatterikran foran lyst vindu",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-eksklusivt-bad-ledspeil.webp",
+        "rel_path": "vvs/04-eksklusivt-bad-ledspeil.webp",
+        "curated_rel_path": "assets/curated/vvs/04-eksklusivt-bad-ledspeil.webp",
+        "sha256": "62258a41227060576dbc156cff3064c13614c36f4756a9ad6e9d75323a8a78b2",
+        "width": 1024,
+        "height": 684,
+        "size_kb": 47.2,
+        "alt_nb": "Eksklusivt baderom med mørke fliser, badekar og belyste speil",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-glassdusj-baderomsinnredning.webp",
+        "rel_path": "vvs/05-glassdusj-baderomsinnredning.webp",
+        "curated_rel_path": "assets/curated/vvs/05-glassdusj-baderomsinnredning.webp",
+        "sha256": "a7eaee001578a0688170f78f6dbdad00237acacedebbac5f4619bce92fbdc8c2",
+        "width": 1024,
+        "height": 684,
+        "size_kb": 53.2,
+        "alt_nb": "Funksjonelt baderom med buet dusjløsning og steinbenkeplate",
+        "role": "about"
+      },
+      {
+        "filename": "06-totalrenovert-baderom.webp",
+        "rel_path": "vvs/06-totalrenovert-baderom.webp",
+        "curated_rel_path": "assets/curated/vvs/06-totalrenovert-baderom.webp",
+        "sha256": "77478477f822e1a9d89a08caaa1d659c6a62638b5dc72421d47003979ae22e56",
+        "width": 1024,
+        "height": 684,
+        "size_kb": 59.6,
+        "alt_nb": "Romslig baderom med plassbygd innredning og lys flislegging",
+        "role": "process"
+      },
+      {
+        "filename": "07-servant-armatur-detalj.webp",
+        "rel_path": "vvs/07-servant-armatur-detalj.webp",
+        "curated_rel_path": "assets/curated/vvs/07-servant-armatur-detalj.webp",
+        "sha256": "e4fa942c0f188af02ba15af18d858e9b3ec124fd8687192f052bc5b287bc1fbe",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 45.2,
+        "alt_nb": "Moderne baderomsservant med kromarmatur og god belysning",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-rent-drikkevann-kran.webp",
+        "rel_path": "vvs/08-rent-drikkevann-kran.webp",
+        "curated_rel_path": "assets/curated/vvs/08-rent-drikkevann-kran.webp",
+        "sha256": "d9b3c52c0f6cb74bf81eb51fd52e073f0ec1fb986d7c851cdcbbd43f72a1bc5e",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 44.6,
+        "alt_nb": "Klart og friskt tappevann som fylles i glass fra kjøkkenkran",
+        "role": "cta"
+      }
+    ],
+    "regnskap": [
+      {
+        "filename": "01-regnskapsforer-kalkulator.webp",
+        "rel_path": "regnskap/01-regnskapsforer-kalkulator.webp",
+        "curated_rel_path": "assets/curated/regnskap/01-regnskapsforer-kalkulator.webp",
+        "sha256": "9f3ecd5e70cc2f040371bd332242e19392063916606ed492ac625e51e389498f",
+        "width": 960,
+        "height": 638,
+        "size_kb": 79.9,
+        "alt_nb": "Regnskapsfører som arbeider med kalkulator og regneark på PC",
+        "role": "hero"
+      },
+      {
+        "filename": "02-okonomidashboard-laptop.webp",
+        "rel_path": "regnskap/02-okonomidashboard-laptop.webp",
+        "curated_rel_path": "assets/curated/regnskap/02-okonomidashboard-laptop.webp",
+        "sha256": "24d4758e847fc943f099a3794219cbde25c1ed553c372eed73ccc144dc660bc1",
+        "width": 960,
+        "height": 640,
+        "size_kb": 31.4,
+        "alt_nb": "Bærbar datamaskin som viser nøkkeltall, grafer og budsjett",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-finansrapport-oversikt.webp",
+        "rel_path": "regnskap/03-finansrapport-oversikt.webp",
+        "curated_rel_path": "assets/curated/regnskap/03-finansrapport-oversikt.webp",
+        "sha256": "7c29cc09d0b1f097d8871d755469cf1d21756d607280023bd0c500a3881df05c",
+        "width": 960,
+        "height": 640,
+        "size_kb": 37.6,
+        "alt_nb": "Økonomirapport med stolpediagram, kalkulator og tastatur",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-nordisk-okonomikontor.webp",
+        "rel_path": "regnskap/04-nordisk-okonomikontor.webp",
+        "curated_rel_path": "assets/curated/regnskap/04-nordisk-okonomikontor.webp",
+        "sha256": "782afa6687faf79054f166fdb5c4697053e28c017b9eb4c027963ac785d9d29f",
+        "width": 960,
+        "height": 720,
+        "size_kb": 21.0,
+        "alt_nb": "Lyst skandinavisk kontorbord med laptop, regnskapsbok og kalkulator",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-skrivebord-regnskapsbok.webp",
+        "rel_path": "regnskap/05-skrivebord-regnskapsbok.webp",
+        "curated_rel_path": "assets/curated/regnskap/05-skrivebord-regnskapsbok.webp",
+        "sha256": "fd652f1c8b0bb006c4218bb7a2ab540b2a846c5ad562daa06bf2108027e13236",
+        "width": 960,
+        "height": 640,
+        "size_kb": 32.8,
+        "alt_nb": "Ryddig arbeidsplass med tastatur, notatbok og kaffekopp",
+        "role": "about"
+      },
+      {
+        "filename": "06-budsjett-briller-notater.webp",
+        "rel_path": "regnskap/06-budsjett-briller-notater.webp",
+        "curated_rel_path": "assets/curated/regnskap/06-budsjett-briller-notater.webp",
+        "sha256": "6578b7dc2d271ad21f6abea0d205d81e498b459ac2b580f5074a6c21aa8fbbb6",
+        "width": 960,
+        "height": 641,
+        "size_kb": 88.9,
+        "alt_nb": "Notatblokk, briller og kalkulator klargjort for årsoppgjør",
+        "role": "process"
+      },
+      {
+        "filename": "07-okonomiplanlegging-bord.webp",
+        "rel_path": "regnskap/07-okonomiplanlegging-bord.webp",
+        "curated_rel_path": "assets/curated/regnskap/07-okonomiplanlegging-bord.webp",
+        "sha256": "243ca5376cfe2355ed682d9926b633c6beb2d4ec2715fe20a13fd679a35a716d",
+        "width": 960,
+        "height": 640,
+        "size_kb": 91.6,
+        "alt_nb": "Hender som fører tall og budsjettnotater i planlegger",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-kalkulator-naerbilde.webp",
+        "rel_path": "regnskap/08-kalkulator-naerbilde.webp",
+        "curated_rel_path": "assets/curated/regnskap/08-kalkulator-naerbilde.webp",
+        "sha256": "a361d2a418b38c60da515741cff66c27518a37259b40ee524238ac36151a2847",
+        "width": 960,
+        "height": 640,
+        "size_kb": 37.0,
+        "alt_nb": "Detaljbilde av bordkalkulator på ryddig kontorpult",
+        "role": "cta"
+      }
+    ],
+    "renhold": [
+      {
+        "filename": "01-rent-kontorbygg-lobby.webp",
+        "rel_path": "renhold/01-rent-kontorbygg-lobby.webp",
+        "curated_rel_path": "assets/curated/renhold/01-rent-kontorbygg-lobby.webp",
+        "sha256": "cd2d14b638835fede50139e4558fb27fb07cd5ad0a6d4743863f985a6cc90653",
+        "width": 1200,
+        "height": 896,
+        "size_kb": 132.8,
+        "alt_nb": "Skinne-ren moderne kontorlobby med blankt tregulv og store glassflater",
+        "role": "hero"
+      },
+      {
+        "filename": "02-ryddig-kontorlandskap.webp",
+        "rel_path": "renhold/02-ryddig-kontorlandskap.webp",
+        "curated_rel_path": "assets/curated/renhold/02-ryddig-kontorlandskap.webp",
+        "sha256": "2126c3f5c6a5ca6dd14f1b4c644b3e7943c7da7444d8d515a0d22399c3711155",
+        "width": 1024,
+        "height": 675,
+        "size_kb": 34.8,
+        "alt_nb": "Lyst og nyvasket kontorlandskap med hvite arbeidsbord",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-fasadevask-glassbygg.webp",
+        "rel_path": "renhold/03-fasadevask-glassbygg.webp",
+        "curated_rel_path": "assets/curated/renhold/03-fasadevask-glassbygg.webp",
+        "sha256": "e5992770091072a2b0087e676d272db46df89503a590b7d12695c28212539d82",
+        "width": 960,
+        "height": 640,
+        "size_kb": 69.8,
+        "alt_nb": "Krystallklare glassfasader på moderne næringsbygg",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-hjemmerenhold-soverom.webp",
+        "rel_path": "renhold/04-hjemmerenhold-soverom.webp",
+        "curated_rel_path": "assets/curated/renhold/04-hjemmerenhold-soverom.webp",
+        "sha256": "372fbd2c89c7b3dee41b4e14b71f8f14fdfd125265e4280a3b022e68464923a8",
+        "width": 960,
+        "height": 640,
+        "size_kb": 23.1,
+        "alt_nb": "Friskt og nyoppredd soverom med rene hvite tekstiler",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-rent-hotell-naeringsrom.webp",
+        "rel_path": "renhold/05-rent-hotell-naeringsrom.webp",
+        "curated_rel_path": "assets/curated/renhold/05-rent-hotell-naeringsrom.webp",
+        "sha256": "b28995b8a7d9f109fedf5fdd0b299e69c7928ad7919cb6ef45ee0b95238d3f3b",
+        "width": 960,
+        "height": 641,
+        "size_kb": 41.2,
+        "alt_nb": "Nyvasket og innbydende nærings- og gjesterom i varme materialer",
+        "role": "about"
+      },
+      {
+        "filename": "06-hygiene-arbeidsplass.webp",
+        "rel_path": "renhold/06-hygiene-arbeidsplass.webp",
+        "curated_rel_path": "assets/curated/renhold/06-hygiene-arbeidsplass.webp",
+        "sha256": "82b429d54f299f1c328c4ee09e484aaeac2f9814f2883cd01fc00f070014099c",
+        "width": 960,
+        "height": 640,
+        "size_kb": 19.9,
+        "alt_nb": "Støvfri og ryddig hvit kontorpult med grønn plante",
+        "role": "process"
+      },
+      {
+        "filename": "07-vinduspuss-moderne-fasade.webp",
+        "rel_path": "renhold/07-vinduspuss-moderne-fasade.webp",
+        "curated_rel_path": "assets/curated/renhold/07-vinduspuss-moderne-fasade.webp",
+        "sha256": "e54a060854ce5022def34da1b916b0c0046756e1e183c6cf4a5bc0cd297aa2f8",
+        "width": 960,
+        "height": 720,
+        "size_kb": 77.0,
+        "alt_nb": "Skinnende rene vindusrekker og hvit fasade på næringsbygg",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-flyttevask-lys-stue.webp",
+        "rel_path": "renhold/08-flyttevask-lys-stue.webp",
+        "curated_rel_path": "assets/curated/renhold/08-flyttevask-lys-stue.webp",
+        "sha256": "4d81bfa29d1009c4153df17be8cca4cc16aa43880090f959335c8464d632422b",
+        "width": 960,
+        "height": 641,
+        "size_kb": 60.0,
+        "alt_nb": "Nylig rengjort og innflyttingsklar stue med blanke gulv",
+        "role": "cta"
+      }
+    ],
+    "it": [
+      {
+        "filename": "01-utvikler-bredskjerm.webp",
+        "rel_path": "it/01-utvikler-bredskjerm.webp",
+        "curated_rel_path": "assets/curated/it/01-utvikler-bredskjerm.webp",
+        "sha256": "3d352843939db9e55b5f2b9f5fafd9911a017e3a6c39ac442d8c5cd4058830a9",
+        "width": 960,
+        "height": 640,
+        "size_kb": 17.0,
+        "alt_nb": "Programvareutvikler ved ryddig arbeidsstasjon med bredskjerm",
+        "role": "hero"
+      },
+      {
+        "filename": "02-kildekode-skjermbilde.webp",
+        "rel_path": "it/02-kildekode-skjermbilde.webp",
+        "curated_rel_path": "assets/curated/it/02-kildekode-skjermbilde.webp",
+        "sha256": "105b2d7ae3fcc29106351c5858d9b76f728b24297d364fcbe8c8f8be9d7e0adb",
+        "width": 960,
+        "height": 640,
+        "size_kb": 92.0,
+        "alt_nb": "Nærbilde av strukturert kildekode i mørkt utviklingsmiljø",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-programmering-laptop.webp",
+        "rel_path": "it/03-programmering-laptop.webp",
+        "curated_rel_path": "assets/curated/it/03-programmering-laptop.webp",
+        "sha256": "aa904861d70479502a14c4c1cfa7e4b3eb9d36df7bb3d1cf68bd97e0a62795a5",
+        "width": 960,
+        "height": 640,
+        "size_kb": 34.3,
+        "alt_nb": "Utvikler som skriver kode på bærbar datamaskin",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-systemutvikling-toskjerm.webp",
+        "rel_path": "it/04-systemutvikling-toskjerm.webp",
+        "curated_rel_path": "assets/curated/it/04-systemutvikling-toskjerm.webp",
+        "sha256": "7330ce0ad5c561e402e9e0e32c0a7a567b6aa7b42630a441802828c8e25b4466",
+        "width": 960,
+        "height": 686,
+        "size_kb": 44.8,
+        "alt_nb": "IT-spesialist som arbeider ved to skjermer i kontorlandskap",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-tech-arbeidsstasjon.webp",
+        "rel_path": "it/05-tech-arbeidsstasjon.webp",
+        "curated_rel_path": "assets/curated/it/05-tech-arbeidsstasjon.webp",
+        "sha256": "acf9af35dcef055ec9b9942450fc971fd9d2e583173587a0beb5a96d04416f6a",
+        "width": 960,
+        "height": 640,
+        "size_kb": 30.1,
+        "alt_nb": "Hender på tastatur foran stor skjerm på skandinavisk trepult",
+        "role": "about"
+      },
+      {
+        "filename": "06-moderne-utviklerbord.webp",
+        "rel_path": "it/06-moderne-utviklerbord.webp",
+        "curated_rel_path": "assets/curated/it/06-moderne-utviklerbord.webp",
+        "sha256": "e5548d8bc7a3c88d61bd527e75f486982a729475419f0eb8352c0b0a7a1ac88e",
+        "width": 960,
+        "height": 640,
+        "size_kb": 31.0,
+        "alt_nb": "Bærbar PC med åpen kodeeditor, mobil og notatbok på lyst bord",
+        "role": "process"
+      },
+      {
+        "filename": "07-kodegjennomgang-desk.webp",
+        "rel_path": "it/07-kodegjennomgang-desk.webp",
+        "curated_rel_path": "assets/curated/it/07-kodegjennomgang-desk.webp",
+        "sha256": "a23764d117054f454e7263a6e769723a721ddfb46420b76b9ee275049b6cc8e6",
+        "width": 960,
+        "height": 657,
+        "size_kb": 53.0,
+        "alt_nb": "Programvareutvikling og feilsøking på bærbar maskin",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-frontend-design-utvikler.webp",
+        "rel_path": "it/08-frontend-design-utvikler.webp",
+        "curated_rel_path": "assets/curated/it/08-frontend-design-utvikler.webp",
+        "sha256": "9cf349e6b61a8ea892d1c872193aaf26828e82dc3b64d51239e9dcda02708aad",
+        "width": 960,
+        "height": 640,
+        "size_kb": 45.9,
+        "alt_nb": "Utvikler som tester webapplikasjon og grensesnitt på laptop",
+        "role": "cta"
+      }
+    ],
+    "helse": [
+      {
+        "filename": "01-moderne-tannlegeklinikk.webp",
+        "rel_path": "helse/01-moderne-tannlegeklinikk.webp",
+        "curated_rel_path": "assets/curated/helse/01-moderne-tannlegeklinikk.webp",
+        "sha256": "fe6f9495652790a1edf4087c333ad281c79411d119e81132be2488ae94592561",
+        "width": 960,
+        "height": 640,
+        "size_kb": 29.9,
+        "alt_nb": "Lyst og moderne behandlingsrom i tannlegeklinikk",
+        "role": "hero"
+      },
+      {
+        "filename": "02-pasientkonsultasjon-lege.webp",
+        "rel_path": "helse/02-pasientkonsultasjon-lege.webp",
+        "curated_rel_path": "assets/curated/helse/02-pasientkonsultasjon-lege.webp",
+        "sha256": "6264cfc855ca14d8105112913e116d8d9cf6f9a8d40ff799e0458778f081fefc",
+        "width": 960,
+        "height": 640,
+        "size_kb": 30.0,
+        "alt_nb": "Lege og sykepleier i trygg konsultasjon med pasient",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-fysioterapi-behandling.webp",
+        "rel_path": "helse/03-fysioterapi-behandling.webp",
+        "curated_rel_path": "assets/curated/helse/03-fysioterapi-behandling.webp",
+        "sha256": "af430eff987259c618d2e38481933d930c14b4ac74acd0997ee7b39721ffb924",
+        "width": 960,
+        "height": 640,
+        "size_kb": 34.1,
+        "alt_nb": "Terapeut som utfører skulder- og ryggbehandling i rolig rom",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-behandlingsstol-klinikk.webp",
+        "rel_path": "helse/04-behandlingsstol-klinikk.webp",
+        "curated_rel_path": "assets/curated/helse/04-behandlingsstol-klinikk.webp",
+        "sha256": "8c4ab3915dce176a7d9a356f1837cf92086af74acaaafd846e4935a48e77fba4",
+        "width": 960,
+        "height": 640,
+        "size_kb": 28.9,
+        "alt_nb": "Rent og velutstyrt klinikkrom med moderne behandlingsutstyr",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-digital-pasientjournal.webp",
+        "rel_path": "helse/05-digital-pasientjournal.webp",
+        "curated_rel_path": "assets/curated/helse/05-digital-pasientjournal.webp",
+        "sha256": "b90b5defe764d40d71dd5d5124213f7bb349e0301680be36fdb2ed055bfabd6e",
+        "width": 960,
+        "height": 640,
+        "size_kb": 25.8,
+        "alt_nb": "Helsepersonell som gjennomgår behandlingsplan på nettbrett",
+        "role": "about"
+      },
+      {
+        "filename": "06-helsefaglig-oppfolging.webp",
+        "rel_path": "helse/06-helsefaglig-oppfolging.webp",
+        "curated_rel_path": "assets/curated/helse/06-helsefaglig-oppfolging.webp",
+        "sha256": "a3b7221999cf73574291e054706388aee3c69ad59aaaf3db157a71a43873c2d8",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 41.6,
+        "alt_nb": "Helsepersonell som dokumenterer pasientoppfølging på PC",
+        "role": "process"
+      },
+      {
+        "filename": "07-klinikkutstyr-oversikt.webp",
+        "rel_path": "helse/07-klinikkutstyr-oversikt.webp",
+        "curated_rel_path": "assets/curated/helse/07-klinikkutstyr-oversikt.webp",
+        "sha256": "0efcf99db29831e0ab1b51640efc3dc3076e14c3a31315df730965b18f82aabb",
+        "width": 960,
+        "height": 640,
+        "size_kb": 44.2,
+        "alt_nb": "Ergonomisk behandlingsstol i ryddig og hygienisk klinikk",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-velvaere-avspenning.webp",
+        "rel_path": "helse/08-velvaere-avspenning.webp",
+        "curated_rel_path": "assets/curated/helse/08-velvaere-avspenning.webp",
+        "sha256": "349abd1568b411d26a2f8dcbca748278e8125109421122f7c6a2e85e50d111aa",
+        "width": 960,
+        "height": 640,
+        "size_kb": 48.8,
+        "alt_nb": "Rolig velvære- og avspenningsbehandling i lys klinikk",
+        "role": "cta"
+      }
+    ],
+    "hage": [
+      {
+        "filename": "01-nordisk-terrasse-hage.webp",
+        "rel_path": "hage/01-nordisk-terrasse-hage.webp",
+        "curated_rel_path": "assets/curated/hage/01-nordisk-terrasse-hage.webp",
+        "sha256": "3efd2c34a360218780435c7a1c25e8283b8b795bdf9ac6e2392fdfe32937507a",
+        "width": 1200,
+        "height": 896,
+        "size_kb": 242.0,
+        "alt_nb": "Nybygd treterrasse med utestue og frodig norsk hage",
+        "role": "hero"
+      },
+      {
+        "filename": "02-utebelysning-terrasse.webp",
+        "rel_path": "hage/02-utebelysning-terrasse.webp",
+        "curated_rel_path": "assets/curated/hage/02-utebelysning-terrasse.webp",
+        "sha256": "9d06f6886a3148a7ce6e4102aa9268df623780f88a392bd739d68bc25352b3d9",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 119.6,
+        "alt_nb": "Stemningsfull treterrasse med varm utebelysning ved skumring",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-gronn-plen-hageanlegg.webp",
+        "rel_path": "hage/03-gronn-plen-hageanlegg.webp",
+        "curated_rel_path": "assets/curated/hage/03-gronn-plen-hageanlegg.webp",
+        "sha256": "baee192149084a4ca80c9fb8f3f032c441a7eb8cc54867250c0885ed39e7bedf",
+        "width": 960,
+        "height": 646,
+        "size_kb": 126.6,
+        "alt_nb": "Velstelt og frodig grønn plen badet i sollys",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-hekklipp-gangsti.webp",
+        "rel_path": "hage/04-hekklipp-gangsti.webp",
+        "curated_rel_path": "assets/curated/hage/04-hekklipp-gangsti.webp",
+        "sha256": "400d8526640777132a56b17a7fc8afd674c20b75f0a7bc4323a200a0e4c9404e",
+        "width": 960,
+        "height": 636,
+        "size_kb": 85.6,
+        "alt_nb": "Ryddig hellelagt gangsti innrammet av veltrimmede hekker",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-uteplass-hagemobler.webp",
+        "rel_path": "hage/05-uteplass-hagemobler.webp",
+        "curated_rel_path": "assets/curated/hage/05-uteplass-hagemobler.webp",
+        "sha256": "a94ef808f579aa01b32afc5d705eed183e8401113c734e00bed84ededed97190",
+        "width": 960,
+        "height": 640,
+        "size_kb": 62.9,
+        "alt_nb": "Moderne uteplass med sittegruppe omgitt av prydgress",
+        "role": "about"
+      },
+      {
+        "filename": "06-pergola-uterom.webp",
+        "rel_path": "hage/06-pergola-uterom.webp",
+        "curated_rel_path": "assets/curated/hage/06-pergola-uterom.webp",
+        "sha256": "990fae31fc2f7fbd9ccce6a56cec3aaaf53b0c1410168b0fd4061688359300c3",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 111.7,
+        "alt_nb": "Skreddersydd uterom og terrasse integrert mot bolig",
+        "role": "process"
+      },
+      {
+        "filename": "07-formklippet-grontanlegg.webp",
+        "rel_path": "hage/07-formklippet-grontanlegg.webp",
+        "curated_rel_path": "assets/curated/hage/07-formklippet-grontanlegg.webp",
+        "sha256": "8a88bcddd328f57cb449a5ef499c9992f142353ef4f770851c1c4f45d7a76551",
+        "width": 960,
+        "height": 632,
+        "size_kb": 89.9,
+        "alt_nb": "Presisjonsklippet hekk og prydbusk mot klar blå himmel",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-detalj-terrassemiljo.webp",
+        "rel_path": "hage/08-detalj-terrassemiljo.webp",
+        "curated_rel_path": "assets/curated/hage/08-detalj-terrassemiljo.webp",
+        "sha256": "9f67ce53f8be68fb2a5f171a1d049ac9cc969265a608d594b0f49eb25f6c877d",
+        "width": 960,
+        "height": 640,
+        "size_kb": 196.4,
+        "alt_nb": "Innbydende sitteområde på treplatting med grønne planter",
+        "role": "cta"
+      }
+    ],
+    "arkitekt": [
+      {
+        "filename": "01-arkitektskisse-tegning.webp",
+        "rel_path": "arkitekt/01-arkitektskisse-tegning.webp",
+        "curated_rel_path": "assets/curated/arkitekt/01-arkitektskisse-tegning.webp",
+        "sha256": "ea2973faa984d8619a42c082c1d545eaa1b69871a042b22df2ad9a30cda89063",
+        "width": 960,
+        "height": 640,
+        "size_kb": 25.5,
+        "alt_nb": "Håndtegnet arkitektonisk skisse og linjetegning på papir",
+        "role": "hero"
+      },
+      {
+        "filename": "02-teknisk-byggetegning.webp",
+        "rel_path": "arkitekt/02-teknisk-byggetegning.webp",
+        "curated_rel_path": "assets/curated/arkitekt/02-teknisk-byggetegning.webp",
+        "sha256": "b07f2e85a942c4c44b5d7d6a1f6d8efd0bed63995732fbdd18e7e4ce5a1fc8a3",
+        "width": 1024,
+        "height": 768,
+        "size_kb": 53.6,
+        "alt_nb": "Passer og målestokk over detaljert snittegning av bygg",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-glassatrium-arkitektur.webp",
+        "rel_path": "arkitekt/03-glassatrium-arkitektur.webp",
+        "curated_rel_path": "assets/curated/arkitekt/03-glassatrium-arkitektur.webp",
+        "sha256": "d16da9ede3628b08c7ce11ee408550d4962ab3e0fc29d702099bda897180ca34",
+        "width": 960,
+        "height": 640,
+        "size_kb": 114.1,
+        "alt_nb": "Geometrisk glasstak og stålkonstruksjon i moderne atrium",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-minimalistisk-betong-lys.webp",
+        "rel_path": "arkitekt/04-minimalistisk-betong-lys.webp",
+        "curated_rel_path": "assets/curated/arkitekt/04-minimalistisk-betong-lys.webp",
+        "sha256": "749886b6d83218628a5c07b51386f5904f8ee703bb229684c9218171554465a0",
+        "width": 960,
+        "height": 640,
+        "size_kb": 11.4,
+        "alt_nb": "Minimalistisk arkitektonisk interiør med betong og spilelys",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-moderne-nordisk-fasade.webp",
+        "rel_path": "arkitekt/05-moderne-nordisk-fasade.webp",
+        "curated_rel_path": "assets/curated/arkitekt/05-moderne-nordisk-fasade.webp",
+        "sha256": "06a235be75db75dbf0870fc2fd5725df44f8d05c9a1568a9b8478c198b70da48",
+        "width": 960,
+        "height": 638,
+        "size_kb": 52.2,
+        "alt_nb": "Samtidsarkitektur med rene linjer og kontrastfelt i fasaden",
+        "role": "about"
+      },
+      {
+        "filename": "06-glassfasade-hoybygg.webp",
+        "rel_path": "arkitekt/06-glassfasade-hoybygg.webp",
+        "curated_rel_path": "assets/curated/arkitekt/06-glassfasade-hoybygg.webp",
+        "sha256": "54f2e9fabc60ff13a90b8bfb85724f1308ba53e25a3e4e5bf16f286dce19ca00",
+        "width": 960,
+        "height": 640,
+        "size_kb": 41.8,
+        "alt_nb": "Stram arkitektonisk glassfasade som speiler blå himmel",
+        "role": "process"
+      },
+      {
+        "filename": "07-stalkonstruksjon-kuppel.webp",
+        "rel_path": "arkitekt/07-stalkonstruksjon-kuppel.webp",
+        "curated_rel_path": "assets/curated/arkitekt/07-stalkonstruksjon-kuppel.webp",
+        "sha256": "7cbde70d61d43f11fbdcd1ec593c9e8baf11994091380188b6ca42cfdf9b13e6",
+        "width": 960,
+        "height": 640,
+        "size_kb": 111.6,
+        "alt_nb": "Avansert ingeniør- og stålkonstruksjon i takhvelving",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-tvillingbygg-arkitektur.webp",
+        "rel_path": "arkitekt/08-tvillingbygg-arkitektur.webp",
+        "curated_rel_path": "assets/curated/arkitekt/08-tvillingbygg-arkitektur.webp",
+        "sha256": "2ad7c9062f4ca276104620b43c1359ae63c16c8c4e853dbe2d366fa6192fc5bc",
+        "width": 960,
+        "height": 640,
+        "size_kb": 42.8,
+        "alt_nb": "Moderne næringsbygg med presise vinkler og glassfasader",
+        "role": "cta"
+      }
+    ],
+    "eiendom": [
+      {
+        "filename": "01-moderne-naeringsbygg.webp",
+        "rel_path": "eiendom/01-moderne-naeringsbygg.webp",
+        "curated_rel_path": "assets/curated/eiendom/01-moderne-naeringsbygg.webp",
+        "sha256": "23b40965c050d0f8ce2a1a8fa2fbfe56e3f596a165b866c1e958b478ec82a74b",
+        "width": 960,
+        "height": 720,
+        "size_kb": 52.5,
+        "alt_nb": "Representativt næringsbygg med glassfasade i sentrum",
+        "role": "hero"
+      },
+      {
+        "filename": "02-bolignokkel-overlevering.webp",
+        "rel_path": "eiendom/02-bolignokkel-overlevering.webp",
+        "curated_rel_path": "assets/curated/eiendom/02-bolignokkel-overlevering.webp",
+        "sha256": "cf66c5bdd57129c903e575712dbe9e4f11ee9b6a27c9412be2320e23216a41de",
+        "width": 960,
+        "height": 640,
+        "size_kb": 25.1,
+        "alt_nb": "Husnøkkel i inngangsdør klar for overtakelse og visning",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-lys-bolig-stueinterior.webp",
+        "rel_path": "eiendom/03-lys-bolig-stueinterior.webp",
+        "curated_rel_path": "assets/curated/eiendom/03-lys-bolig-stueinterior.webp",
+        "sha256": "21f7425cbebbebd7f0c74bd46a25e6bdac8581f1644b5d720a8903255813d76a",
+        "width": 960,
+        "height": 640,
+        "size_kb": 57.0,
+        "alt_nb": "Lyst og innbydende stueinteriør klargjort for visning",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-leilighetsbygg-balkonger.webp",
+        "rel_path": "eiendom/04-leilighetsbygg-balkonger.webp",
+        "curated_rel_path": "assets/curated/eiendom/04-leilighetsbygg-balkonger.webp",
+        "sha256": "d339d4d63256ba5a6922a76694405e7018a717c6789a31dbe0f55b008143bf7b",
+        "width": 960,
+        "height": 640,
+        "size_kb": 29.4,
+        "alt_nb": "Moderne leilighetskompleks med solrike balkonger",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-kontoreiendom-glass.webp",
+        "rel_path": "eiendom/05-kontoreiendom-glass.webp",
+        "curated_rel_path": "assets/curated/eiendom/05-kontoreiendom-glass.webp",
+        "sha256": "a7b7469cd37eb851f44d6f250c0c8a6632216166967b05f75d502a45815c6518",
+        "width": 960,
+        "height": 720,
+        "size_kb": 80.7,
+        "alt_nb": "Moderne kontoreiendom med refleksjoner i glassfasade",
+        "role": "about"
+      },
+      {
+        "filename": "06-visning-moderne-stue.webp",
+        "rel_path": "eiendom/06-visning-moderne-stue.webp",
+        "curated_rel_path": "assets/curated/eiendom/06-visning-moderne-stue.webp",
+        "sha256": "6731c85141e7fdb58ea68b40ea3841230d108ad99a2a36e0bd2921394545f834",
+        "width": 960,
+        "height": 640,
+        "size_kb": 30.5,
+        "alt_nb": "Velholdt stue med hvite overflater og rikelig dagslys",
+        "role": "process"
+      },
+      {
+        "filename": "07-eksklusiv-bolig-utsikt.webp",
+        "rel_path": "eiendom/07-eksklusiv-bolig-utsikt.webp",
+        "curated_rel_path": "assets/curated/eiendom/07-eksklusiv-bolig-utsikt.webp",
+        "sha256": "c2e74ab6e181afd81700134da79ad651b6cdca116ac5458b4757b71134b1f33d",
+        "width": 960,
+        "height": 720,
+        "size_kb": 54.2,
+        "alt_nb": "Moderne bolig med stor terrasse og åpen panoramautsikt",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-bygard-naeringseiendom.webp",
+        "rel_path": "eiendom/08-bygard-naeringseiendom.webp",
+        "curated_rel_path": "assets/curated/eiendom/08-bygard-naeringseiendom.webp",
+        "sha256": "4de7869d3c1f7d3796b686e7169eb66d5c2fa21b24e6274ad1262b569fd6c12d",
+        "width": 960,
+        "height": 620,
+        "size_kb": 67.5,
+        "alt_nb": "Klassisk bygård og moderne næringsbygg i bysentrum",
+        "role": "cta"
+      }
+    ],
+    "hotell_mat": [
+      {
+        "filename": "01-moderne-bistro-restaurant.webp",
+        "rel_path": "hotell_mat/01-moderne-bistro-restaurant.webp",
+        "curated_rel_path": "assets/curated/hotell_mat/01-moderne-bistro-restaurant.webp",
+        "sha256": "0ec5c6afc8b5c8480b2b17c812a806b4ae6dd15e788e133a72980026c24d1528",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 171.9,
+        "alt_nb": "Stemningsfull restaurant og bistro med varm belysning",
+        "role": "hero"
+      },
+      {
+        "filename": "02-nordisk-hotellrom.webp",
+        "rel_path": "hotell_mat/02-nordisk-hotellrom.webp",
+        "curated_rel_path": "assets/curated/hotell_mat/02-nordisk-hotellrom.webp",
+        "sha256": "c1910aee64f7508e593aaafa1b5b7f5e178d089ddaa09ec3149fc152bf44aaf2",
+        "width": 960,
+        "height": 640,
+        "size_kb": 52.6,
+        "alt_nb": "Lunt og moderne hotellrom i treverk med myk belysning",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-restaurantkjokken-kokker.webp",
+        "rel_path": "hotell_mat/03-restaurantkjokken-kokker.webp",
+        "curated_rel_path": "assets/curated/hotell_mat/03-restaurantkjokken-kokker.webp",
+        "sha256": "24bdd1e44edc14b26471f6a965593a79e5122c96d306c842e56ca9b45575bf33",
+        "width": 960,
+        "height": 640,
+        "size_kb": 47.3,
+        "alt_nb": "Kokker i full aktivitet i åpent profesjonelt restaurantkjøkken",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-anretning-gourmetmat.webp",
+        "rel_path": "hotell_mat/04-anretning-gourmetmat.webp",
+        "curated_rel_path": "assets/curated/hotell_mat/04-anretning-gourmetmat.webp",
+        "sha256": "abfaae9a3b67e77a84ab4381c5f9981c46ab614897b759e31f020dc79971a5c6",
+        "width": 960,
+        "height": 563,
+        "size_kb": 38.6,
+        "alt_nb": "Presis anretning av retter på hvite tallerkener før servering",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-selskapslokale-borddekking.webp",
+        "rel_path": "hotell_mat/05-selskapslokale-borddekking.webp",
+        "curated_rel_path": "assets/curated/hotell_mat/05-selskapslokale-borddekking.webp",
+        "sha256": "77f27b70dbd949dc5f31388debe80e22e087cda5bff3e1f917b564dddebff3a9",
+        "width": 1200,
+        "height": 801,
+        "size_kb": 66.7,
+        "alt_nb": "Hvitt dekkede festbord i lyst og klassisk selskapslokale",
+        "role": "about"
+      },
+      {
+        "filename": "06-uteservering-sjoutsikt.webp",
+        "rel_path": "hotell_mat/06-uteservering-sjoutsikt.webp",
+        "curated_rel_path": "assets/curated/hotell_mat/06-uteservering-sjoutsikt.webp",
+        "sha256": "ffbce403fefc3f5d35806f096684422912662fbe0272d5edf24c11cdb30cf915",
+        "width": 1200,
+        "height": 900,
+        "size_kb": 196.5,
+        "alt_nb": "Innbydende uteservering ved vannet under kveldssol",
+        "role": "process"
+      },
+      {
+        "filename": "07-selskap-vinglass.webp",
+        "rel_path": "hotell_mat/07-selskap-vinglass.webp",
+        "curated_rel_path": "assets/curated/hotell_mat/07-selskap-vinglass.webp",
+        "sha256": "07bfcdc4b13f57bef79591096d64a1afe51787f012e0e587d98d03b500f00f53",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 48.1,
+        "alt_nb": "Gjester som skåler med vinglass under feiring og middag",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-servering-hovedrett.webp",
+        "rel_path": "hotell_mat/08-servering-hovedrett.webp",
+        "curated_rel_path": "assets/curated/hotell_mat/08-servering-hovedrett.webp",
+        "sha256": "e6ad6b6291ac280b36db4dd1b18d54c0d2e2bd9c15d75fad4a52c81d802d9236",
+        "width": 1200,
+        "height": 801,
+        "size_kb": 124.5,
+        "alt_nb": "Nystekt hovedrett servert med friske råvarer og tilbehør",
+        "role": "cta"
+      }
+    ],
+    "industri": [
+      {
+        "filename": "01-sveising-gnister-verksted.webp",
+        "rel_path": "industri/01-sveising-gnister-verksted.webp",
+        "curated_rel_path": "assets/curated/industri/01-sveising-gnister-verksted.webp",
+        "sha256": "ffda373784bdf420418471eaa54a77fbcdd8d4e7dfc05d41b3c3d5c99884fede",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 59.6,
+        "alt_nb": "Sveiser i fullt verneutstyr under arbeid med kraftig stålplate",
+        "role": "hero"
+      },
+      {
+        "filename": "02-metallbearbeiding-sveis.webp",
+        "rel_path": "industri/02-metallbearbeiding-sveis.webp",
+        "curated_rel_path": "assets/curated/industri/02-metallbearbeiding-sveis.webp",
+        "sha256": "3ff3a8ea9a518b60053cc1c1bd5bb3e157aa466a88d637ec427e1817481536e6",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 51.1,
+        "alt_nb": "Presisjonssveising i mekanisk verksted og stålproduksjon",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-traverskran-verkstedhall.webp",
+        "rel_path": "industri/03-traverskran-verkstedhall.webp",
+        "curated_rel_path": "assets/curated/industri/03-traverskran-verkstedhall.webp",
+        "sha256": "3eb6c3997d6fe9cdf64db2a44bc387ffb50311c0dbb7278fa9a2979c3f7fab28",
+        "width": 960,
+        "height": 540,
+        "size_kb": 21.7,
+        "alt_nb": "Kraftig løftekrok på traverskran i industriell verkstedhall",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-rorproduksjon-stalverk.webp",
+        "rel_path": "industri/04-rorproduksjon-stalverk.webp",
+        "curated_rel_path": "assets/curated/industri/04-rorproduksjon-stalverk.webp",
+        "sha256": "1c9bd496f905d21b5eafa7919af3f377cf89083892b29991108d09fed201a7c1",
+        "width": 960,
+        "height": 640,
+        "size_kb": 162.4,
+        "alt_nb": "Industrielle stålrør og konstruksjonsdeler på produksjonsområde",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-prosessindustri-anlegg.webp",
+        "rel_path": "industri/05-prosessindustri-anlegg.webp",
+        "curated_rel_path": "assets/curated/industri/05-prosessindustri-anlegg.webp",
+        "sha256": "7e8185832993fe9f28b5cbf5258fb9ad4450246adaf9469ca6378c7062631750",
+        "width": 960,
+        "height": 640,
+        "size_kb": 70.7,
+        "alt_nb": "Moderne prosessanlegg og stålkonstruksjoner i tungindustri",
+        "role": "about"
+      },
+      {
+        "filename": "06-mekanisk-arbeidsbenk.webp",
+        "rel_path": "industri/06-mekanisk-arbeidsbenk.webp",
+        "curated_rel_path": "assets/curated/industri/06-mekanisk-arbeidsbenk.webp",
+        "sha256": "1dbfe03fbbfa85b6d3159937caef0bb0f263f74ba3102952ee0ff1b39b89790d",
+        "width": 960,
+        "height": 641,
+        "size_kb": 56.2,
+        "alt_nb": "Fagarbeider som utfører presisjonsmontering ved arbeidsbenk",
+        "role": "process"
+      },
+      {
+        "filename": "07-festemidler-verkstedlager.webp",
+        "rel_path": "industri/07-festemidler-verkstedlager.webp",
+        "curated_rel_path": "assets/curated/industri/07-festemidler-verkstedlager.webp",
+        "sha256": "ddd06f1d4f017e8419512e35efa63d396c362dd9e7f00bf80710aa5ab90ac3b7",
+        "width": 960,
+        "height": 640,
+        "size_kb": 121.2,
+        "alt_nb": "Systematisk sortert sortiment av bolter og festemidler på verksted",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-stalbolter-industridetalj.webp",
+        "rel_path": "industri/08-stalbolter-industridetalj.webp",
+        "curated_rel_path": "assets/curated/industri/08-stalbolter-industridetalj.webp",
+        "sha256": "5faa896022b432fe461e18ae63193c82b781c515af2c8a54fa12601ee8a23503",
+        "width": 960,
+        "height": 640,
+        "size_kb": 32.0,
+        "alt_nb": "Nærbilde av høyfaste skruer og maskindeler i stål",
+        "role": "cta"
+      }
+    ],
+    "advokat": [
+      {
+        "filename": "01-styrerom-advokatkontor.webp",
+        "rel_path": "advokat/01-styrerom-advokatkontor.webp",
+        "curated_rel_path": "assets/curated/advokat/01-styrerom-advokatkontor.webp",
+        "sha256": "403060aef0da75533bec8049a6a6d01f8b6340fe06766af4047960f7892b0bf1",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 53.4,
+        "alt_nb": "Representativt møterom med gulv-til-tak-vinduer hos advokatfirma",
+        "role": "hero"
+      },
+      {
+        "filename": "02-kontrakt-juridisk-dokument.webp",
+        "rel_path": "advokat/02-kontrakt-juridisk-dokument.webp",
+        "curated_rel_path": "assets/curated/advokat/02-kontrakt-juridisk-dokument.webp",
+        "sha256": "ff7b7e76e65d10c0bf88fba911d7a6e2acd605cf75ca4b2bb3ccf21a7f613cfc",
+        "width": 960,
+        "height": 640,
+        "size_kb": 69.3,
+        "alt_nb": "Signert juridisk dokument og fyllepenn på mørkt skrivebord",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-panoramisk-moterom.webp",
+        "rel_path": "advokat/03-panoramisk-moterom.webp",
+        "curated_rel_path": "assets/curated/advokat/03-panoramisk-moterom.webp",
+        "sha256": "77247e8e16f027a941e395d9a85f7084e430e9759fcc727ef4ac1e9a872fbb72",
+        "width": 960,
+        "height": 640,
+        "size_kb": 58.1,
+        "alt_nb": "Stort forhandlings- og styrerom klargjort for klientmøte",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-avtale-handtrykk-bord.webp",
+        "rel_path": "advokat/04-avtale-handtrykk-bord.webp",
+        "curated_rel_path": "assets/curated/advokat/04-avtale-handtrykk-bord.webp",
+        "sha256": "4c2c3dc360c7a6906275d961c2fa9c2e6cbfa0b64da868d3e32ec4c8bf29d67b",
+        "width": 960,
+        "height": 640,
+        "size_kb": 27.8,
+        "alt_nb": "Fast håndtrykk over møtebord etter inngått avtale",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-kontorkorridor-glass.webp",
+        "rel_path": "advokat/05-kontorkorridor-glass.webp",
+        "curated_rel_path": "assets/curated/advokat/05-kontorkorridor-glass.webp",
+        "sha256": "733f1eb24747b322fe4c176ce510c352fda64e7ef6aefa77a98538b7c2baf957",
+        "width": 960,
+        "height": 640,
+        "size_kb": 47.3,
+        "alt_nb": "Moderne advokatkontorer med lydisolerte glassvegger",
+        "role": "about"
+      },
+      {
+        "filename": "06-juridisk-bibliotek-kontor.webp",
+        "rel_path": "advokat/06-juridisk-bibliotek-kontor.webp",
+        "curated_rel_path": "assets/curated/advokat/06-juridisk-bibliotek-kontor.webp",
+        "sha256": "5d0ab8a3a3f261591ca071c210ca42405e0ad365bacd96fda4b014ea65340250",
+        "width": 960,
+        "height": 640,
+        "size_kb": 98.4,
+        "alt_nb": "Kontor med fylte bokhyller av faglitteratur og lovsamlinger",
+        "role": "process"
+      },
+      {
+        "filename": "07-forhandlingsrom-trebord.webp",
+        "rel_path": "advokat/07-forhandlingsrom-trebord.webp",
+        "curated_rel_path": "assets/curated/advokat/07-forhandlingsrom-trebord.webp",
+        "sha256": "69ac6b2ceae0fb70c9299b8614eb3f1322ab83675fdbaa43905465d523858fe1",
+        "width": 1280,
+        "height": 960,
+        "size_kb": 59.2,
+        "alt_nb": "Klassisk forhandlingsrom med langt møtebord i eik",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-klassisk-rettsbygning.webp",
+        "rel_path": "advokat/08-klassisk-rettsbygning.webp",
+        "curated_rel_path": "assets/curated/advokat/08-klassisk-rettsbygning.webp",
+        "sha256": "7c7c8062613c1db29e5af930c79f9e785a8212296ab37d250398c34169db960d",
+        "width": 1024,
+        "height": 768,
+        "size_kb": 183.4,
+        "alt_nb": "Høytidelig klassisk retts- og institusjonsarkitektur",
+        "role": "cta"
+      }
+    ],
+    "transport": [
+      {
+        "filename": "01-vogntog-norsk-fjord.webp",
+        "rel_path": "transport/01-vogntog-norsk-fjord.webp",
+        "curated_rel_path": "assets/curated/transport/01-vogntog-norsk-fjord.webp",
+        "sha256": "ac5bc93d37c1fe0a7491f96af837715f4ad3516b34951c99281cdcede44c5f60",
+        "width": 1200,
+        "height": 896,
+        "size_kb": 229.2,
+        "alt_nb": "Hvitt vogntog på landevei langs norsk fjord og fjell",
+        "role": "hero"
+      },
+      {
+        "filename": "02-logistikksenter-lager.webp",
+        "rel_path": "transport/02-logistikksenter-lager.webp",
+        "curated_rel_path": "assets/curated/transport/02-logistikksenter-lager.webp",
+        "sha256": "4ba3548de32ec1eb9789f13991cd638ccf41ac1f9ddc6d8a485d6033966f8a0f",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 227.1,
+        "alt_nb": "Stort moderne logistikklager med systematisk pallehåndtering",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-truck-hoyreol-lager.webp",
+        "rel_path": "transport/03-truck-hoyreol-lager.webp",
+        "curated_rel_path": "assets/curated/transport/03-truck-hoyreol-lager.webp",
+        "sha256": "d202aca80e1abc16f88a3dfd71123ce3212b9113b39003270f25f24905808f9c",
+        "width": 1024,
+        "height": 697,
+        "size_kb": 137.4,
+        "alt_nb": "Truckfører som henter palle fra høylager i distribusjonssenter",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-varemottak-palletransport.webp",
+        "rel_path": "transport/04-varemottak-palletransport.webp",
+        "curated_rel_path": "assets/curated/transport/04-varemottak-palletransport.webp",
+        "sha256": "353a3b14266e83394fc4f9fb9f7a3aa97a752ed9e7c3a6e08d1f6568c912a457",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 105.7,
+        "alt_nb": "Gaffeltruck i drift med fullastet palle i logistikkterminal",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-terminal-varelasting.webp",
+        "rel_path": "transport/05-terminal-varelasting.webp",
+        "curated_rel_path": "assets/curated/transport/05-terminal-varelasting.webp",
+        "sha256": "cbfc8b7b2474d53630655068e21c032dc81c44ffb84980e3b64a5382091c9d42",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 143.1,
+        "alt_nb": "Effektiv lasting og flytting av godspaller i lagerhall",
+        "role": "about"
+      },
+      {
+        "filename": "06-lagerkontroll-ekspedisjon.webp",
+        "rel_path": "transport/06-lagerkontroll-ekspedisjon.webp",
+        "curated_rel_path": "assets/curated/transport/06-lagerkontroll-ekspedisjon.webp",
+        "sha256": "bb945ccc5f8b7f996451d087b202ccc3aab3543a94c8a21fc2717348863f14e1",
+        "width": 1024,
+        "height": 683,
+        "size_kb": 81.4,
+        "alt_nb": "Lagerkoordinator som kontrollerer leveranse ved gaffeltruck",
+        "role": "process"
+      },
+      {
+        "filename": "07-pakking-flytteeske.webp",
+        "rel_path": "transport/07-pakking-flytteeske.webp",
+        "curated_rel_path": "assets/curated/transport/07-pakking-flytteeske.webp",
+        "sha256": "5ee3fe61aed3b97db54b3060cf371ca734f84fd7b0822cd8a168e5ce6d1eb754",
+        "width": 960,
+        "height": 641,
+        "size_kb": 49.3,
+        "alt_nb": "Pakking og klargjøring av eske for trygg forsendelse",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-pappeske-forsendelse.webp",
+        "rel_path": "transport/08-pappeske-forsendelse.webp",
+        "curated_rel_path": "assets/curated/transport/08-pappeske-forsendelse.webp",
+        "sha256": "b905ece15d99f38e485ad061d2150e3448f325d2c5337b3523f90e27505d45ef",
+        "width": 960,
+        "height": 640,
+        "size_kb": 24.7,
+        "alt_nb": "Solid pappeske merket for lagring, flytting og transport",
+        "role": "cta"
+      }
+    ],
+    "frisor": [
+      {
+        "filename": "01-frisor-styling-klipp.webp",
+        "rel_path": "frisor/01-frisor-styling-klipp.webp",
+        "curated_rel_path": "assets/curated/frisor/01-frisor-styling-klipp.webp",
+        "sha256": "7183847068fe7d508c6e64ed75bc685a003a287ef3077fb649057ec529de3f68",
+        "width": 1200,
+        "height": 801,
+        "size_kb": 99.3,
+        "alt_nb": "Frisør som føner og styler kundens hår i lys salong",
+        "role": "hero"
+      },
+      {
+        "filename": "02-moderne-frisorsalong.webp",
+        "rel_path": "frisor/02-moderne-frisorsalong.webp",
+        "curated_rel_path": "assets/curated/frisor/02-moderne-frisorsalong.webp",
+        "sha256": "66f9d4c0541ab49e50c3a65ca7870e247334cec852e220abe4fd76dd3cf18437",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 52.9,
+        "alt_nb": "Lyst og innbydende frisørstudio med behandlingsstoler og speil",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-ansiktsbehandling-hudpleie.webp",
+        "rel_path": "frisor/03-ansiktsbehandling-hudpleie.webp",
+        "curated_rel_path": "assets/curated/frisor/03-ansiktsbehandling-hudpleie.webp",
+        "sha256": "4290b08bf9a5e427d641974cdd814bddc498803d202c3e593642cbda23f794cd",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 52.3,
+        "alt_nb": "Beroligende ansiktsmaske og profesjonell hudpleiebehandling",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-barberer-skjeggpleie.webp",
+        "rel_path": "frisor/04-barberer-skjeggpleie.webp",
+        "curated_rel_path": "assets/curated/frisor/04-barberer-skjeggpleie.webp",
+        "sha256": "cf3fc957525cc6abeb9d279a73886b5abfda2df5169bba98f0da1ae8749fab4f",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 25.8,
+        "alt_nb": "Barberer som utfører presis skjeggpleie i stilfull salong",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-velvaere-hudpleieprodukter.webp",
+        "rel_path": "frisor/05-velvaere-hudpleieprodukter.webp",
+        "curated_rel_path": "assets/curated/frisor/05-velvaere-hudpleieprodukter.webp",
+        "sha256": "89ae1f0b74eb36877ab9a66a9b6a0f7995e1f87f7f6fe9bf30d836b76308f05b",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 59.3,
+        "alt_nb": "Rene håndklær, duftlys og pleieprodukter i spa-miljø",
+        "role": "about"
+      },
+      {
+        "filename": "06-eksklusiv-salong-interior.webp",
+        "rel_path": "frisor/06-eksklusiv-salong-interior.webp",
+        "curated_rel_path": "assets/curated/frisor/06-eksklusiv-salong-interior.webp",
+        "sha256": "1e8e7eb0e926e9469d752ebfd61bbd2db5761139288dfdf86704d772d7017819",
+        "width": 1200,
+        "height": 900,
+        "size_kb": 117.1,
+        "alt_nb": "Stilren frisørsalong med klassiske stasjoner og godt arbeidslys",
+        "role": "process"
+      },
+      {
+        "filename": "07-spa-maskebehandling.webp",
+        "rel_path": "frisor/07-spa-maskebehandling.webp",
+        "curated_rel_path": "assets/curated/frisor/07-spa-maskebehandling.webp",
+        "sha256": "c59579b9626a9574f2e52446c43f1bac5531afb9d970acd299819dd5ecc38302",
+        "width": 1200,
+        "height": 800,
+        "size_kb": 62.2,
+        "alt_nb": "Hudterapeut som påfører pleiende maske under spabehandling",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-herrefrisor-barbershop.webp",
+        "rel_path": "frisor/08-herrefrisor-barbershop.webp",
+        "curated_rel_path": "assets/curated/frisor/08-herrefrisor-barbershop.webp",
+        "sha256": "e60489a912abdde9ff43a994e848f2cdf7d4f40660aa3a2e1f0e72aaeb88edef",
+        "width": 1200,
+        "height": 797,
+        "size_kb": 184.3,
+        "alt_nb": "Stemningsfull barbershop med mursteinsvegg og klassiske stoler",
+        "role": "cta"
+      }
+    ],
+    "b2b_generell": [
+      {
+        "filename": "01-norsk-bedriftsmote-kontor.webp",
+        "rel_path": "b2b_generell/01-norsk-bedriftsmote-kontor.webp",
+        "curated_rel_path": "assets/curated/b2b_generell/01-norsk-bedriftsmote-kontor.webp",
+        "sha256": "d6f9c630def7bd228474bdb042b7127eeaad576183ee3f09b3d29bdd3c0812fd",
+        "width": 1200,
+        "height": 896,
+        "size_kb": 142.4,
+        "alt_nb": "Samarbeidsmøte i lyst norsk kontorlokale med utsikt mot fjord",
+        "role": "hero"
+      },
+      {
+        "filename": "02-moderne-forretningsbygg.webp",
+        "rel_path": "b2b_generell/02-moderne-forretningsbygg.webp",
+        "curated_rel_path": "assets/curated/b2b_generell/02-moderne-forretningsbygg.webp",
+        "sha256": "e4377d6e5c06c06d1cf05d862dc62c5ceb0fb7ce963ef0ce091ecd7c82e4b89c",
+        "width": 960,
+        "height": 575,
+        "size_kb": 88.2,
+        "alt_nb": "Moderne nærings- og kontorbygg i attraktivt forretningsstrøk",
+        "role": "service-1"
+      },
+      {
+        "filename": "03-prosjektplan-laptop-bord.webp",
+        "rel_path": "b2b_generell/03-prosjektplan-laptop-bord.webp",
+        "curated_rel_path": "assets/curated/b2b_generell/03-prosjektplan-laptop-bord.webp",
+        "sha256": "44a9591fd555e998e0b48a3605496a3622548fb1b7db1996d5d6e8a1d4b7d729",
+        "width": 960,
+        "height": 720,
+        "size_kb": 97.8,
+        "alt_nb": "Arbeid på bærbar PC over prosjekttegninger og planer",
+        "role": "service-2"
+      },
+      {
+        "filename": "04-analyse-notatbok-pc.webp",
+        "rel_path": "b2b_generell/04-analyse-notatbok-pc.webp",
+        "curated_rel_path": "assets/curated/b2b_generell/04-analyse-notatbok-pc.webp",
+        "sha256": "68a54dd777b7f82ce041894127538abbc856c718a145a54162363e275fa54846",
+        "width": 960,
+        "height": 640,
+        "size_kb": 42.4,
+        "alt_nb": "Bærbar PC med forretningsoversikt ved siden av notatbok",
+        "role": "service-3"
+      },
+      {
+        "filename": "05-kontorkompleks-by.webp",
+        "rel_path": "b2b_generell/05-kontorkompleks-by.webp",
+        "curated_rel_path": "assets/curated/b2b_generell/05-kontorkompleks-by.webp",
+        "sha256": "14eb62e2f5781fbf2f70b9986501203a3652702eecd417bf6f3a27f954e72583",
+        "width": 960,
+        "height": 672,
+        "size_kb": 91.5,
+        "alt_nb": "Moderne kontorkompleks med glass- og stålfasader",
+        "role": "about"
+      },
+      {
+        "filename": "06-ryddig-arbeidsplass-pc.webp",
+        "rel_path": "b2b_generell/06-ryddig-arbeidsplass-pc.webp",
+        "curated_rel_path": "assets/curated/b2b_generell/06-ryddig-arbeidsplass-pc.webp",
+        "sha256": "2b01757e4bb75c4bcaff6ff9b60cd449b32f7a4d0cb0c33c4bdcb597c00af92f",
+        "width": 960,
+        "height": 640,
+        "size_kb": 38.4,
+        "alt_nb": "Lyst kontorbord med bærbar PC, plante og ryddige omgivelser",
+        "role": "process"
+      },
+      {
+        "filename": "07-naeringsbygg-himmel.webp",
+        "rel_path": "b2b_generell/07-naeringsbygg-himmel.webp",
+        "curated_rel_path": "assets/curated/b2b_generell/07-naeringsbygg-himmel.webp",
+        "sha256": "9b96f26eb0a3dc93cb6a75feb62b8ad2e0b9ade0d1b4ac507b70144d9137d7cf",
+        "width": 960,
+        "height": 720,
+        "size_kb": 101.5,
+        "alt_nb": "Representativt forretningsbygg med speilende glassfasade",
+        "role": "gallery"
+      },
+      {
+        "filename": "08-minimalistisk-kontorpult.webp",
+        "rel_path": "b2b_generell/08-minimalistisk-kontorpult.webp",
+        "curated_rel_path": "assets/curated/b2b_generell/08-minimalistisk-kontorpult.webp",
+        "sha256": "deb4bb2f0290f9e25c8a98295bc56201efe62e7b7a2cd5a9f27d370c5aae90df",
+        "width": 960,
+        "height": 640,
+        "size_kb": 14.4,
+        "alt_nb": "Bærbar datamaskin og mus på varm arbeidsflate i tre",
+        "role": "cta"
+      }
+    ]
+  }
+}
